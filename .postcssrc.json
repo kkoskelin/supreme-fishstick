@@ -1,0 +1,12 @@
+{
+  "plugins": {
+    "postcss-import": {},
+    "postcss-nested": {
+      "extensions": [
+        ".css",
+        ".scss"
+      ]
+    },
+    "tailwindcss": {}
+  }
+}

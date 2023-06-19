@@ -1,0 +1,6 @@
+.DS_Store
+.parcel-cache
+coverage/
+dist
+e2e/videos
+node_modules
