@@ -1,14 +1,11 @@
-export type State = {
-  randomInfo?: Record<string, string>;
-  currentPage: string;
-};
-
-export type Link = {
-  href: string;
-  name: string;
-  current?: boolean;
-};
+import { State } from '../types/State';
+import { derivedState } from './derivedState';
+import { swimData } from '../data/swimData';
 
 export const state: State = {
   currentPage: '',
+  form: { recordFilter: {} },
+  recordFilter: {},
+  swimData,
+  ...derivedState,
 };
