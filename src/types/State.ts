@@ -8,4 +8,5 @@ export type State = {
   recordFilter: RecordFilter;
   swimData: SwimRecord[];
   filteredRankings: SwimRecord[];
+  hasSearchParameters: boolean;
 };

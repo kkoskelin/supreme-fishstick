@@ -7,8 +7,9 @@ import React from 'react';
 export const EventFilter = () => {
   const {
     form: { recordFilter },
+    hasSearchParameters,
   } = useAppState();
-  const { submitSearch, updateFilter } = useActions();
+  const { clearSearch, submitSearch, updateFilter } = useActions();
   return (
     <form
       onSubmit={e => {
@@ -18,6 +19,22 @@ export const EventFilter = () => {
     >
       <fieldset className="mb-2">
         <legend className="inline">Gender:</legend>
+        <label className="mr-4">
+          <input
+            type="radio"
+            name="gender"
+            checked={recordFilter.gender === undefined}
+            defaultValue={undefined}
+            onChange={() => {
+              void updateFilter({
+                ...recordFilter,
+                gender: undefined,
+              });
+            }}
+            className="mr-2 -mt-1"
+          />
+          All
+        </label>
         {GenderList.map(gender => (
           <label key={gender} className="mr-4">
             <input
@@ -36,22 +53,6 @@ export const EventFilter = () => {
             {gender}
           </label>
         ))}
-        <label className="mr-4">
-          <input
-            type="radio"
-            name="gender"
-            checked={recordFilter.gender === undefined}
-            defaultValue={undefined}
-            onChange={() => {
-              void updateFilter({
-                ...recordFilter,
-                gender: undefined,
-              });
-            }}
-            className="mr-2 -mt-1"
-          />
-          All
-        </label>
       </fieldset>
       <label>
         Stroke:
@@ -114,7 +115,7 @@ export const EventFilter = () => {
         <button
           type="button"
           onClick={() => {
-            void updateFilter({});
+            void clearSearch();
           }}
           className="w-24 rounded border-2 border-gray-400"
         >

@@ -4,6 +4,7 @@ export type SwimRecord = {
   date: string;
   displayName: string;
   event: number;
+  eventName?: string;
   exhibition: boolean;
   firstName: string;
   lastName: string;

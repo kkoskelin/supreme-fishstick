@@ -1,15 +1,8 @@
 import { SwimRecord } from '../types/SwimRecord';
+import { timeToSeconds } from '../presenter/derivedState';
 import data from './swim.json';
 
 type RawRecord = Record<string, string | number>;
-
-const timeToSeconds = (time: string): number => {
-  const parts: string[] = time.split(':');
-  if (parts.length == 1) {
-    return +parts;
-  }
-  return +parts[0] * 60 + +parts[1];
-};
 
 const formatRecord = (row: RawRecord): SwimRecord => ({
   age: +row['Age'],

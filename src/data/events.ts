@@ -1,4 +1,7 @@
+import { Distance } from '../types/Distance';
 import { Event } from '../types/Event';
+import { Gender } from '../types/Gender';
+import { Stroke } from '../types/Stroke';
 
 export const EVENT_MAP: Record<number, Event> = {
   1: {
@@ -470,3 +473,27 @@ export const EVENT_MAP: Record<number, Event> = {
     stroke: 'Free Relay',
   },
 };
+
+export const EVENTS_BY_STROKE: Record<Stroke, string[]> = {} as Record<
+  Stroke,
+  string[]
+>;
+export const EVENTS_BY_DISTANCE: Record<Distance, string[]> = {} as Record<
+  Distance,
+  string[]
+>;
+export const EVENTS_BY_GENDER: Record<Gender, string[]> = {} as Record<
+  Gender,
+  string[]
+>;
+
+for (const [eventNumber, eventDetails] of Object.entries(EVENT_MAP)) {
+  EVENTS_BY_STROKE[eventDetails.stroke] ??= [];
+  EVENTS_BY_STROKE[eventDetails.stroke].push(eventNumber);
+
+  EVENTS_BY_DISTANCE[eventDetails.distance] ??= [];
+  EVENTS_BY_DISTANCE[eventDetails.distance].push(eventNumber);
+
+  EVENTS_BY_GENDER[eventDetails.gender] ??= [];
+  EVENTS_BY_GENDER[eventDetails.gender].push(eventNumber);
+}
