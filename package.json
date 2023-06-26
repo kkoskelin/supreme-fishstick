@@ -8,7 +8,7 @@
   "scripts": {
     "build": "parcel build",
     "clean": "rm -rf ./dist ./.parcel-cache",
-    "lint": "eslint  --ext .js,.jsx,.ts,.tsx src/",
+    "lint": "tsc --noEmit && eslint  --ext .js,.jsx,.ts,.tsx src/",
     "lint:css": "stylelint ./src/**/*.css",
     "lint:css:fix": "stylelint ./src/**/*.css --fix",
     "lint:fix": "npm run lint -- --fix",

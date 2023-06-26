@@ -2,7 +2,6 @@ import { useAppState } from '../presenter/presenter';
 import React from 'react';
 
 import { LoadingTemplate } from '../views/LoadingTemplate';
-import { RandomInfo } from './RandomInfo';
 import { Rankings } from '../views/Rankings';
 
 export const CurrentPage = () => {
@@ -11,7 +10,6 @@ export const CurrentPage = () => {
     <>
       {currentPage == 'Rankings' && <Rankings />}
       {currentPage == 'Loading' && <LoadingTemplate />}
-      {currentPage == 'RandomInfo' && <RandomInfo />}
     </>
   );
 };
