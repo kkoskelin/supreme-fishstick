@@ -1,5 +1,13 @@
 # README
 
+madisonswimming.com appears to be hosted on WIX
+
+Let's try an iframe with react app.
+* datatables for react
+* ability to filter on all fields
+* ability to specify sort, print, export
+
+
 ## Engineering setup
 
 ### Toolchain Installs:

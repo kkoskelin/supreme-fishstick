@@ -2,16 +2,14 @@ import { useAppState } from '../presenter/presenter';
 import React from 'react';
 
 import { LoadingTemplate } from '../views/LoadingTemplate';
-import { RandomInfo } from './RandomInfo';
-import { SplashTemplate } from '../views/SplashTemplate';
+import { Rankings } from '../views/Rankings';
 
 export const CurrentPage = () => {
   const { currentPage } = useAppState();
   return (
     <>
-      {currentPage == 'Splash' && <SplashTemplate />}
+      {currentPage == 'Rankings' && <Rankings />}
       {currentPage == 'Loading' && <LoadingTemplate />}
-      {currentPage == 'RandomInfo' && <RandomInfo />}
     </>
   );
 };
