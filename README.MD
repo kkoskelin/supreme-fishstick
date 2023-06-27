@@ -1,6 +1,6 @@
 # README
 
-madisonswimming.com appears to be hosted on WIX
+madisonswimming.com hosted on WIX
 
 Let's try an iframe with react app.
 * datatables for react
