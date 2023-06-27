@@ -3,8 +3,10 @@ import { Gender } from './Gender';
 import { Stroke } from './Stroke';
 
 export type RecordFilter = {
-  ageMin?: number;
-  ageMax?: number;
+  ageMin?: string;
+  ageMax?: string;
+  beginYear?: string;
+  endYear?: string;
   distance?: Distance;
   gender?: Gender;
   stroke?: Stroke;

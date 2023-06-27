@@ -22,4 +22,4 @@ const formatRecord = (row: RawRecord): SwimRecord => ({
 
 export const swimData = (data as RawRecord[])
   .map(formatRecord)
-  .sort((a, b) => a.time - b.time);
+  .sort((a, b) => a.convertedTime - b.convertedTime);

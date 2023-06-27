@@ -7,7 +7,6 @@ import React from 'react';
 export const EventFilter = () => {
   const {
     form: { recordFilter },
-    hasSearchParameters,
   } = useAppState();
   const { clearSearch, submitSearch, updateFilter } = useActions();
   return (
@@ -16,6 +15,7 @@ export const EventFilter = () => {
         e.preventDefault();
         void submitSearch();
       }}
+      className="ml-0.5"
     >
       <fieldset className="mb-2">
         <legend className="inline">Gender:</legend>
@@ -54,6 +54,76 @@ export const EventFilter = () => {
           </label>
         ))}
       </fieldset>
+      <div className="my-4">
+        <label>
+          Minimum age{' '}
+          <input
+            type="text"
+            data-pattern="^\d{2}$"
+            name="ageMin"
+            className="h-8 w-12 text-xs rounded invalid:border-red-700 invalid:bg-red-200"
+            value={recordFilter.ageMin || ''}
+            onChange={e => {
+              void updateFilter({
+                ...recordFilter,
+                ageMin: e.target.value || undefined,
+              });
+            }}
+          />
+        </label>
+        <label className="ml-4">
+          Maximum age{' '}
+          <input
+            type="text"
+            pattern="^\d{2}$"
+            name="ageMax"
+            className="h-8 w-12 text-xs rounded invalid:border-red-700 invalid:bg-red-200"
+            value={recordFilter.ageMax || ''}
+            onChange={e => {
+              void updateFilter({
+                ...recordFilter,
+                ageMax: e.target.value || undefined,
+              });
+            }}
+          />
+        </label>
+      </div>
+      <div className="my-4">
+        <label>
+          Starting Year{' '}
+          <input
+            type="number"
+            min="1900"
+            max="2100"
+            name="beginYear"
+            className="h-8 w-20 text-xs rounded invalid:border-red-500 invalid:bg-red-200"
+            value={recordFilter.beginYear || ''}
+            onChange={e => {
+              void updateFilter({
+                ...recordFilter,
+                beginYear: e.target.value || undefined,
+              });
+            }}
+          />
+        </label>
+        <label className="ml-4">
+          Ending Year{' '}
+          <input
+            type="number"
+            min="1900"
+            max="2100"
+            name="endYear"
+            className="h-8 w-20 text-xs rounded invalid:border-red-500 invalid:bg-red-200"
+            value={recordFilter.endYear || ''}
+            onChange={e => {
+              void updateFilter({
+                ...recordFilter,
+                endYear: e.target.value || undefined,
+              });
+            }}
+          />
+        </label>
+      </div>
       <label>
         Stroke:
         <select
@@ -108,7 +178,7 @@ export const EventFilter = () => {
               swimmerName: e.target.value,
             });
           }}
-          className="rounded h-8 text-xs w-60"
+          className="rounded h-8 text-xs w-40"
         />
       </label>
       <div className="my-4">
