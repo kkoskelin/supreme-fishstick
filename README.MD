@@ -1,5 +1,7 @@
 # README
 
+This site will be deployed to tiiny.site on a temporary basis.
+
 madisonswimming.com is hosted on WIX
 
 Let's try an iframe with react app.
