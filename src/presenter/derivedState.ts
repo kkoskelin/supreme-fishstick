@@ -51,16 +51,24 @@ export const distanceFilter = (distance: Distance) =>
         EVENTS_BY_DISTANCE[distance].includes(record.event.toString())
     : () => true;
 
-// export const ageFilter =
-//   (ageMin?: number, ageMax?: number) => (record: SwimRecord) => {
-//     if (ageMin && record.age < ageMin) {
-//       return false;
-//     }
-//     if (ageMax && record.age > ageMax) {
-//       return false;
-//     }
-//     return true;
-//   };
+export const yearFilter =
+  (beginYear: string, endYear: string) => (record: SwimRecord) => {
+    return (
+      (beginYear ? `${beginYear}-01-01}` <= record.date : true) &&
+      (endYear ? `${endYear}-12-31` >= record.date : true)
+    );
+  };
+
+export const ageFilter =
+  (ageMin?: string, ageMax?: string) => (record: SwimRecord) => {
+    if (ageMin && record.age < +ageMin) {
+      return false;
+    }
+    if (ageMax && record.age > +ageMax) {
+      return false;
+    }
+    return true;
+  };
 
 export const filteredRankings = (state: State): SwimRecord[] => {
   const { recordFilter } = state;
@@ -68,8 +76,9 @@ export const filteredRankings = (state: State): SwimRecord[] => {
     .filter(nameFilter(recordFilter.swimmerName))
     .filter(strokeFilter(recordFilter.stroke))
     .filter(distanceFilter(recordFilter.distance))
-    .filter(genderFilter(recordFilter.gender));
-  // .filter(ageFilter(recordFilter.ageMin, recordFilter.ageMax));
+    .filter(genderFilter(recordFilter.gender))
+    .filter(yearFilter(recordFilter.beginYear, recordFilter.endYear))
+    .filter(ageFilter(recordFilter.ageMin, recordFilter.ageMax));
   return filteredRecords;
 };
 

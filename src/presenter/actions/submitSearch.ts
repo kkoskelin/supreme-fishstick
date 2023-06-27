@@ -1,6 +1,10 @@
 import { Context } from '../presenter';
+import { isUndefined, omitBy } from 'lodash';
 
 export const submitSearch = (context: Context) => {
-  context.state.recordFilter = { ...context.state.form.recordFilter };
+  context.state.recordFilter = omitBy(
+    context.state.form.recordFilter,
+    isUndefined,
+  );
   console.log(context.state.recordFilter);
 };

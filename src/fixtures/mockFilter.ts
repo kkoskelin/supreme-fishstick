@@ -2,8 +2,8 @@ import { RecordFilter } from '../types/RecordFilter';
 import { SwimRecord } from '../types/SwimRecord';
 
 export const mockFilter: RecordFilter = {
-  ageMax: 11,
-  ageMin: 9,
+  ageMax: '11',
+  ageMin: '9',
   distance: '100 Meter',
   gender: 'Boys',
   stroke: 'Back',
