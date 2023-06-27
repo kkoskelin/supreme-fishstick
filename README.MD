@@ -1,12 +1,15 @@
 # README
 
-madisonswimming.com hosted on WIX
+madisonswimming.com is hosted on WIX
 
 Let's try an iframe with react app.
 * datatables for react
 * ability to filter on all fields
 * ability to specify sort, print, export
 
+TODO:
+* firebase configuration
+* administrative options for entering historical data
 
 ## Engineering setup
 
