@@ -1,6 +1,5 @@
 import { SwimRecord } from '../types/SwimRecord';
 import { timeToSeconds } from '../presenter/derivedState';
-import data from './swim.json';
 
 type RawRecord = Record<string, string | number>;
 
@@ -17,9 +16,8 @@ const formatRecord = (row: RawRecord): SwimRecord => ({
   place: isNaN(+row['Place']) ? undefined : +row['Place'],
   team: row['Team'] as string,
   time: timeToSeconds(row['Time'] as string),
-  weekNumber: +row['Week Number'],
+  weekNumber: +(row['Week'] as string).replace('Week ', ''),
 });
 
-export const swimData = (data as RawRecord[])
-  .map(formatRecord)
-  .sort((a, b) => a.convertedTime - b.convertedTime);
+const sortByConvertedTime = (a: SwimRecord, b: SwimRecord) =>
+  a.convertedTime - b.convertedTime;

@@ -5,7 +5,7 @@ import {
   secondsToTime,
   timeToSeconds,
 } from './derivedState';
-import { mockSwimRecord } from '../fixtures/mockFilter';
+import { mockSwimRecord } from '../fixtures/mockData';
 import { state } from './state';
 
 describe('derived state functions', () => {

@@ -1,10 +1,9 @@
 import { DataTableBase } from '../components/Datatable';
-// import { EVENT_MAP } from '../data/events';
+import { DownloadJSONFile } from '../components/DownloadJSONFile';
 import { EventFilter } from '../components/EventFilter';
 import { SwimRecord } from '../types/SwimRecord';
 import { secondsToTime } from '../presenter/derivedState';
 import { useAppState } from '../presenter/presenter';
-
 import React from 'react';
 
 const rankColumnConfig = [
@@ -52,8 +51,10 @@ const rankColumnConfig = [
 
 export const Rankings = () => {
   const { filteredRankings, hasSearchParameters, swimData } = useAppState();
+  console.log({ filteredRankings });
   return (
-    <div>
+    <div className="downloadIt">
+      <DownloadJSONFile data={swimData} filename={'swimData.json'} />
       <EventFilter />
       {hasSearchParameters && (
         <>

@@ -472,7 +472,7 @@ export const EVENT_MAP: Record<number, Event> = {
     gender: 'Boys',
     stroke: 'Free Relay',
   },
-};
+} as const;
 
 export const EVENTS_BY_STROKE: Record<Stroke, string[]> = {} as Record<
   Stroke,
