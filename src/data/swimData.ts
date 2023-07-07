@@ -17,7 +17,7 @@ const formatRecord = (row: RawRecord): SwimRecord => ({
   place: isNaN(+row['Place']) ? undefined : +row['Place'],
   team: row['Team'] as string,
   time: timeToSeconds(row['Time'] as string),
-  weekNumber: +row['Week Number'],
+  weekNumber: +(row['Week'] as string).replace('Week ', ''),
 });
 
 export const swimData = (data as RawRecord[])
