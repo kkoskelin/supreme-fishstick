@@ -1,6 +1,5 @@
 import { SwimRecord } from '../types/SwimRecord';
 import { timeToSeconds } from '../presenter/derivedState';
-import data from './swim.json';
 
 type RawRecord = Record<string, string | number>;
 
@@ -20,6 +19,5 @@ const formatRecord = (row: RawRecord): SwimRecord => ({
   weekNumber: +(row['Week'] as string).replace('Week ', ''),
 });
 
-export const swimData = (data as RawRecord[])
-  .map(formatRecord)
-  .sort((a, b) => a.convertedTime - b.convertedTime);
+const sortByConvertedTime = (a: SwimRecord, b: SwimRecord) =>
+  a.convertedTime - b.convertedTime;

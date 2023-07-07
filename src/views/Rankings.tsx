@@ -1,10 +1,9 @@
 import { DataTableBase } from '../components/Datatable';
-// import { EVENT_MAP } from '../data/events';
 import { DownloadJSONFile } from '../components/DownloadJSONFile';
 import { EventFilter } from '../components/EventFilter';
 import { SwimRecord } from '../types/SwimRecord';
 import { secondsToTime } from '../presenter/derivedState';
-import { useActions, useAppState } from '../presenter/presenter';
+import { useAppState } from '../presenter/presenter';
 import React from 'react';
 
 const rankColumnConfig = [
@@ -52,18 +51,11 @@ const rankColumnConfig = [
 
 export const Rankings = () => {
   const { filteredRankings, hasSearchParameters, swimData } = useAppState();
-  const { addRecord, deleteRecords } = useActions();
   console.log({ filteredRankings });
   return (
     <div className="downloadIt">
       <DownloadJSONFile data={swimData} filename={'swimData.json'} />
       <EventFilter />
-      <button className="border" onClick={() => void addRecord()}>
-        Add Random Record
-      </button>
-      <button className="border" onClick={() => void deleteRecords()}>
-        Delete All Records
-      </button>
       {hasSearchParameters && (
         <>
           <hr className="my-4 h-1 bg-gray-400" />
