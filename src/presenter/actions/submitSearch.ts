@@ -6,5 +6,4 @@ export const submitSearch = (context: Context) => {
     context.state.form.recordFilter,
     isUndefined,
   );
-  console.log(context.state.recordFilter);
 };

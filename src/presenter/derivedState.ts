@@ -71,8 +71,8 @@ export const ageFilter =
   };
 
 export const filteredRankings = (state: State): SwimRecord[] => {
-  const { recordFilter } = state;
-  const filteredRecords = state.swimData
+  const { recordFilter, swimData } = state;
+  const filteredRecords = swimData
     .filter(nameFilter(recordFilter.swimmerName))
     .filter(strokeFilter(recordFilter.stroke))
     .filter(distanceFilter(recordFilter.distance))

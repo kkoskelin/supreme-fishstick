@@ -44,12 +44,23 @@ describe('derived state functions', () => {
       const filtered = filteredRankings(state);
       expect(filtered).toEqual([]);
     });
+    it('returns all records if record filter is empty', () => {
+      state.recordFilter = {};
+      state.swimData = [mockSwimRecord];
+      const filtered = filteredRankings(state);
+      expect(filtered).toEqual([mockSwimRecord]);
+    });
   });
   describe('timeToSeconds', () => {
     it('correctly converts 32.12 from string to decimal', () => {
       const time = '32.12';
       const result = timeToSeconds(time);
       expect(result).toEqual(32.12);
+    });
+    it('correctly converts values over a minute from string to decimal', () => {
+      const time = '1:02.20';
+      const result = timeToSeconds(time);
+      expect(result).toEqual(62.2);
     });
   });
   describe('hasSearchParameters', () => {
