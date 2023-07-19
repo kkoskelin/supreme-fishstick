@@ -42,6 +42,19 @@ Modify your editor's `settings.json` file to include the following preferences:
 ## Application startup
     npm start
 
+## Serverless
+Set up AWS Credentials: https://www.serverless.com/framework/docs/providers/aws/guide/credentials/
+Video walkthrough: https://youtu.be/KngM5bfpttA
+
+To get serverless template engine thing working:
+ - brew install serverless
+
+ - sls deploy
+ - sls remove
+ - serverless info      View deployed endpoints and resources
+ - serverless invoke    Invoke deployed functions
+ - serverless --help    Discover more commands
+
 ## Running Tests
 Jest Tests:
 ```

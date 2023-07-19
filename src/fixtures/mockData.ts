@@ -1,5 +1,6 @@
 import { RecordFilter } from '../types/RecordFilter';
 import { SwimRecord } from '../types/SwimRecord';
+import { random } from 'lodash';
 
 export const mockFilter: RecordFilter = {
   ageMax: '11',
@@ -24,4 +25,13 @@ export const mockSwimRecord: SwimRecord = {
   team: 'Planet Money',
   time: 200,
   weekNumber: 2,
+};
+
+export const generateSwimRecordId = ({
+  date,
+  displayName,
+  event,
+}: SwimRecord): string => {
+  const compositeKey = `${event}_${displayName}_${date}`;
+  return compositeKey;
 };

@@ -1,0 +1,24 @@
+{
+  "name": "typescript-example",
+  "version": "0.0.0",
+  "description": "Modules required for lambda MUST be found in dependencies, not devDependencies",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "tsc -w"
+  },
+  "keywords": [],
+  "author": "kkoskelin",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/aws-sdk": "0.0.42",
+    "@types/cors": "^2.8.13",
+    "@types/node": "^7.0.5",
+    "typescript": "^2.4.2"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "serverless-http": "^3.2.0"
+  }
+}

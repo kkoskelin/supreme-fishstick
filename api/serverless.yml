@@ -1,0 +1,57 @@
+org: kkoskelin
+app: supreme-fishstick
+service: api
+frameworkVersion: '3'
+
+custom:
+  tableName: 'swim-records-${sls:stage}'
+
+package:
+  excludeDevDependencies: true
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  iam:
+    role:
+      statements:
+        - Effect: Allow
+          Action:
+            - dynamodb:Query
+            - dynamodb:Scan
+            - dynamodb:GetItem
+            - dynamodb:PutItem
+            - dynamodb:UpdateItem
+            - dynamodb:DeleteItem
+          Resource:
+            - Fn::GetAtt: [ RecordsTable, Arn ]
+  environment:
+    SWIM_RECORDS_DB: ${self:custom.tableName}
+
+functions:
+  api:
+    handler: ./index.handler
+    events:
+      - httpApi: '*'
+
+plugins:
+  - serverless-plugin-typescript
+
+resources:
+  Resources:
+    RecordsTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        TableName: ${self:custom.tableName}
+        AttributeDefinitions:
+          - AttributeName: compositeKey
+            AttributeType: S
+          - AttributeName: convertedTime
+            AttributeType: N
+        KeySchema:
+          - AttributeName: compositeKey
+            KeyType: HASH
+          - AttributeName: convertedTime
+            KeyType: RANGE
+        BillingMode: PAY_PER_REQUEST
+

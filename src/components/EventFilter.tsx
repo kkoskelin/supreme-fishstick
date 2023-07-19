@@ -8,7 +8,7 @@ export const EventFilter = () => {
   const {
     form: { recordFilter },
   } = useAppState();
-  const { clearSearch, submitSearch, updateFilter } = useActions();
+  const { addRecords, clearSearch, submitSearch, updateFilter } = useActions();
   return (
     <form
       onSubmit={e => {
@@ -196,6 +196,12 @@ export const EventFilter = () => {
           className="rounded ml-6 w-36 border-2 border-gray-400 bg-gray-200 active:bg-gray-100"
         >
           search rankings
+        </button>
+        <button
+          className="rounded ml-6 w-36 border-2 border-gray-400 bg-gray-200 active:bg-gray-100"
+          onClick={() => void addRecords()}
+        >
+          Add a Record
         </button>
       </div>
     </form>
