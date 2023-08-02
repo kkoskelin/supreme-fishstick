@@ -5,6 +5,7 @@ import {
   PutCommand,
 } from '@aws-sdk/lib-dynamodb';
 // import { SwimRecord } from '../src/types/SwimRecord';
+import { applicationContext } from './src/applicationContext';
 import cors from 'cors';
 import express, { Request, Response } from 'express';
 import serverless from 'serverless-http';
@@ -23,8 +24,10 @@ const SWIM_RECORDS_DB = process.env.SWIM_RECORDS_DB;
 const client = new DynamoDBClient({});
 const dynamoDbClient = DynamoDBDocumentClient.from(client);
 
+const date = new Date().toISOString();
+
 app.get('/hello', (req: Request, res: Response) => {
-  res.json({ general: 'kenobi', hello: 'there' });
+  res.json({ date, general: 'kenobi', hello: 'there' });
 });
 
 // app.get(
