@@ -5,14 +5,20 @@
     "declaration": true,
     "declarationMap": true,
     "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
     "jsx": "react",
     "module": "commonjs",
     "moduleResolution": "node",
+    "noEmit": true,
     "noImplicitAny": true,
     "outDir": "./dist/",
+    "preserveConstEnums": true,
+    "resolveJsonModule": true,
     "skipLibCheck": true,
-    "target": "es2021",
-    "resolveJsonModule": true
+    "sourceMap": false,
+    "strict": true,
+    "target": "es2021"
   },
   "include": [
     "src"
@@ -24,5 +30,12 @@
   },
   "typeAcquisition": {
     "enable": true
-  }
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "types": [
+    "node",
+    "aws-sdk"
+  ]
 }

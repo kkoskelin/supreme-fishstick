@@ -20,4 +20,4 @@ const formatRecord = (row: RawRecord): SwimRecord => ({
 });
 
 const sortByConvertedTime = (a: SwimRecord, b: SwimRecord) =>
-  a.convertedTime - b.convertedTime;
+  (a.convertedTime || 0) - (b.convertedTime || 0);
