@@ -1,4 +1,4 @@
-import { DataTableBase } from '../components/Datatable';
+import { DataTableBase, TableColumn } from '../components/Datatable';
 import { DownloadJSONFile } from '../components/DownloadJSONFile';
 import { EventFilter } from '../components/EventFilter';
 import { SwimRecord } from '../types/SwimRecord';
@@ -6,7 +6,14 @@ import { secondsToTime } from '../presenter/derivedState';
 import { useAppState } from '../presenter/presenter';
 import React from 'react';
 
-const rankColumnConfig = [
+interface DataRow {
+  convertedTime: number;
+  displayName: string;
+  age: number;
+  team: string;
+  date: string;
+}
+const rankColumnConfig: TableColumn<DataRow>[] = [
   // {
   //   format: (row: SwimRecord) => {
   //     const event = EVENT_MAP[row.event];
@@ -18,30 +25,39 @@ const rankColumnConfig = [
   //   sortable: true,
   // },
   {
-    format: (row: SwimRecord) => secondsToTime(row['convertedTime']),
+    format: (row: DataRow) => secondsToTime(row['convertedTime']),
+    id: 'convertedTime',
     name: 'Finals Time',
     right: true,
-    selector: (row: SwimRecord) => row['convertedTime'],
+    selector: (row: DataRow) => row['convertedTime'],
     sortable: true,
     width: '125px',
   },
   {
+    id: 'displayName',
     minWidth: '160px',
     name: 'Name',
-    selector: (row: SwimRecord) => row['displayName'],
+    selector: (row: DataRow) => row['displayName'],
     sortable: true,
   },
   {
+    id: 'age',
     name: 'Age',
     right: true,
-    selector: (row: SwimRecord) => row.age,
+    selector: (row: DataRow) => row.age,
     sortable: true,
     width: '80px',
   },
-  { name: 'Team', selector: (row: SwimRecord) => row.team, sortable: true },
   {
+    id: 'team',
+    name: 'Team',
+    selector: (row: DataRow) => row.team,
+    sortable: true,
+  },
+  {
+    id: 'date',
     name: 'Date',
-    selector: (row: SwimRecord) => {
+    selector: (row: DataRow) => {
       const date = new Date(`${row['date']}T12:00`);
       return date.toLocaleDateString('en-US');
     },
@@ -65,7 +81,7 @@ export const Rankings = () => {
           <DataTableBase
             columns={rankColumnConfig}
             paginationPerPage={10}
-            data={filteredRankings}
+            data={filteredRankings as DataRow[]}
           />
         </>
       )}

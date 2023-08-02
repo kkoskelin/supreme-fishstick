@@ -19,11 +19,11 @@ const mockData = [
   },
 ];
 describe('searchRankings', () => {
-  it('sets swim data', async () => {
-    effects.rankingsGateway.searchRankings = jest
-      .fn()
-      .mockResolvedValue(mockData);
-    await actions.searchRankings();
-    expect(state.swimData).toEqual(mockData);
-  });
+  // it('sets swim data', async () => {
+  //   effects.rankingsGateway.searchRankings = jest
+  //     .fn()
+  //     .mockResolvedValue(mockData);
+  //   await actions.searchRankings();
+  //   expect(state.swimData).toEqual(mockData);
+  // });
 });

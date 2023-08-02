@@ -5,6 +5,7 @@ const sortIcon = <ArrowDownIcon />;
 const selectProps = {
   indeterminate: (isIndeterminate: boolean) => isIndeterminate,
 };
+export type { TableColumn } from 'react-data-table-component';
 
 export function DataTableBase<T>(props: TableProps<T>): JSX.Element {
   return (

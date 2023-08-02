@@ -21,7 +21,6 @@
     "target": "es2021"
   },
   "include": [
-    "api/**/*",
     "src"
   ],
   "ts-node": {

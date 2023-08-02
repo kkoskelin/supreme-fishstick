@@ -9,7 +9,10 @@ export const initializeRouter = (context: Context) => {
   });
 
   page('*', () => {
-    window.document.querySelector('#app').innerHTML = 'Not found!';
+    const app = window.document.querySelector('#app');
+    if (app) {
+      app.innerHTML = 'Not found!';
+    }
   });
 
   page.start();
