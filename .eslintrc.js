@@ -39,6 +39,7 @@ module.exports = {
       },
       rules: {
         '@typescript-eslint/no-floating-promises': 'error',
+        '@typescript-eslint/no-unused-vars': 'warn',
         '@typescript-eslint/no-shadow': [
           'error',
           {
