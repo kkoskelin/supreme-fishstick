@@ -10,7 +10,7 @@ Let's try an iframe with react app.
 * ability to specify sort, print, export
 
 TODO:
-* firebase configuration
+* database configuration
 * administrative options for entering historical data
 
 ## Engineering setup
