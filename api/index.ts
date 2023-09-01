@@ -1,9 +1,6 @@
+/* eslint-disable @typescript-eslint/no-misused-promises */
 import { DynamoDBClient } from '@aws-sdk/client-dynamodb';
-import {
-  DynamoDBDocumentClient,
-  GetCommand,
-  PutCommand,
-} from '@aws-sdk/lib-dynamodb';
+import { DynamoDBDocumentClient, QueryCommand } from '@aws-sdk/lib-dynamodb';
 // import { SwimRecord } from '../src/types/SwimRecord';
 import { applicationContext } from './src/applicationContext';
 import cors from 'cors';
@@ -28,6 +25,32 @@ const date = new Date().toISOString();
 
 app.get('/hello', (req: Request, res: Response) => {
   res.json({ date, general: 'kenobi', hello: 'there' });
+});
+
+app.get('/swim-records', async (req: Request, res: Response) => {
+  const params = {
+    ExpressionAttributeValues: {
+      ':prefix': { S: '13_' }, // Replace with the prefix you want to query
+    },
+    KeyConditionExpression: 'compositeKey begins_with :prefix',
+    Select: 'ALL_ATTRIBUTES',
+    TableName: SWIM_RECORDS_DB,
+  };
+  try {
+    const { Items } = await dynamoDbClient.send(new QueryCommand(params));
+    if (Items) {
+      const result = Items.map(Item => ({ ...Item }));
+      res.json(result);
+    } else {
+      res.status(404).json({ error: 'Could not find any records' });
+    }
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({
+      error: 'Could not retrieve record',
+      message: error.message as string,
+    });
+  }
 });
 
 // app.get(
