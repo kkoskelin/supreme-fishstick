@@ -21,7 +21,8 @@
     "target": "es2021"
   },
   "include": [
-    "src"
+    "src",
+    "api"
   ],
   "ts-node": {
     "compilerOptions": {

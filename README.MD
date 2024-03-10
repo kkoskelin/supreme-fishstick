@@ -3,6 +3,9 @@
 This site will be deployed to tiiny.site on a temporary basis.
 
 madisonswimming.com is hosted on WIX
+Features we want:
+https://reachforthewall.org/swimmer-stats/
+https://reachforthewall.org/event-stats/
 
 Let's try an iframe with react app.
 * datatables for react
@@ -67,3 +70,14 @@ npx jest path/to/myFile.test.ts
 
 ## input validation
     Zod - https://javascript.plainenglish.io/validating-input-with-zod-in-typescript-6d0e04677123
+
+# Application Functionality Requests
+
+## Search for a Swimmer, filter on attributes.
+
+First, we want to search for a particular swimmer by their NAME (a substring) and TEAM affiliation.
+Additionally, we would like the ability to optionally restrict the year of the records.
+Other filters would be by stroke or by event (each of which has a specific gender, stroke, and distance).
+
+Second, we would like to be able to search for swimmer rankings for a particular event.
+- Choose an EVENT (only required criteria); this implicitly requires choice of gender, stroke, and distance.
