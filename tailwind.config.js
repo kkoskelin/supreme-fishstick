@@ -10,6 +10,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        ...colors,
         accent: colors.green,
         primary: colors.gray,
         secondary: colors.indigo,

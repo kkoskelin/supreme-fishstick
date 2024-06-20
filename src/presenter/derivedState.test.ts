@@ -2,6 +2,13 @@ import {
   filteredRankings,
   hasSearchParameters,
   nameFilter,
+  teamFilter,
+  strokeFilter,
+  genderFilter,
+  distanceFilter,
+  yearFilter,
+  ageFilter,
+  getBestTimesPerEvent,
   secondsToTime,
   timeToSeconds,
 } from './derivedState';
@@ -14,6 +21,30 @@ describe('derived state functions', () => {
       const generatedFilter = nameFilter(undefined);
       const result = generatedFilter({ ...mockSwimRecord });
       expect(result).toBeTruthy();
+    });
+  });
+  describe('teamFilter', () => {
+    it('returns true if team matches', () => {
+      const generatedFilter = teamFilter(mockSwimRecord.team);
+      const result = generatedFilter({ ...mockSwimRecord });
+      expect(result).toBeTruthy();
+    });
+    it('returns false if team does not match', () => {
+      const generatedFilter = teamFilter('NO-SUCH-TEAM');
+      const result = generatedFilter({ ...mockSwimRecord });
+      expect(result).toBeFalsy();
+    });
+  });
+  describe('strokeFilter', () => {
+    it('returns true if stroke matches', () => {
+      const generatedFilter = strokeFilter(mockSwimRecord.stroke);
+      const result = generatedFilter({ ...mockSwimRecord });
+      expect(result).toBeTruthy();
+    });
+    it('returns false if stroke does not match', () => {
+      const generatedFilter = strokeFilter('NO-SUCH-STROKE');
+      const result = generatedFilter({ ...mockSwimRecord });
+      expect(result).toBeFalsy();
     });
   });
   describe('secondsToTime', () => {

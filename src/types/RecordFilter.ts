@@ -11,4 +11,5 @@ export type RecordFilter = {
   gender?: Gender;
   stroke?: Stroke;
   swimmerName?: string;
+  team?: string;
 };

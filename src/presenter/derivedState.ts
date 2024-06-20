@@ -27,29 +27,43 @@ export const secondsToTime = (inputSeconds = 0): string => {
   return `${minutes}:${seconds.toString().padStart(2, '0')}.${fraction}`;
 };
 
-export const nameFilter = (name?: string) =>
-  name != undefined
-    ? (record: SwimRecord) =>
-        record.displayName.toLowerCase().includes(name.toLowerCase())
-    : () => true;
+const trueFilter = () => true;
+
+export const teamFilter = (team?: string) => {
+  if (team) {
+    const teamRegex = new RegExp(team, 'i');
+    return (record: SwimRecord) => teamRegex.test(record.team);
+  } else {
+    return trueFilter;
+  }
+};
+
+export const nameFilter = (name?: string) => {
+  if (name) {
+    const nameRegex = new RegExp(name, 'i');
+    return (record: SwimRecord) => nameRegex.test(record.displayName);
+  } else {
+    return trueFilter;
+  }
+};
 
 export const strokeFilter = (stroke?: Stroke) =>
   stroke != undefined
     ? (record: SwimRecord) =>
-        EVENTS_BY_STROKE[stroke].includes(record.event.toString())
-    : () => true;
+      EVENTS_BY_STROKE[stroke].includes(record.event.toString())
+    : trueFilter;
 
 export const genderFilter = (gender?: Gender) =>
   gender != undefined
     ? (record: SwimRecord) =>
-        EVENTS_BY_GENDER[gender].includes(record.event.toString())
-    : () => true;
+      EVENTS_BY_GENDER[gender].includes(record.event.toString())
+    : trueFilter;
 
 export const distanceFilter = (distance?: Distance) =>
   distance != undefined
     ? (record: SwimRecord) =>
-        EVENTS_BY_DISTANCE[distance].includes(record.event.toString())
-    : () => true;
+      EVENTS_BY_DISTANCE[distance].includes(record.event.toString())
+    : trueFilter;
 
 export const yearFilter =
   (beginYear?: string, endYear?: string) => (record: SwimRecord) => {
@@ -70,10 +84,23 @@ export const ageFilter =
     return true;
   };
 
+export const getBestTimesPerEvent = (records: SwimRecord[]): SwimRecord[] => {
+  const bestTimes: { [key: string]: SwimRecord } = {};
+  records.forEach((record) => {
+    const key = record.event;
+    const time: number = +record.convertedTime!;
+    if (!bestTimes[key] || record.convertedTime! < bestTimes[key].convertedTime!) {
+      bestTimes[key] = record;
+    }
+  });
+  return Object.values(bestTimes);
+};
+
 export const filteredRankings = (state: State): SwimRecord[] => {
   const { recordFilter, swimData } = state;
   const filteredRecords =
     swimData
+      .filter(teamFilter(recordFilter.team))
       .filter(nameFilter(recordFilter.swimmerName))
       .filter(strokeFilter(recordFilter.stroke))
       .filter(distanceFilter(recordFilter.distance))

@@ -8,6 +8,10 @@ export const initializeRouter = (context: Context) => {
     return context.actions.displayRankings();
   });
 
+  page('/swimmer', context.actions.displaySwimmerSearch);
+
+  page('/event', context.actions.displayRankings);
+
   page('*', () => {
     const app = window.document.querySelector('#app');
     if (app) {

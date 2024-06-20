@@ -1,3 +1,41 @@
 @import url('tailwindcss/base');
 @import url('tailwindcss/components');
 @import url('tailwindcss/utilities');
+
+@layer base {
+  *:focus,
+  *:focus-visible {
+    outline: 1px solid transparent;
+  }
+
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  li {
+    @apply
+      list-inside
+      list-disc;
+  }
+
+  a[href] {
+    @apply
+      text-blue-700
+      active:text-blue-500
+      hover:text-blue-800
+      hover:underline
+      /* focus-visible:outline-fuchsia */
+      focus-visible:outline-2
+      focus-visible:rounded-md
+      focus:outline-none
+      underline
+      ;
+  }
+
+}

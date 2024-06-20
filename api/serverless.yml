@@ -48,18 +48,18 @@ resources:
             AttributeType: S
           - AttributeName: entityId
             AttributeType: S
-          - AttributeName: eventId
-            AttributeType: N
-          - AttributeName: time
-            AttributeType: N
-          - AttributeName: teamId
-            AttributeType: N # Change the attribute type to number for teamId
+          # - AttributeName: eventId
+          #   AttributeType: N
+          # - AttributeName: time
+          #   AttributeType: N
+          # - AttributeName: teamId
+          #   AttributeType: N # Change the attribute type to number for teamId
         KeySchema:
           - AttributeName: entityType
             KeyType: HASH
           - AttributeName: entityId
             KeyType: RANGE
-        ProvisionedThroughput:
-          ReadCapacityUnits: 5 # Adjust according to your needs
-          WriteCapacityUnits: 5 # Adjust according to your needs
+        # ProvisionedThroughput:
+        #   ReadCapacityUnits: 5 # Adjust according to your needs
+        #   WriteCapacityUnits: 5 # Adjust according to your needs
         BillingMode: PAY_PER_REQUEST # Use on-demand capacity
