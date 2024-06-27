@@ -16,7 +16,7 @@ export const SwimmerFilter = () => {
       }}
       className="ml-0.5"
     >
-      <h1 className="mb-4">By Swimmer ({swimData.length} records)</h1>
+      <h1 className="mb-4">Search By Swimmer ({swimData.length} records)</h1>
 
       <label className="mr-4">
         Team:

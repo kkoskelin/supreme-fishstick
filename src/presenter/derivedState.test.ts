@@ -12,6 +12,7 @@ import {
   secondsToTime,
   timeToSeconds,
 } from './derivedState';
+import { EVENTS_BY_STROKE } from '../data/events';
 import { mockSwimRecord } from '../fixtures/mockData';
 import { state } from './state';
 
@@ -21,6 +22,78 @@ describe('derived state functions', () => {
       const generatedFilter = nameFilter(undefined);
       const result = generatedFilter({ ...mockSwimRecord });
       expect(result).toBeTruthy();
+    });
+    it('returns function that returns true if swimmerName substring is a match', () => {
+      const generatedFilter = nameFilter('Kenny');
+      const result = generatedFilter({ ...mockSwimRecord });
+      expect(result).toBeTruthy();
+    });
+    it('returns function that returns false if swimmerName substring is not a match', () => {
+      const generatedFilter = nameFilter('NO-SUCH-NAME');
+      const result = generatedFilter({ ...mockSwimRecord });
+      expect(result).toBeFalsy();
+    });
+  });
+  describe('distanceFilter', () => {
+    it('returns true if distance matches', () => {
+      const generatedFilter = distanceFilter('25 Meter');
+      const result = generatedFilter({ ...mockSwimRecord });
+      expect(result).toBeTruthy();
+    });
+    it('returns false if distance does not match', () => {
+      const generatedFilter = distanceFilter('100 Meter');
+      const result = generatedFilter({ ...mockSwimRecord });
+      expect(result).toBeFalsy();
+    });
+  });
+  describe('genderFilter', () => {
+    it('returns true if gender matches', () => {
+      const generatedFilter = genderFilter('Boys');
+      const result = generatedFilter({ ...mockSwimRecord });
+      expect(result).toBeTruthy();
+    });
+    it('returns false if gender does not match', () => {
+      const generatedFilter = genderFilter('Girls');
+      const result = generatedFilter({ ...mockSwimRecord });
+      expect(result).toBeFalsy();
+    });
+  });
+  describe('getBestTimesPerEvent', () => {
+    it('returns the fastest time for each event', () => {
+      const swimData = [
+        { ...mockSwimRecord, event: 1, convertedTime: 100 },
+        { ...mockSwimRecord, event: 1, convertedTime: 200 },
+        { ...mockSwimRecord, event: 2, convertedTime: 200 },
+      ];
+      const result = getBestTimesPerEvent(swimData);
+      expect(result).toEqual([
+        { ...mockSwimRecord, event: 1, convertedTime: 100 },
+        { ...mockSwimRecord, event: 2, convertedTime: 200 },
+      ]);
+    });
+  });
+  describe('ageFilter', () => {
+    it('returns true if age is within range', () => {
+      const generatedFilter = ageFilter('9', '11');
+      const result = generatedFilter({ ...mockSwimRecord });
+      expect(result).toBeTruthy();
+    });
+    it('returns false if age is outside range', () => {
+      const generatedFilter = ageFilter('12', '14');
+      const result = generatedFilter({ ...mockSwimRecord });
+      expect(result).toBeFalsy();
+    });
+  });
+  describe('yearFilter', () => {
+    it('returns true if date is within range', () => {
+      const generatedFilter = yearFilter('2023', '2023');
+      const result = generatedFilter({ ...mockSwimRecord });
+      expect(result).toBeTruthy();
+    });
+    it('returns false if date is outside range', () => {
+      const generatedFilter = yearFilter('2024', '2024');
+      const result = generatedFilter({ ...mockSwimRecord });
+      expect(result).toBeFalsy();
     });
   });
   describe('teamFilter', () => {
@@ -37,12 +110,12 @@ describe('derived state functions', () => {
   });
   describe('strokeFilter', () => {
     it('returns true if stroke matches', () => {
-      const generatedFilter = strokeFilter(mockSwimRecord.stroke);
+      const generatedFilter = strokeFilter('Free');
       const result = generatedFilter({ ...mockSwimRecord });
       expect(result).toBeTruthy();
     });
     it('returns false if stroke does not match', () => {
-      const generatedFilter = strokeFilter('NO-SUCH-STROKE');
+      const generatedFilter = strokeFilter('Fly');
       const result = generatedFilter({ ...mockSwimRecord });
       expect(result).toBeFalsy();
     });

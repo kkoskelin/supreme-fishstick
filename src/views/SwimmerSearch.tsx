@@ -79,10 +79,8 @@ const rankColumnConfig: TableColumn<DataRow>[] = [
 
 export const SwimmerSearch = () => {
   const { filteredRankings, hasSearchParameters, swimData } = useAppState();
-  console.log({ filteredRankings });
   return (
     <div className="downloadIt">
-      <DownloadJSONFile data={swimData} filename={'swimData.json'} />
       <SwimmerFilter />
       {hasSearchParameters && (
         <>
@@ -90,6 +88,9 @@ export const SwimmerSearch = () => {
           <p>
             Filtered {filteredRankings.length} of {swimData.length}
           </p>
+          {filteredRankings.length > 0 &&
+            <DownloadJSONFile data={filteredRankings} filename={'swimData.json'} title="Download search results" />
+          }
           <DataTableBase
             columns={rankColumnConfig}
             paginationPerPage={10}

@@ -27,14 +27,12 @@ export const secondsToTime = (inputSeconds = 0): string => {
   return `${minutes}:${seconds.toString().padStart(2, '0')}.${fraction}`;
 };
 
-const trueFilter = () => true;
-
 export const teamFilter = (team?: string) => {
   if (team) {
     const teamRegex = new RegExp(team, 'i');
     return (record: SwimRecord) => teamRegex.test(record.team);
   } else {
-    return trueFilter;
+    return undefined;
   }
 };
 
@@ -43,7 +41,7 @@ export const nameFilter = (name?: string) => {
     const nameRegex = new RegExp(name, 'i');
     return (record: SwimRecord) => nameRegex.test(record.displayName);
   } else {
-    return trueFilter;
+    return undefined;
   }
 };
 
@@ -51,19 +49,19 @@ export const strokeFilter = (stroke?: Stroke) =>
   stroke != undefined
     ? (record: SwimRecord) =>
       EVENTS_BY_STROKE[stroke].includes(record.event.toString())
-    : trueFilter;
+    : undefined;
 
 export const genderFilter = (gender?: Gender) =>
   gender != undefined
     ? (record: SwimRecord) =>
       EVENTS_BY_GENDER[gender].includes(record.event.toString())
-    : trueFilter;
+    : undefined;
 
 export const distanceFilter = (distance?: Distance) =>
   distance != undefined
     ? (record: SwimRecord) =>
       EVENTS_BY_DISTANCE[distance].includes(record.event.toString())
-    : trueFilter;
+    : undefined;
 
 export const yearFilter =
   (beginYear?: string, endYear?: string) => (record: SwimRecord) => {
@@ -96,18 +94,30 @@ export const getBestTimesPerEvent = (records: SwimRecord[]): SwimRecord[] => {
   return Object.values(bestTimes);
 };
 
+// Function to combine multiple filter predicates into a single predicate, ignoring undefined filters
+function combineFilters<T>(...filters: Array<((record: T) => boolean) | undefined>): (record: T) => boolean {
+  // Filter out any undefined filters
+  const definedFilters = filters.filter((filter): filter is (record: T) => boolean => filter !== undefined);
+
+  return (record: T) => {
+    return definedFilters.every(filter => filter(record));
+  };
+}
+
 export const filteredRankings = (state: State): SwimRecord[] => {
   const { recordFilter, swimData } = state;
-  const filteredRecords =
-    swimData
-      .filter(teamFilter(recordFilter.team))
-      .filter(nameFilter(recordFilter.swimmerName))
-      .filter(strokeFilter(recordFilter.stroke))
-      .filter(distanceFilter(recordFilter.distance))
-      .filter(genderFilter(recordFilter.gender))
-      .filter(yearFilter(recordFilter.beginYear, recordFilter.endYear))
-      .filter(ageFilter(recordFilter.ageMin, recordFilter.ageMax)) || [];
-  return filteredRecords;
+  const combinedFilter = combineFilters(
+    teamFilter(recordFilter.team),
+    nameFilter(recordFilter.swimmerName),
+    strokeFilter(recordFilter.stroke),
+    distanceFilter(recordFilter.distance),
+    genderFilter(recordFilter.gender),
+    yearFilter(recordFilter.beginYear, recordFilter.endYear),
+    ageFilter(recordFilter.ageMin, recordFilter.ageMax)
+  );
+
+  const filteredRecords = swimData.filter(combinedFilter) || [];
+  return getBestTimesPerEvent(filteredRecords);
 };
 
 export const hasSearchParameters = (state: State): boolean => {

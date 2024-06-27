@@ -11,17 +11,17 @@ ReactDOM.render(
     <Provider value={overmindApp}>
       <main>
         <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-          <nav className="mb-4">
+          {/* <nav className="mb-4">
             Search:
             <ul>
               <li>
                 <a href="/swimmer">By Swimmer</a>
               </li>
-              {/* <li>
+              <li>
                 <a href="/event">By Event</a>
-              </li> */}
+              </li>
             </ul>
-          </nav>
+          </nav> */}
           <CurrentPage />
         </div>
       </main>

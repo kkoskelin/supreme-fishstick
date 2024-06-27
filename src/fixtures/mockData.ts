@@ -1,6 +1,5 @@
 import { RecordFilter } from '../types/RecordFilter';
 import { SwimRecord } from '../types/SwimRecord';
-import { random } from 'lodash';
 
 export const mockFilter: RecordFilter = {
   ageMax: '11',
@@ -16,7 +15,7 @@ export const mockSwimRecord: SwimRecord = {
   convertedTime: 200,
   date: '2023-06-02',
   displayName: 'Kenny Malone',
-  event: 13,
+  event: 12,
   exhibition: false,
   firstName: 'Kenny',
   lastName: 'Malone',

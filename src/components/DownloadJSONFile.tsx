@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 type DownloadProps = {
   filename: string;
   data: unknown;
+  title?: string;
 };
 
 export const DownloadJSONFile = (props: DownloadProps) => {
@@ -16,10 +17,10 @@ export const DownloadJSONFile = (props: DownloadProps) => {
   return (
     <a
       href={blobUrl}
-      title={`Download ${props.filename}`}
+      title={props.title ?? `Download ${props.filename}`}
       download={props.filename}
     >
-      Download {props.filename}
+      {props.title ?? `Download ${props.filename}`}
     </a>
   );
 };

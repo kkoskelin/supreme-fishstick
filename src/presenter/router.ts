@@ -5,7 +5,7 @@ export const initializeRouter = (context: Context) => {
   page.base('');
 
   page('/', () => {
-    return context.actions.displayRankings();
+    return context.actions.displaySwimmerSearch();
   });
 
   page('/swimmer', context.actions.displaySwimmerSearch);
