@@ -1,9 +1,11 @@
 import { Distance } from '../types/Distance';
 import {
+  EVENTS_BY_AGE_CLASS,
   EVENTS_BY_DISTANCE,
   EVENTS_BY_GENDER,
   EVENTS_BY_STROKE,
 } from '../data/events';
+import { AgeClass } from '../types/Age';
 import { Gender } from '../types/Gender';
 import { State } from '../types/State';
 import { Stroke } from '../types/Stroke';
@@ -63,6 +65,12 @@ export const distanceFilter = (distance?: Distance) =>
       EVENTS_BY_DISTANCE[distance].includes(record.event.toString())
     : undefined;
 
+export const ageClassFilter = (ageClass?: AgeClass) =>
+  ageClass != undefined
+    ? (record: SwimRecord) =>
+      EVENTS_BY_AGE_CLASS[ageClass].includes(record.event.toString())
+    : undefined;
+
 export const yearFilter =
   (beginYear?: string, endYear?: string) => (record: SwimRecord) => {
     return (
@@ -107,17 +115,23 @@ function combineFilters<T>(...filters: Array<((record: T) => boolean) | undefine
 export const filteredRankings = (state: State): SwimRecord[] => {
   const { recordFilter, swimData } = state;
   const combinedFilter = combineFilters(
-    teamFilter(recordFilter.team),
-    nameFilter(recordFilter.swimmerName),
-    strokeFilter(recordFilter.stroke),
+    ageFilter(recordFilter.ageMin, recordFilter.ageMax),
+    ageClassFilter(recordFilter.ageClass),
     distanceFilter(recordFilter.distance),
     genderFilter(recordFilter.gender),
+    nameFilter(recordFilter.swimmerName),
+    strokeFilter(recordFilter.stroke),
+    teamFilter(recordFilter.team),
     yearFilter(recordFilter.beginYear, recordFilter.endYear),
-    ageFilter(recordFilter.ageMin, recordFilter.ageMax)
   );
 
   const filteredRecords = swimData.filter(combinedFilter) || [];
-  return getBestTimesPerEvent(filteredRecords);
+
+  if (recordFilter.bestTimesOnly) {
+    return getBestTimesPerEvent(filteredRecords);
+  } else {
+    return filteredRecords;
+  }
 };
 
 export const hasSearchParameters = (state: State): boolean => {

@@ -2,10 +2,10 @@ export const StrokeList = [
   'Back',
   'Breast',
   'Fly',
-  'Free Relay',
+  // 'Free Relay',
   'Free',
   'IM',
-  'Medley Relay',
+  // 'Medley Relay',
 ] as const;
 
 export type Stroke = (typeof StrokeList)[number];

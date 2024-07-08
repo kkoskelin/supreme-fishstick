@@ -1,4 +1,5 @@
 import {
+  ageClassFilter,
   filteredRankings,
   hasSearchParameters,
   nameFilter,
@@ -17,44 +18,55 @@ import { mockSwimRecord } from '../fixtures/mockData';
 import { state } from './state';
 
 describe('derived state functions', () => {
+  describe('ageClassFilter', () => {
+    it('returns true if age is within range', () => {
+      const generatedFilter = ageClassFilter('8 & U');
+      const result = generatedFilter && generatedFilter({ ...mockSwimRecord });
+      expect(result).toBeTruthy();
+    });
+    it('returns false if age is outside range', () => {
+      const generatedFilter = ageClassFilter('11-12');
+      const result = generatedFilter && generatedFilter({ ...mockSwimRecord });
+      expect(result).toBeFalsy();
+    });
+  });
   describe('nameFilter generator', () => {
     it('returns function that returns true if swimmerName is undefined', () => {
       const generatedFilter = nameFilter(undefined);
-      const result = generatedFilter({ ...mockSwimRecord });
-      expect(result).toBeTruthy();
+      expect(generatedFilter).toBeFalsy();
     });
     it('returns function that returns true if swimmerName substring is a match', () => {
       const generatedFilter = nameFilter('Kenny');
-      const result = generatedFilter({ ...mockSwimRecord });
+      const result = generatedFilter && generatedFilter({ ...mockSwimRecord });
       expect(result).toBeTruthy();
     });
     it('returns function that returns false if swimmerName substring is not a match', () => {
       const generatedFilter = nameFilter('NO-SUCH-NAME');
-      const result = generatedFilter({ ...mockSwimRecord });
+      const result = generatedFilter && generatedFilter({ ...mockSwimRecord });
       expect(result).toBeFalsy();
     });
   });
   describe('distanceFilter', () => {
     it('returns true if distance matches', () => {
-      const generatedFilter = distanceFilter('25 Meter');
-      const result = generatedFilter({ ...mockSwimRecord });
+      const generatedFilter = distanceFilter('25M');
+      const result = generatedFilter && generatedFilter({ ...mockSwimRecord });
       expect(result).toBeTruthy();
     });
     it('returns false if distance does not match', () => {
-      const generatedFilter = distanceFilter('100 Meter');
-      const result = generatedFilter({ ...mockSwimRecord });
+      const generatedFilter = distanceFilter('100M');
+      const result = generatedFilter && generatedFilter({ ...mockSwimRecord });
       expect(result).toBeFalsy();
     });
   });
   describe('genderFilter', () => {
     it('returns true if gender matches', () => {
       const generatedFilter = genderFilter('Boys');
-      const result = generatedFilter({ ...mockSwimRecord });
+      const result = generatedFilter && generatedFilter({ ...mockSwimRecord });
       expect(result).toBeTruthy();
     });
     it('returns false if gender does not match', () => {
       const generatedFilter = genderFilter('Girls');
-      const result = generatedFilter({ ...mockSwimRecord });
+      const result = generatedFilter && generatedFilter({ ...mockSwimRecord });
       expect(result).toBeFalsy();
     });
   });
@@ -75,48 +87,48 @@ describe('derived state functions', () => {
   describe('ageFilter', () => {
     it('returns true if age is within range', () => {
       const generatedFilter = ageFilter('9', '11');
-      const result = generatedFilter({ ...mockSwimRecord });
+      const result = generatedFilter && generatedFilter({ ...mockSwimRecord });
       expect(result).toBeTruthy();
     });
     it('returns false if age is outside range', () => {
       const generatedFilter = ageFilter('12', '14');
-      const result = generatedFilter({ ...mockSwimRecord });
+      const result = generatedFilter && generatedFilter({ ...mockSwimRecord });
       expect(result).toBeFalsy();
     });
   });
   describe('yearFilter', () => {
     it('returns true if date is within range', () => {
       const generatedFilter = yearFilter('2023', '2023');
-      const result = generatedFilter({ ...mockSwimRecord });
+      const result = generatedFilter && generatedFilter({ ...mockSwimRecord });
       expect(result).toBeTruthy();
     });
     it('returns false if date is outside range', () => {
       const generatedFilter = yearFilter('2024', '2024');
-      const result = generatedFilter({ ...mockSwimRecord });
+      const result = generatedFilter && generatedFilter({ ...mockSwimRecord });
       expect(result).toBeFalsy();
     });
   });
   describe('teamFilter', () => {
     it('returns true if team matches', () => {
       const generatedFilter = teamFilter(mockSwimRecord.team);
-      const result = generatedFilter({ ...mockSwimRecord });
+      const result = generatedFilter && generatedFilter({ ...mockSwimRecord });
       expect(result).toBeTruthy();
     });
     it('returns false if team does not match', () => {
       const generatedFilter = teamFilter('NO-SUCH-TEAM');
-      const result = generatedFilter({ ...mockSwimRecord });
+      const result = generatedFilter && generatedFilter({ ...mockSwimRecord });
       expect(result).toBeFalsy();
     });
   });
   describe('strokeFilter', () => {
     it('returns true if stroke matches', () => {
       const generatedFilter = strokeFilter('Free');
-      const result = generatedFilter({ ...mockSwimRecord });
+      const result = generatedFilter && generatedFilter({ ...mockSwimRecord });
       expect(result).toBeTruthy();
     });
     it('returns false if stroke does not match', () => {
       const generatedFilter = strokeFilter('Fly');
-      const result = generatedFilter({ ...mockSwimRecord });
+      const result = generatedFilter && generatedFilter({ ...mockSwimRecord });
       expect(result).toBeFalsy();
     });
   });
@@ -137,7 +149,7 @@ describe('derived state functions', () => {
   });
   describe('filteredRankings', () => {
     it('filters by matching a last name', () => {
-      state.recordFilter = { swimmerName: mockSwimRecord.lastName };
+      state.recordFilter = { swimmerName: mockSwimRecord.displayName };
       state.swimData = [mockSwimRecord];
       const filtered = filteredRankings(state);
       expect(filtered).toEqual([mockSwimRecord]);

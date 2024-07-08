@@ -9,7 +9,7 @@
     "node": ">= 18"
   },
   "scripts": {
-    "build": "parcel build",
+    "build": "parcel build --no-source-maps",
     "api:build": "parcel build --target node",
     "api:deploy": "serverless deploy",
     "api:destroy": "serverless remove",
@@ -73,6 +73,7 @@
     "browserify-zlib": "^0.2.0",
     "buffer": "^6.0.3",
     "crypto-browserify": "^3.12.0",
+    "csv-parser": "^3.0.0",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-cypress": "^2.15.2",

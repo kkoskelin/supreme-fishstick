@@ -35,7 +35,7 @@ For VSCode users:
 
 Modify your editor's `settings.json` file to include the following preferences:
 
-```
+```json
     "editor.formatOnSave": true,
     "eslint.format.enable": true,
     "editor.codeActionsOnSave": {
@@ -51,6 +51,28 @@ Modify your editor's `settings.json` file to include the following preferences:
 ## Application startup
 
 `npm start`
+
+## Prepare the bundle for distribution
+
+### Convert the CSV to JSON
+
+You may need to edit the JS file below for your desired year.
+
+```sh
+pushd src/fixtures
+node csvtoJson.js 20*csv
+popd
+```
+
+### Build the bundle into a ZIP file
+
+```sh
+npm run clean
+npm run build
+zip dist/index.zip dist/*
+```
+
+Then upload to tiiny.host or whatever free hosting site you wish.
 
 ## Serverless
 

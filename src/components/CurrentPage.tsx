@@ -3,7 +3,7 @@ import React from 'react';
 
 import { LoadingTemplate } from '../views/LoadingTemplate';
 import { Rankings } from '../views/Rankings';
-import { SwimmerSearch } from '../views/SwimmerSearch';
+import { SwimmerSearch } from '../views/SearchResults';
 
 export const CurrentPage = () => {
   const { currentPage } = useAppState();

@@ -1,12 +1,17 @@
 import { State } from '../types/State';
 import { derivedState } from './derivedState';
-import swimData from '../fixtures/swimData.json';
-import { SwimRecord } from '../types/SwimRecord';
+import { latestSwimRecordDate, swimData, swimmerNames } from '../fixtures/swimData';
 
 export const state: State = {
   currentPage: '',
-  form: { recordFilter: {} },
+  form: {
+    recordFilter: {
+      team: 'Sun Prairie',
+    }
+  },
+  latestSwimRecordDate,
   recordFilter: {},
-  swimData: swimData as SwimRecord[],
+  swimData,
+  swimmerNames,
   ...derivedState,
 };

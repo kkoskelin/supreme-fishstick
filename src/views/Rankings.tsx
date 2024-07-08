@@ -1,5 +1,5 @@
 import { DataTableBase, TableColumn } from '../components/Datatable';
-import { DownloadJSONFile } from '../components/DownloadJSONFile';
+import { DownloadFile } from '../components/DownloadFile';
 import { EventFilter } from '../components/EventFilter';
 import { SwimRecord } from '../types/SwimRecord';
 import { secondsToTime } from '../presenter/derivedState';
@@ -70,7 +70,7 @@ export const Rankings = () => {
   console.log({ filteredRankings });
   return (
     <div className="downloadIt">
-      <DownloadJSONFile data={swimData} filename={'swimData.json'} />
+      <DownloadFile data={swimData} filename={'swimData.json'} />
       <EventFilter />
       {hasSearchParameters && (
         <>

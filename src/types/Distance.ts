@@ -1,7 +1,7 @@
 export const DistanceList = [
-  '25 Meter',
-  '50 Meter',
-  '100 Meter',
-  '200 Meter',
+  '25M',
+  '50M',
+  '100M',
+  '200M',
 ] as const;
 export type Distance = (typeof DistanceList)[number];
