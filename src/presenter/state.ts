@@ -6,11 +6,10 @@ export const state: State = {
   currentPage: '',
   form: {
     recordFilter: {
-      team: 'Sun Prairie',
     }
   },
-  latestSwimRecordDate,
   recordFilter: {},
+  latestSwimRecordDate,
   swimData,
   swimmerNames,
   ...derivedState,

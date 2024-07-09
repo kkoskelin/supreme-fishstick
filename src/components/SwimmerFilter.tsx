@@ -24,7 +24,7 @@ export const SwimmerFilter = () => {
     >
       <h1 className="">Search By Swimmer ({swimData.length.toLocaleString()} records) as of {latestSwimRecordDate}</h1>
       <div className="my-4">
-        <label className="mr-2">
+        <label className="block my-2 sm:inline-block md:mr-2">
           Swimmer name:{' '}
           <input
             type="text"
@@ -48,134 +48,132 @@ export const SwimmerFilter = () => {
               ))}
           </datalist>
         </label>
-      </div>
-      <div className="my-4">
-        <label className="mr-2">
-          Distance:
-          <select
-            name="distance"
-            value={recordFilter.distance || ''}
-            className="ml-1 h-8 text-xs rounded"
-            onChange={e => {
-              void updateFilter({
-                ...recordFilter,
-                distance: (e.target.value as Distance) || undefined,
-              });
-            }}
-          >
-            <option value="">(any)</option>
-            {DistanceList.map(distance => (
-              <option key={distance} value={distance}>
-                {distance}
-              </option>
-            ))}
-          </select>
-        </label>
-        <label className="m-2">
-          Stroke:
-          <select
-            name="stroke"
-            value={recordFilter.stroke || ''}
-            className="ml-1 h-8 text-xs rounded"
-            onChange={e => {
-              void updateFilter({
-                ...recordFilter,
-                stroke: (e.target.value as Stroke) || undefined,
-              });
-            }}
-          >
-            <option value="">(any)</option>
-            {StrokeList.map(stroke => (
-              <option key={stroke} value={stroke}>
-                {stroke}
-              </option>
-            ))}
-          </select>
-        </label>
-      </div>
-      <div className="my-4">
-        <label className="mr-2">
-          Gender:
-          <select
-            name="gender" className="ml-1 h-8 text-xs rounded"
-            value={recordFilter.gender || ''}
-            onChange={e => {
-              void updateFilter({
-                ...recordFilter,
-                gender: e.target.value as Gender,
-              })
-            }}>
-            <option>(all)</option>
-            {GenderList.map(gender =>
-              <option key={gender}>{gender}</option>
-            )}
-          </select>
-        </label>
-        <label className="m-2">
-          Age Group:
-          <select
-            name="age" className="ml-1 h-8 text-xs rounded"
-            value={recordFilter.ageClass || ''}
-            onChange={e => {
-              void updateFilter({
-                ...recordFilter,
-                ageClass: e.target.value as AgeClass,
-              })
-            }}>
-            <option>(all)</option>
-            {AgeClassList.map(age =>
-              <option key={age}>{age}</option>
-            )}
-          </select>
-        </label>
-      </div>
-      <div className="my-4">
-        <label className="mr-2">
-          Season:
-          <select
-            name="season" className="ml-1 h-8 text-xs rounded"
-            value={recordFilter.beginYear || '2024'}
-            onChange={e => {
-              const value = e.target.value !== '' ? e.target.value : undefined;
-              void updateFilter({
-                ...recordFilter,
-                endYear: value,
-                beginYear: value,
-              })
-            }}>
-            <option value="">(all)</option>
-            <option>2024</option>
-            <option>2023</option>
-            <option>2022</option>
-            <option>2021</option>
-            <option>2019</option>
-          </select>
-        </label>
-        <label className="m-2">
-          Team:
-          <select
-            name="team"
-            defaultValue={recordFilter.team || ''}
-            title={recordFilter.team}
-            className="ml-1 h-8 text-xs rounded"
-            onChange={e => {
-              void updateFilter({
-                ...recordFilter,
-                team: (e.target.value as Team) || undefined,
-              });
-            }}
-          >
-            <option value="">(any)</option>
-            {TeamNames.map(team => (
-              <option key={team} value={team}>
-                {team}
-              </option>
-            ))}
-          </select>
-        </label>
-      </div>
-      <div>
-        <label className="mt-4 text-xs block">
+        <div>
+          <label className="block my-2 sm:inline-block">
+            Distance:
+            <select
+              name="distance"
+              value={recordFilter.distance || ''}
+              className="ml-1 h-8 text-xs rounded"
+              onChange={e => {
+                void updateFilter({
+                  ...recordFilter,
+                  distance: (e.target.value as Distance) || undefined,
+                });
+              }}
+            >
+              <option value="">(any)</option>
+              {DistanceList.map(distance => (
+                <option key={distance} value={distance}>
+                  {distance}
+                </option>
+              ))}
+            </select>
+          </label>
+          <label className="block my-2 sm:inline-block sm:ml-2">
+            Stroke:
+            <select
+              name="stroke"
+              value={recordFilter.stroke || ''}
+              className="ml-1 h-8 text-xs rounded"
+              onChange={e => {
+                void updateFilter({
+                  ...recordFilter,
+                  stroke: (e.target.value as Stroke) || undefined,
+                });
+              }}
+            >
+              <option value="">(any)</option>
+              {StrokeList.map(stroke => (
+                <option key={stroke} value={stroke}>
+                  {stroke}
+                </option>
+              ))}
+            </select>
+          </label>
+        </div>
+        <div>
+          <label className="block my-2 sm:inline-block">
+            Gender:
+            <select
+              name="gender" className="ml-1 h-8 text-xs rounded"
+              value={recordFilter.gender || ''}
+              onChange={e => {
+                void updateFilter({
+                  ...recordFilter,
+                  gender: e.target.value as Gender,
+                })
+              }}>
+              <option>(all)</option>
+              {GenderList.map(gender =>
+                <option key={gender}>{gender}</option>
+              )}
+            </select>
+          </label>
+          <label className="block my-2 sm:inline-block sm:ml-2">
+            Age Group:
+            <select
+              name="age" className="ml-1 h-8 text-xs rounded"
+              value={recordFilter.ageClass || ''}
+              onChange={e => {
+                void updateFilter({
+                  ...recordFilter,
+                  ageClass: e.target.value as AgeClass,
+                })
+              }}>
+              <option>(all)</option>
+              {AgeClassList.map(age =>
+                <option key={age}>{age}</option>
+              )}
+            </select>
+          </label>
+        </div>
+        <div>
+          <label className="block my-2 sm:inline-block">
+            Season:
+            <select
+              name="season" className="ml-1 h-8 text-xs rounded"
+              value={recordFilter.beginYear ?? ''}
+              onChange={e => {
+                const value = e.target.value !== '' ? e.target.value : undefined;
+                void updateFilter({
+                  ...recordFilter,
+                  endYear: value,
+                  beginYear: value,
+                })
+              }}>
+              <option value="">(all)</option>
+              <option>2024</option>
+              <option>2023</option>
+              <option>2022</option>
+              <option>2021</option>
+              <option>2019</option>
+            </select>
+          </label>
+          <label className="block my-2 sm:inline-block sm:ml-2">
+            Team:
+            <select
+              name="team"
+              defaultValue={recordFilter.team || ''}
+              title={recordFilter.team}
+              className="ml-1 h-8 text-xs rounded"
+              onChange={e => {
+                void updateFilter({
+                  ...recordFilter,
+                  team: (e.target.value as Team) ?? undefined,
+                });
+              }}
+            >
+              <option value="">(any)</option>
+              {TeamNames.map(team => (
+                <option key={team} value={team}>
+                  {team}
+                </option>
+              ))}
+            </select>
+          </label>
+        </div>
+        <label className="text-xs block">
           <input
             type="checkbox"
             name="bestTimesOnly"
@@ -208,6 +206,6 @@ export const SwimmerFilter = () => {
           search rankings
         </button>
       </div>
-    </form>
+    </form >
   );
 };

@@ -4,11 +4,9 @@ import page from 'page';
 export const initializeRouter = (context: Context) => {
   page.base('');
 
-  page('/', () => {
-    return context.actions.displaySwimmerSearch();
-  });
+  page('/', context.actions.displaySwimmerSearch);
 
-  page('/swimmer', context.actions.displaySwimmerSearch);
+  page('/responsive', context.actions.displaySwimmerSearchResponsive);
 
   page('/event', context.actions.displayRankings);
 

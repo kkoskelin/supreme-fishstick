@@ -96,7 +96,7 @@ const rankColumnConfig = [
 
 ];
 
-export const SearchResults = () => {
+export const SearchResultsResponsive = () => {
   const { filteredRankings, hasSearchParameters, swimData } = useAppState();
   return (
     <div className="downloadIt">

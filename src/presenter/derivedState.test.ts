@@ -146,6 +146,9 @@ describe('derived state functions', () => {
     it('converts 32.12 to 0:32.12', () => {
       expect(secondsToTime(32.12)).toBe('0:32.12');
     });
+    it('converts 32.02 to 0:32.02', () => {
+      expect(secondsToTime(32.02)).toBe('0:32.02');
+    });
   });
   describe('filteredRankings', () => {
     it('filters by matching a last name', () => {

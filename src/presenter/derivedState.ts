@@ -25,7 +25,7 @@ export const secondsToTime = (inputSeconds = 0): string => {
   const seconds = Math.floor(inputSeconds - minutes * 60);
   const fraction = Math.round((inputSeconds - minutes * 60 - seconds) * 100)
     .toString()
-    .padEnd(2, '0');
+    .padStart(2, '0');
   return `${minutes}:${seconds.toString().padStart(2, '0')}.${fraction}`;
 };
 
