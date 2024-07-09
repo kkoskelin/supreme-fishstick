@@ -5,67 +5,6 @@ import { Gender } from '../types/Gender';
 import { Stroke } from '../types/Stroke';
 
 export const EVENT_MAP: Record<number, Event> = {
-  /*
-  1: {
-    ageClass: '8 & U',
-    distance: '100M',
-    gender: 'Girls',
-    stroke: 'Medley Relay',
-  },
-  2: {
-    ageClass: '8 & U',
-    distance: '100M',
-    gender: 'Boys',
-    stroke: 'Medley Relay',
-  },
-  3: {
-    ageClass: '9-10',
-    distance: '200M',
-    gender: 'Girls',
-    stroke: 'Medley Relay',
-  },
-  4: {
-    ageClass: '9-10',
-    distance: '200M',
-    gender: 'Boys',
-    stroke: 'Medley Relay',
-  },
-  5: {
-    ageClass: '11-12',
-    distance: '200M',
-    gender: 'Girls',
-    stroke: 'Medley Relay',
-  },
-  6: {
-    ageClass: '11-12',
-    distance: '200M',
-    gender: 'Boys',
-    stroke: 'Medley Relay',
-  },
-  7: {
-    ageClass: '13-14',
-    distance: '200M',
-    gender: 'Girls',
-    stroke: 'Medley Relay',
-  },
-  8: {
-    ageClass: '13-14',
-    distance: '200M',
-    gender: 'Boys',
-    stroke: 'Medley Relay',
-  },
-  9: {
-    ageClass: '15-18',
-    distance: '200M',
-    gender: 'Girls',
-    stroke: 'Medley Relay',
-  },
-  10: {
-    ageClass: '15-18',
-    distance: '200M',
-    gender: 'Boys',
-    stroke: 'Medley Relay',
-  },*/
   11: {
     ageClass: '8 & U',
     distance: '25M',
@@ -414,67 +353,6 @@ export const EVENT_MAP: Record<number, Event> = {
     gender: 'Boys',
     stroke: 'Fly',
   },
-  /*
-  69: {
-    ageClass: '8 & U',
-    distance: '100M',
-    gender: 'Girls',
-    stroke: 'Free Relay',
-  },
-  70: {
-    ageClass: '8 & U',
-    distance: '100M',
-    gender: 'Boys',
-    stroke: 'Free Relay',
-  },
-  71: {
-    ageClass: '9-10',
-    distance: '200M',
-    gender: 'Girls',
-    stroke: 'Free Relay',
-  },
-  72: {
-    ageClass: '9-10',
-    distance: '200M',
-    gender: 'Boys',
-    stroke: 'Free Relay',
-  },
-  73: {
-    ageClass: '11-12',
-    distance: '200M',
-    gender: 'Girls',
-    stroke: 'Free Relay',
-  },
-  74: {
-    ageClass: '11-12',
-    distance: '200M',
-    gender: 'Boys',
-    stroke: 'Free Relay',
-  },
-  75: {
-    ageClass: '13-14',
-    distance: '200M',
-    gender: 'Girls',
-    stroke: 'Free Relay',
-  },
-  76: {
-    ageClass: '13-14',
-    distance: '200M',
-    gender: 'Boys',
-    stroke: 'Free Relay',
-  },
-  77: {
-    ageClass: '15-18',
-    distance: '200M',
-    gender: 'Girls',
-    stroke: 'Free Relay',
-  },
-  78: {
-    ageClass: '15-18',
-    distance: '200M',
-    gender: 'Boys',
-    stroke: 'Free Relay',
-  },*/
 } as const;
 
 export const EVENTS_BY_STROKE: Record<Stroke, string[]> = {} as Record<
