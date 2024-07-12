@@ -4,6 +4,7 @@ import {
   EVENTS_BY_DISTANCE,
   EVENTS_BY_GENDER,
   EVENTS_BY_STROKE,
+  EVENT_MAP,
 } from '../data/events';
 import { AgeClass } from '../types/Age';
 import { Gender } from '../types/Gender';
@@ -11,6 +12,7 @@ import { State } from '../types/State';
 import { Stroke } from '../types/Stroke';
 import { SwimRecord } from '../types/SwimRecord';
 import { derived } from 'overmind';
+import { FormattedSwimRecord } from '../types/FormattedSwimRecord';
 
 export const timeToSeconds = (time: string): number => {
   const parts: string[] = time.split(':');
@@ -112,7 +114,7 @@ function combineFilters<T>(...filters: Array<((record: T) => boolean) | undefine
   };
 }
 
-export const filteredRankings = (state: State): SwimRecord[] => {
+export const filteredRankings = (state: State): FormattedSwimRecord[] => {
   const { recordFilter, swimData } = state;
   const combinedFilter = combineFilters(
     ageFilter(recordFilter.ageMin, recordFilter.ageMax),
@@ -125,13 +127,25 @@ export const filteredRankings = (state: State): SwimRecord[] => {
     yearFilter(recordFilter.beginYear, recordFilter.endYear),
   );
 
-  const filteredRecords = swimData.filter(combinedFilter) || [];
+  let filteredRecords = swimData.filter(combinedFilter) || [];
 
   if (recordFilter.bestTimesOnly) {
-    return getBestTimesPerEvent(filteredRecords);
-  } else {
-    return filteredRecords;
+    filteredRecords = getBestTimesPerEvent(filteredRecords);
   }
+  return filteredRecords.map(formatRanking);
+};
+
+export const formatRanking = (record: SwimRecord): FormattedSwimRecord => {
+  return {
+    ...record,
+    formattedEvent: `${EVENT_MAP[record.event].gender} ${EVENT_MAP[record.event].ageClass} ${EVENT_MAP[record.event].distance} ${EVENT_MAP[record.event].stroke}`,
+    formattedDate: new Date(`${record.date}T12:00`).toLocaleDateString('en-US', {
+      year: '2-digit',
+      month: '2-digit',
+      day: '2-digit',
+    }) + ` (Wk ${record.weekNumber})`,
+    formattedTime: secondsToTime(record.convertedTime),
+  };
 };
 
 export const hasSearchParameters = (state: State): boolean => {

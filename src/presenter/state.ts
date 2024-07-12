@@ -5,8 +5,7 @@ import { latestSwimRecordDate, swimData, swimmerNames } from '../fixtures/swimDa
 export const state: State = {
   currentPage: '',
   form: {
-    recordFilter: {
-    }
+    recordFilter: {}
   },
   recordFilter: {},
   latestSwimRecordDate,

@@ -1,6 +1,7 @@
 import { Form } from '../types/Form';
 import { RecordFilter } from '../types/RecordFilter';
 import { SwimRecord } from '../types/SwimRecord';
+import { FormattedSwimRecord } from './FormattedSwimRecord';
 
 export type State = {
   currentPage: string;
@@ -9,6 +10,6 @@ export type State = {
   recordFilter: RecordFilter;
   swimData: SwimRecord[];
   swimmerNames: string[];
-  filteredRankings: SwimRecord[];
+  filteredRankings: FormattedSwimRecord[];
   hasSearchParameters: boolean;
 };
