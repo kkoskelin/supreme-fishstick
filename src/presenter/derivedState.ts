@@ -74,28 +74,14 @@ export const ageClassFilter = (ageClass?: AgeClass) =>
     : undefined;
 
 export const yearFilter =
-  (beginYear?: string, endYear?: string) => (record: SwimRecord) => {
-    return (
-      (beginYear ? `${beginYear}-01-01}` <= record.date : true) &&
-      (endYear ? `${endYear}-12-31` >= record.date : true)
-    );
-  };
+  (year?: string) =>
+    year != undefined ?
+      ((record: SwimRecord) => record.date.startsWith(year)) : undefined;
 
-export const ageFilter =
-  (ageMin?: string, ageMax?: string) => (record: SwimRecord) => {
-    if (ageMin && record.age < +ageMin) {
-      return false;
-    }
-    if (ageMax && record.age > +ageMax) {
-      return false;
-    }
-    return true;
-  };
-
-export const getBestTimesPerEvent = (records: SwimRecord[]): SwimRecord[] => {
+export const getBestTimesPerEvent = (records: SwimRecord[], perSwimmer: boolean = false): SwimRecord[] => {
   const bestTimes: { [key: string]: SwimRecord } = {};
   records.forEach((record) => {
-    const key = record.event;
+    const key = perSwimmer ? record.event : `${record.event}-${record.displayName}`;
     const time: number = +record.convertedTime!;
     if (!bestTimes[key] || record.convertedTime! < bestTimes[key].convertedTime!) {
       bestTimes[key] = record;
@@ -117,20 +103,19 @@ function combineFilters<T>(...filters: Array<((record: T) => boolean) | undefine
 export const filteredRankings = (state: State): FormattedSwimRecord[] => {
   const { recordFilter, swimData } = state;
   const combinedFilter = combineFilters(
-    ageFilter(recordFilter.ageMin, recordFilter.ageMax),
     ageClassFilter(recordFilter.ageClass),
     distanceFilter(recordFilter.distance),
     genderFilter(recordFilter.gender),
     nameFilter(recordFilter.swimmerName),
     strokeFilter(recordFilter.stroke),
     teamFilter(recordFilter.team),
-    yearFilter(recordFilter.beginYear, recordFilter.endYear),
+    yearFilter(recordFilter.year),
   );
 
   let filteredRecords = swimData.filter(combinedFilter) || [];
 
-  if (recordFilter.bestTimesOnly) {
-    filteredRecords = getBestTimesPerEvent(filteredRecords);
+  if (recordFilter.bestTimesPerEvent || recordFilter.bestTimesPerSwimmer) {
+    filteredRecords = getBestTimesPerEvent(filteredRecords, state.recordFilter.bestTimesPerSwimmer);
   }
   return filteredRecords.map(formatRanking);
 };

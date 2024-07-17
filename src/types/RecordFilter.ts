@@ -4,15 +4,15 @@ import { Gender } from './Gender';
 import { Stroke } from './Stroke';
 
 export type RecordFilter = {
-  ageMin?: string;
-  ageMax?: string;
   ageClass?: AgeClass,
-  beginYear?: string;
-  bestTimesOnly?: boolean;
-  endYear?: string;
+  ageMax?: string;
+  ageMin?: string;
+  bestTimesPerEvent?: boolean;
+  bestTimesPerSwimmer?: boolean;
   distance?: Distance;
   gender?: Gender;
   stroke?: Stroke;
   swimmerName?: string;
   team?: string;
+  year?: string;
 };

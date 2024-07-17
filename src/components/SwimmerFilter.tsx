@@ -22,8 +22,9 @@ export const SwimmerFilter = () => {
       }}
       className="ml-0.5"
     >
-      <h1 className="">Search By Swimmer ({swimData.length.toLocaleString()} records) as of {latestSwimRecordDate}</h1>
-      <div className="my-4">
+      <h1 className="text-md">Search By Swimmer</h1>
+      <p className="italic">{swimData.length.toLocaleString()} records as of {latestSwimRecordDate}</p>
+      <div className="my-2 text-sm">
         <label className="block my-2 sm:inline-block md:mr-2">
           Swimmer name:{' '}
           <input
@@ -114,7 +115,7 @@ export const SwimmerFilter = () => {
             Age Group:
             <select
               name="age" className="ml-1 h-8 text-xs rounded"
-              value={recordFilter.ageClass || ''}
+              value={recordFilter.ageClass ?? ''}
               onChange={e => {
                 void updateFilter({
                   ...recordFilter,
@@ -133,13 +134,12 @@ export const SwimmerFilter = () => {
             Season:
             <select
               name="season" className="ml-1 h-8 text-xs rounded"
-              value={recordFilter.beginYear ?? ''}
+              value={recordFilter.year ?? ''}
               onChange={e => {
                 const value = e.target.value !== '' ? e.target.value : undefined;
                 void updateFilter({
                   ...recordFilter,
-                  endYear: value,
-                  beginYear: value,
+                  year: value,
                 })
               }}>
               <option value="">(all)</option>
@@ -154,7 +154,7 @@ export const SwimmerFilter = () => {
             Team:
             <select
               name="team"
-              defaultValue={recordFilter.team || ''}
+              defaultValue={recordFilter.team ?? ''}
               title={recordFilter.team}
               className="ml-1 h-8 text-xs rounded"
               onChange={e => {
@@ -173,21 +173,42 @@ export const SwimmerFilter = () => {
             </select>
           </label>
         </div>
-        <label className="text-xs block">
-          <input
-            type="checkbox"
-            name="bestTimesOnly"
-            checked={Boolean(recordFilter.bestTimesOnly)}
-            onChange={e => {
-              void updateFilter({
-                ...recordFilter,
-                bestTimesOnly: e.target.checked,
-              });
-            }}
-            className="rounded mr-1.5"
-          />
-          Show only best times per event
-        </label>
+        <fieldset className="border-inset border border-slate-300 p-2 w-80">
+          <legend className="text-sm">Choose no more than one (optional):</legend>
+
+          <label className="text-xs block my-1">
+            <input
+              type="checkbox"
+              name="bestEventTimes"
+              checked={Boolean(recordFilter.bestTimesPerEvent)}
+              onChange={e => {
+                void updateFilter({
+                  ...recordFilter,
+                  bestTimesPerEvent: e.target.checked,
+                  bestTimesPerSwimmer: e.target.checked ? false : recordFilter.bestTimesPerSwimmer
+                });
+              }}
+              className="rounded mr-1.5"
+            />
+            Show each swimmer's best event times only
+          </label>
+          <label className="text-xs block my-1">
+            <input
+              type="checkbox"
+              name="bestSwimmerTimes"
+              checked={Boolean(recordFilter.bestTimesPerSwimmer)}
+              onChange={e => {
+                void updateFilter({
+                  ...recordFilter,
+                  bestTimesPerEvent: e.target.checked ? false : recordFilter.bestTimesPerEvent,
+                  bestTimesPerSwimmer: e.target.checked,
+                });
+              }}
+              className="rounded mr-1.5"
+            />
+            Show only best time for each event
+          </label>
+        </fieldset>
       </div>
       <div className="button-container my-4">
         <button

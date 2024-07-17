@@ -26,12 +26,15 @@ function readCSV(filePath) {
   });
 }
 
-function convertTimeToSeconds(timeString) {
-  let [seconds, minutes] = timeString.split(':').reverse();
-  minutes = minutes > 0 ? parseFloat(minutes) : 0;
-  seconds = parseFloat(seconds);
-  let totalSeconds = (minutes * 60) + seconds;
-  return totalSeconds;
+function convertTimeToSeconds(timeStr) {
+  if (timeStr.includes(':')) {
+      const [minutes, seconds] = timeStr.split(':');
+      const totalSeconds = parseInt(minutes) * 60 + parseFloat(seconds);
+      return Math.round(totalSeconds * 100) / 100;
+  } else {
+      const totalSeconds = parseFloat(timeStr);
+      return Math.round(totalSeconds * 100) / 100;
+  }
 }
 
 function transformEntry(entry) {
@@ -39,7 +42,6 @@ function transformEntry(entry) {
     const place = isNaN(parseInt(entry.Place, 10)) ? undefined : parseInt(entry.Place, 10);
     const eventNumber = parseInt(entry['Event #'].replace('#', ''), 10);
 
-    // Convert the date from "7/15/2023" to "2023-07-15"
     const [month, day, year] = entry.Date.split('/');
     const formattedDate = `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
     if(!teamKeyMap[entry.Team]) {
@@ -57,8 +59,7 @@ function transformEntry(entry) {
       team: teamKeyMap[entry.Team],
       weekNumber: parseInt(entry.Week.replace('Week ', ''), 10)
     };
-    // console.log(JSON.stringify(entry, null, 2));
-    // console.log(JSON.stringify(objectFormat, null, 2));
+
     const arrayFormat = [
       objectFormat.age,
       objectFormat.convertedTime,
@@ -86,17 +87,6 @@ function writeJSON(filePath, data) {
       }
     });
   });
-}
-
-async function processCSVToJson(csvFilePath, jsonFilePath) {
-  try {
-    const csvData = await readCSV(csvFilePath);
-    const jsonData = csvData.map(transformEntry);
-    await writeJSON(jsonFilePath, jsonData);
-    console.log('CSV has been converted to JSON successfully.');
-  } catch (error) {
-    console.error('Error processing CSV to JSON:', error);
-  }
 }
 
 (async()=>{

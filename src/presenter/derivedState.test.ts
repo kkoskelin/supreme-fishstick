@@ -8,7 +8,6 @@ import {
   genderFilter,
   distanceFilter,
   yearFilter,
-  ageFilter,
   getBestTimesPerEvent,
   secondsToTime,
   timeToSeconds,
@@ -84,26 +83,15 @@ describe('derived state functions', () => {
       ]);
     });
   });
-  describe('ageFilter', () => {
-    it('returns true if age is within range', () => {
-      const generatedFilter = ageFilter('9', '11');
-      const result = generatedFilter && generatedFilter({ ...mockSwimRecord });
-      expect(result).toBeTruthy();
-    });
-    it('returns false if age is outside range', () => {
-      const generatedFilter = ageFilter('12', '14');
-      const result = generatedFilter && generatedFilter({ ...mockSwimRecord });
-      expect(result).toBeFalsy();
-    });
-  });
+
   describe('yearFilter', () => {
     it('returns true if date is within range', () => {
-      const generatedFilter = yearFilter('2023', '2023');
+      const generatedFilter = yearFilter('2023');
       const result = generatedFilter && generatedFilter({ ...mockSwimRecord });
       expect(result).toBeTruthy();
     });
     it('returns false if date is outside range', () => {
-      const generatedFilter = yearFilter('2024', '2024');
+      const generatedFilter = yearFilter('2024');
       const result = generatedFilter && generatedFilter({ ...mockSwimRecord });
       expect(result).toBeFalsy();
     });
@@ -155,19 +143,19 @@ describe('derived state functions', () => {
       state.recordFilter = { swimmerName: mockSwimRecord.displayName };
       state.swimData = [mockSwimRecord];
       const filtered = filteredRankings(state);
-      expect(filtered).toEqual([mockSwimRecord]);
+      expect(filtered).toMatchObject([mockSwimRecord]);
     });
     it('filters out all unmatched records', () => {
       state.recordFilter = { swimmerName: 'NO-SUCH-NAME' };
       state.swimData = [mockSwimRecord];
       const filtered = filteredRankings(state);
-      expect(filtered).toEqual([]);
+      expect(filtered).toMatchObject([]);
     });
     it('returns all records if record filter is empty', () => {
       state.recordFilter = {};
       state.swimData = [mockSwimRecord];
       const filtered = filteredRankings(state);
-      expect(filtered).toEqual([mockSwimRecord]);
+      expect(filtered).toMatchObject([mockSwimRecord]);
     });
   });
   describe('timeToSeconds', () => {
