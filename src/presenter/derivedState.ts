@@ -117,10 +117,10 @@ export const filteredRankings = (state: State): FormattedSwimRecord[] => {
   if (recordFilter.bestTimesPerEvent || recordFilter.bestTimesPerSwimmer) {
     filteredRecords = getBestTimesPerEvent(filteredRecords, state.recordFilter.bestTimesPerSwimmer);
   }
-  return filteredRecords.map(formatRanking);
+  return filteredRecords.map(formatSwimRecord);
 };
 
-export const formatRanking = (record: SwimRecord): FormattedSwimRecord => {
+export const formatSwimRecord = (record: SwimRecord): FormattedSwimRecord => {
   return {
     ...record,
     formattedEvent: `${EVENT_MAP[record.event].gender} ${EVENT_MAP[record.event].ageClass} ${EVENT_MAP[record.event].distance} ${EVENT_MAP[record.event].stroke}`,
