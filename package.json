@@ -9,7 +9,7 @@
     "node": ">= 18"
   },
   "scripts": {
-    "build": "parcel build --no-source-maps",
+    "build": "parcel build --no-source-maps --public-url ./",
     "api:build": "parcel build --target node",
     "api:deploy": "serverless deploy",
     "api:destroy": "serverless remove",
