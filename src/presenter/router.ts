@@ -10,12 +10,14 @@ export const initializeRouter = (context: Context) => {
 
   page('/event', context.actions.displayRankings);
 
-  page('*', () => {
-    const app = window.document.querySelector('#app');
-    if (app) {
-      app.innerHTML = 'Not found!';
-    }
-  });
+  // page('*', () => {
+  //   const app = window.document.querySelector('#app');
+  //   if (app) {
+  //     app.innerHTML = 'Not found!';
+  //   }
+  // });
+
+  page('*', context.actions.displaySwimmerSearch);
 
   page.start();
 };
