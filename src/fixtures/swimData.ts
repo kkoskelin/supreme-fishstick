@@ -5,13 +5,7 @@ import { TeamKeyMap } from '../types/Team';
 type RawRecord = (string | number | null)[];
 const rawData = data as RawRecord[];
 
-function sortByEventThenTime(a: SwimRecord, b: SwimRecord) {
-  if (a.event < b.event) return -1;
-  if (a.event > b.event) return 1;
-  return a.convertedTime - b.convertedTime;
-};
-
-export const swimData: SwimRecord[] = rawData.map(transformRecord).sort(sortByEventThenTime);
+export const swimData: SwimRecord[] = rawData.map(transformRecord);
 
 function greatestDateReducer(acc: string, record: SwimRecord) {
   return String(record.date).localeCompare(acc) > 0 ? record.date : acc;

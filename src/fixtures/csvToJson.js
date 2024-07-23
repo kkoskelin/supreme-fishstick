@@ -77,6 +77,13 @@ function transformEntry(entry) {
   }
 }
 
+const [EVENT, TIME] = [4, 1];
+function sortByEventThenTime(a, b) {
+  if (a[EVENT] < b[EVENT]) return -1;
+  if (a[EVENT] > b[EVENT]) return 1;
+  return a[TIME] - b[TIME];
+};
+
 function writeJSON(filePath, data) {
   return new Promise((resolve, reject) => {
     fs.writeFile(filePath, JSON.stringify(data), (error) => {
@@ -97,6 +104,7 @@ function writeJSON(filePath, data) {
     const csvData = await readCSV(file);
     records.push(... csvData.map(transformEntry))
   }
+  records.sort(sortByEventThenTime);
 
   try {
     await writeJSON(jsonFilePath, records);
