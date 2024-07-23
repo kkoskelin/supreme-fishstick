@@ -1,6 +1,5 @@
 import { State } from '../types/State';
 import { derivedState } from './derivedState';
-import { latestSwimRecordDate, swimData, swimmerNames } from '../fixtures/swimData';
 
 export const state: State = {
   currentPage: '',
@@ -8,8 +7,8 @@ export const state: State = {
     recordFilter: {}
   },
   recordFilter: {},
-  latestSwimRecordDate,
-  swimData,
-  swimmerNames,
+  latestSwimRecordDate: '...',
+  swimData: [],
+  swimmerNames: [],
   ...derivedState,
 };
