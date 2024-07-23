@@ -33,7 +33,7 @@ export const SearchResultsResponsive = () => {
                   <div className="md:hidden block order-2 font-semibold text-center col-span-4">Date</div>
                   <div className="md:hidden block order-3 font-semibold text-center col-span-6">Event</div>
                   <div className="md:table-cell md:py-1 md:text-right md:px-4 block col-span-2 order-4">{record.formattedTime}</div>
-                  <div className="md:table-cell md:py-1 text-right md:text-right col-span-4 md:px-4 block order-5">{record.formattedDate} <span className="whitespace-nowrap">(Wk {record.weekNumber})</span></div>
+                  <div className="md:table-cell md:py-1 text-center md:text-right col-span-4 md:px-4 block order-5">{record.formattedDate} <span className="whitespace-nowrap">(Wk {record.weekNumber})</span></div>
                   <div className="md:table-cell md:py-1 md:px-4 block md:col-span-1 md:text-left text-right col-span-6 order-6">{record.formattedEvent}</div>
                   <div className="md:table-cell md:py-1 md:px-4 text-right col-span-8 md:text-left block order-7">{record.displayName} ({record.age})</div>
                   <div className="md:table-cell md:py-1 md:px-4 col-span-4 block order-8 text-right md:text-left md:col-span-1">{record.team}</div>
