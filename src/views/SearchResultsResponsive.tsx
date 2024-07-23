@@ -8,7 +8,6 @@ export const SearchResultsResponsive = () => {
   const { filteredRankings, hasSearchParameters, swimData } = useAppState();
   return (
     <div className="downloadIt">
-      <h1>Responsive</h1>
       <SwimmerFilter />
       {hasSearchParameters && (
         <>

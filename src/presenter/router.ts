@@ -4,7 +4,7 @@ import page from 'page';
 export const initializeRouter = (context: Context) => {
   page.base('');
 
-  page('/', context.actions.displaySwimmerSearch);
+  page('/', context.actions.displaySwimmerSearchResponsive);
 
   page('/responsive', context.actions.displaySwimmerSearchResponsive);
 
@@ -17,7 +17,7 @@ export const initializeRouter = (context: Context) => {
   //   }
   // });
 
-  page('*', context.actions.displaySwimmerSearch);
+  page('*', context.actions.displaySwimmerSearchResponsive);
 
   page.start();
 };
