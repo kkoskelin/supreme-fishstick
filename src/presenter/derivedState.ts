@@ -128,7 +128,7 @@ export const formatSwimRecord = (record: SwimRecord): FormattedSwimRecord => {
       year: '2-digit',
       month: '2-digit',
       day: '2-digit',
-    }) + ` (Wk ${record.weekNumber})`,
+    }),
     formattedTime: secondsToTime(record.convertedTime),
   };
 };
