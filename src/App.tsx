@@ -2,9 +2,9 @@ import './types/images.d.ts';
 import { CurrentPage } from './components/CurrentPage';
 import { Provider } from 'overmind-react';
 import { overmindApp } from './presenter/presenter';
-import logo from './MadisonSwimming-Logo-Small.webp';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import logo from './MadisonSwimming-Logo-Small.webp';
 
 import './styles.css';
 
@@ -16,12 +16,13 @@ ReactDOM.render(
           <img
             className="mx-auto h-16 inline w-auto"
             src={logo}
-            alt="Madison Swimming Logo" />
+            alt="Madison Swimming Logo"
+          />
           <hr className="my-4" />
           <CurrentPage />
         </div>
       </main>
     </Provider>
-  </React.StrictMode >,
+  </React.StrictMode>,
   window.document.querySelector('#app'),
 );

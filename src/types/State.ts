@@ -1,7 +1,7 @@
 import { Form } from '../types/Form';
+import { FormattedSwimRecord } from './FormattedSwimRecord';
 import { RecordFilter } from '../types/RecordFilter';
 import { SwimRecord } from '../types/SwimRecord';
-import { FormattedSwimRecord } from './FormattedSwimRecord';
 
 export type State = {
   currentPage: string;

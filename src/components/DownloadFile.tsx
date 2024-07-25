@@ -1,11 +1,11 @@
-import React, { useEffect } from 'react';
 import { SwimRecord } from '../types/SwimRecord';
+import React, { useEffect } from 'react';
 
 interface ColumnInterface {
   name: string;
   format?: (row: unknown) => string;
   selector: (row: unknown) => string;
-};
+}
 
 type DownloadProps = {
   columns: ColumnInterface[];
@@ -15,16 +15,19 @@ type DownloadProps = {
 };
 
 export const DownloadFile = (props: DownloadProps) => {
-
   // declare a blob that contains text/csv data
   const blob = new Blob(
     [
       [
         props.columns.map(column => '"' + column.name + '"').join(','),
         ...props.data.map(row =>
-          props.columns.map(column =>
-            column.format ? '"' + column.format(row) + '"' : '"' + column.selector(row) + '"',
-          ).join(','),
+          props.columns
+            .map(column =>
+              column.format
+                ? '"' + column.format(row) + '"'
+                : '"' + column.selector(row) + '"',
+            )
+            .join(','),
         ),
       ].join('\n'),
     ],

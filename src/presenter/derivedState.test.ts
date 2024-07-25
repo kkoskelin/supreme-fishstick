@@ -1,18 +1,18 @@
+import { EVENTS_BY_STROKE } from '../data/events';
 import {
   ageClassFilter,
+  distanceFilter,
   filteredRankings,
+  genderFilter,
+  getBestTimesPerEvent,
   hasSearchParameters,
   nameFilter,
-  teamFilter,
-  strokeFilter,
-  genderFilter,
-  distanceFilter,
-  yearFilter,
-  getBestTimesPerEvent,
   secondsToTime,
+  strokeFilter,
+  teamFilter,
   timeToSeconds,
+  yearFilter,
 } from './derivedState';
-import { EVENTS_BY_STROKE } from '../data/events';
 import { mockSwimRecord } from '../fixtures/mockData';
 import { state } from './state';
 
@@ -72,14 +72,14 @@ describe('derived state functions', () => {
   describe('getBestTimesPerEvent', () => {
     it('returns the fastest time for each event', () => {
       const swimData = [
-        { ...mockSwimRecord, event: 1, convertedTime: 100 },
-        { ...mockSwimRecord, event: 1, convertedTime: 200 },
-        { ...mockSwimRecord, event: 2, convertedTime: 200 },
+        { ...mockSwimRecord, convertedTime: 100, event: 1 },
+        { ...mockSwimRecord, convertedTime: 200, event: 1 },
+        { ...mockSwimRecord, convertedTime: 200, event: 2 },
       ];
       const result = getBestTimesPerEvent(swimData);
       expect(result).toEqual([
-        { ...mockSwimRecord, event: 1, convertedTime: 100 },
-        { ...mockSwimRecord, event: 2, convertedTime: 200 },
+        { ...mockSwimRecord, convertedTime: 100, event: 1 },
+        { ...mockSwimRecord, convertedTime: 200, event: 2 },
       ]);
     });
   });

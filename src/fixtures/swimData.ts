@@ -1,13 +1,13 @@
-import data from './swimData.json';
 import { SwimRecord } from '../types/SwimRecord';
 import { TeamKeyMap } from '../types/Team';
+import data from './swimData.json';
 
-type RawRecord = (string | number | null)[];
+type RawRecord = (string | number)[];
 const rawData = data as RawRecord[];
 
 function greatestDateReducer(acc: string, record: SwimRecord) {
   return String(record.date).localeCompare(acc) > 0 ? record.date : acc;
-};
+}
 
 function transformRecord(record: RawRecord): SwimRecord {
   const [
@@ -37,7 +37,7 @@ function transformRecord(record: RawRecord): SwimRecord {
 export function getLatestSwimRecordAndNamesAndData() {
   const swimData: SwimRecord[] = rawData.map(transformRecord);
   const latestSwimRecordDate = swimData.reduce(greatestDateReducer, '0');
-  const allNames = swimData.map((record) => record.displayName);
+  const allNames = swimData.map(record => record.displayName);
   const swimmerNames = Array.from(new Set(allNames)).sort();
 
   return {

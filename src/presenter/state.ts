@@ -4,10 +4,10 @@ import { derivedState } from './derivedState';
 export const state: State = {
   currentPage: '',
   form: {
-    recordFilter: {}
+    recordFilter: {},
   },
-  recordFilter: {},
   latestSwimRecordDate: '...',
+  recordFilter: {},
   swimData: [],
   swimmerNames: [],
   ...derivedState,

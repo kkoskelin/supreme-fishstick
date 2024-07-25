@@ -1,9 +1,9 @@
-import { Team, TeamNames } from '../types/Team';
-import { Stroke, StrokeList } from '../types/Stroke';
-import { Distance, DistanceList } from '../types/Distance';
-import { useActions, useAppState } from '../presenter/presenter';
-import { Gender, GenderList } from '../types/Gender';
 import { AgeClass, AgeClassList } from '../types/Age';
+import { Distance, DistanceList } from '../types/Distance';
+import { Gender, GenderList } from '../types/Gender';
+import { Stroke, StrokeList } from '../types/Stroke';
+import { Team, TeamNames } from '../types/Team';
+import { useActions, useAppState } from '../presenter/presenter';
 import React from 'react';
 
 export const SwimmerFilter = () => {
@@ -23,7 +23,9 @@ export const SwimmerFilter = () => {
       className="ml-0.5"
     >
       <h1 className="text-md">Search By Swimmer</h1>
-      <p className="italic">{swimData.length.toLocaleString()} records as of {latestSwimRecordDate}</p>
+      <p className="italic">
+        {swimData.length.toLocaleString()} records as of {latestSwimRecordDate}
+      </p>
       <div className="my-2 text-sm">
         <label className="block my-2 sm:inline-block md:mr-2">
           Swimmer name:{' '}
@@ -43,10 +45,9 @@ export const SwimmerFilter = () => {
             className="rounded h-8 text-xs w-48"
           />
           <datalist id="swimmerNames">
-            {swimmerNames
-              .map((name, i) => (
-                <option key={name} value={name}></option>
-              ))}
+            {swimmerNames.map(name => (
+              <option key={name} value={name}></option>
+            ))}
           </datalist>
         </label>
         <div>
@@ -97,35 +98,39 @@ export const SwimmerFilter = () => {
           <label className="block my-2 sm:inline-block">
             Gender:
             <select
-              name="gender" className="ml-1 h-8 text-xs rounded"
+              name="gender"
+              className="ml-1 h-8 text-xs rounded"
               value={recordFilter.gender || ''}
               onChange={e => {
                 void updateFilter({
                   ...recordFilter,
                   gender: e.target.value as Gender,
-                })
-              }}>
+                });
+              }}
+            >
               <option>(all)</option>
-              {GenderList.map(gender =>
+              {GenderList.map(gender => (
                 <option key={gender}>{gender}</option>
-              )}
+              ))}
             </select>
           </label>
           <label className="block my-2 sm:inline-block sm:ml-2">
             Age Group:
             <select
-              name="age" className="ml-1 h-8 text-xs rounded"
+              name="age"
+              className="ml-1 h-8 text-xs rounded"
               value={recordFilter.ageClass ?? ''}
               onChange={e => {
                 void updateFilter({
                   ...recordFilter,
                   ageClass: e.target.value as AgeClass,
-                })
-              }}>
+                });
+              }}
+            >
               <option>(all)</option>
-              {AgeClassList.map(age =>
+              {AgeClassList.map(age => (
                 <option key={age}>{age}</option>
-              )}
+              ))}
             </select>
           </label>
         </div>
@@ -133,15 +138,18 @@ export const SwimmerFilter = () => {
           <label className="block my-2 sm:inline-block">
             Season:
             <select
-              name="season" className="ml-1 h-8 text-xs rounded"
+              name="season"
+              className="ml-1 h-8 text-xs rounded"
               value={recordFilter.year ?? ''}
               onChange={e => {
-                const value = e.target.value !== '' ? e.target.value : undefined;
+                const value =
+                  e.target.value !== '' ? e.target.value : undefined;
                 void updateFilter({
                   ...recordFilter,
                   year: value,
-                })
-              }}>
+                });
+              }}
+            >
               <option value="">(all)</option>
               <option>2024</option>
               <option>2023</option>
@@ -174,7 +182,9 @@ export const SwimmerFilter = () => {
           </label>
         </div>
         <fieldset className="border-inset border border-slate-300 p-2 w-80">
-          <legend className="text-sm">Choose no more than one (optional):</legend>
+          <legend className="text-sm">
+            Choose no more than one (optional):
+          </legend>
 
           <label className="text-xs block my-1">
             <input
@@ -185,12 +195,14 @@ export const SwimmerFilter = () => {
                 void updateFilter({
                   ...recordFilter,
                   bestTimesPerEvent: e.target.checked,
-                  bestTimesPerSwimmer: e.target.checked ? false : recordFilter.bestTimesPerSwimmer
+                  bestTimesPerSwimmer: e.target.checked
+                    ? false
+                    : recordFilter.bestTimesPerSwimmer,
                 });
               }}
               className="rounded mr-1.5"
             />
-            Show each swimmer's best event times only
+            Show each swimmer’s best event times only
           </label>
           <label className="text-xs block my-1">
             <input
@@ -200,7 +212,9 @@ export const SwimmerFilter = () => {
               onChange={e => {
                 void updateFilter({
                   ...recordFilter,
-                  bestTimesPerEvent: e.target.checked ? false : recordFilter.bestTimesPerEvent,
+                  bestTimesPerEvent: e.target.checked
+                    ? false
+                    : recordFilter.bestTimesPerEvent,
                   bestTimesPerSwimmer: e.target.checked,
                 });
               }}
@@ -227,6 +241,6 @@ export const SwimmerFilter = () => {
           search rankings
         </button>
       </div>
-    </form >
+    </form>
   );
 };

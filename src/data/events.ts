@@ -367,7 +367,10 @@ export const EVENTS_BY_GENDER: Record<Gender, string[]> = {} as Record<
   Gender,
   string[]
 >;
-export const EVENTS_BY_AGE_CLASS: Record<string, string[]> = {} as Record<AgeClass, string[]>;
+export const EVENTS_BY_AGE_CLASS: Record<string, string[]> = {} as Record<
+  AgeClass,
+  string[]
+>;
 
 for (const [eventNumber, eventDetails] of Object.entries(EVENT_MAP)) {
   EVENTS_BY_STROKE[eventDetails.stroke] ??= [];

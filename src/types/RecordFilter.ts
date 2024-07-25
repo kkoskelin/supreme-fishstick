@@ -4,7 +4,7 @@ import { Gender } from './Gender';
 import { Stroke } from './Stroke';
 
 export type RecordFilter = {
-  ageClass?: AgeClass,
+  ageClass?: AgeClass;
   ageMax?: string;
   ageMin?: string;
   bestTimesPerEvent?: boolean;
