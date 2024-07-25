@@ -7,7 +7,7 @@ export const displaySwimmerSearch = (context: Context) => {
     ...context.state.recordFilter,
     year: '2024',
   };
-  context.state.currentPage = 'SwimmerSearchResponsive';
+  context.state.currentPage = 'SearchResults';
   loadSwimData(context);
 };
 

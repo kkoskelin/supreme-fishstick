@@ -4,7 +4,7 @@ import { RecordFilter } from '../types/RecordFilter';
 import { SwimRecord } from '../types/SwimRecord';
 
 export type State = {
-  currentPage: string;
+  currentPage: 'SearchResults' | 'Loading';
   form: Form;
   latestSwimRecordDate: string;
   recordFilter: RecordFilter;

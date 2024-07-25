@@ -6,9 +6,10 @@ import { SearchResults } from '../views/SearchResults';
 
 export const CurrentPage = () => {
   const { currentPage } = useAppState();
+  console.log('currentPage:', currentPage);
   return (
     <>
-      {currentPage == 'SwimmerSearch' && <SearchResults />}
+      {currentPage == 'SearchResults' && <SearchResults />}
       {currentPage == 'Loading' && <LoadingTemplate />}
     </>
   );
