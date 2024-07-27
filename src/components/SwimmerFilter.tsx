@@ -2,7 +2,7 @@ import { AgeClass, AgeClassList } from '../types/Age';
 import { Distance, DistanceList } from '../types/Distance';
 import { Gender, GenderList } from '../types/Gender';
 import { Stroke, StrokeList } from '../types/Stroke';
-import { Team, TeamNames } from '../types/Team';
+import { TeamNames } from '../types/Team';
 import { useActions, useAppState } from '../presenter/presenter';
 import React from 'react';
 
@@ -10,7 +10,7 @@ export const SwimmerFilter = () => {
   const {
     form: { recordFilter },
     latestSwimRecordDate,
-    swimData,
+    rawSwimData,
     swimmerNames,
   } = useAppState();
   const { clearSearch, submitSearch, updateFilter } = useActions();
@@ -24,7 +24,8 @@ export const SwimmerFilter = () => {
     >
       <h1 className="text-md">Search By Swimmer</h1>
       <p className="italic">
-        {swimData.length.toLocaleString()} records as of {latestSwimRecordDate}
+        {rawSwimData.length.toLocaleString()} records as of{' '}
+        {latestSwimRecordDate}
       </p>
       <div className="my-2 text-sm">
         <label className="block my-2 sm:inline-block md:mr-2">
@@ -39,7 +40,7 @@ export const SwimmerFilter = () => {
             onChange={e => {
               void updateFilter({
                 ...recordFilter,
-                swimmerName: e.target.value,
+                swimmerName: e.target.value !== '' ? e.target.value : undefined,
               });
             }}
             className="rounded h-8 text-xs w-48"
@@ -60,7 +61,10 @@ export const SwimmerFilter = () => {
               onChange={e => {
                 void updateFilter({
                   ...recordFilter,
-                  distance: (e.target.value as Distance) || undefined,
+                  distance:
+                    e.target.value !== ''
+                      ? (e.target.value as Distance)
+                      : undefined,
                 });
               }}
             >
@@ -81,7 +85,10 @@ export const SwimmerFilter = () => {
               onChange={e => {
                 void updateFilter({
                   ...recordFilter,
-                  stroke: (e.target.value as Stroke) || undefined,
+                  stroke:
+                    e.target.value !== ''
+                      ? (e.target.value as Stroke)
+                      : undefined,
                 });
               }}
             >
@@ -104,11 +111,14 @@ export const SwimmerFilter = () => {
               onChange={e => {
                 void updateFilter({
                   ...recordFilter,
-                  gender: e.target.value as Gender,
+                  gender:
+                    e.target.value !== ''
+                      ? (e.target.value as Gender)
+                      : undefined,
                 });
               }}
             >
-              <option>(all)</option>
+              <option value="">(all)</option>
               {GenderList.map(gender => (
                 <option key={gender}>{gender}</option>
               ))}
@@ -123,11 +133,14 @@ export const SwimmerFilter = () => {
               onChange={e => {
                 void updateFilter({
                   ...recordFilter,
-                  ageClass: e.target.value as AgeClass,
+                  ageClass:
+                    e.target.value !== ''
+                      ? (e.target.value as AgeClass)
+                      : undefined,
                 });
               }}
             >
-              <option>(all)</option>
+              <option value="">(all)</option>
               {AgeClassList.map(age => (
                 <option key={age}>{age}</option>
               ))}
@@ -168,7 +181,7 @@ export const SwimmerFilter = () => {
               onChange={e => {
                 void updateFilter({
                   ...recordFilter,
-                  team: (e.target.value as Team) ?? undefined,
+                  team: e.target.value !== '' ? e.target.value : undefined,
                 });
               }}
             >

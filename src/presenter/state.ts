@@ -7,8 +7,8 @@ export const state: State = {
     recordFilter: {},
   },
   latestSwimRecordDate: '...',
+  rawSwimData: [],
   recordFilter: {},
-  swimData: [],
   swimmerNames: [],
   ...derivedState,
 };
