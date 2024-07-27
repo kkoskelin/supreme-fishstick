@@ -3,7 +3,11 @@ import { useAppState } from '../presenter/presenter';
 import React from 'react';
 
 export const SearchResults = () => {
-  const { filteredRankings, hasSearchParameters, swimData } = useAppState();
+  const {
+    filteredSwimRecords: filteredRankings,
+    hasSearchParameters,
+    rawSwimData,
+  } = useAppState();
   return (
     <div className="downloadIt">
       <SwimmerFilter />
@@ -12,7 +16,7 @@ export const SearchResults = () => {
           <hr className="my-4 h-0.5 bg-gray-200" />
           <p>
             Filtered {filteredRankings.length.toLocaleString()} of{' '}
-            {swimData.length.toLocaleString()} records
+            {rawSwimData.length.toLocaleString()} records
           </p>
           <hr className="md:hidden my-4 h-0.5 bg-gray-200" />
           <div className="block md:table w-full text-sm md:border-collapse">

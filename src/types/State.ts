@@ -1,15 +1,15 @@
 import { Form } from '../types/Form';
 import { FormattedSwimRecord } from './FormattedSwimRecord';
+import { RawSwimRecord } from '../types/RawSwimRecord';
 import { RecordFilter } from '../types/RecordFilter';
-import { SwimRecord } from '../types/SwimRecord';
 
 export type State = {
   currentPage: 'SearchResults' | 'Loading';
   form: Form;
   latestSwimRecordDate: string;
   recordFilter: RecordFilter;
-  swimData: SwimRecord[];
+  rawSwimData: RawSwimRecord[];
   swimmerNames: string[];
-  filteredRankings: FormattedSwimRecord[];
+  filteredSwimRecords: FormattedSwimRecord[];
   hasSearchParameters: boolean;
 };

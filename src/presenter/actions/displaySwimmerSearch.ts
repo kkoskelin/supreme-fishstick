@@ -12,9 +12,9 @@ export const displaySwimmerSearch = (context: Context) => {
 };
 
 const loadSwimData = (context: Context) => {
-  const { latestSwimRecordDate, swimData, swimmerNames } =
+  const { latestSwimRecordDate, rawData, swimmerNames } =
     getLatestSwimRecordAndNamesAndData();
-  context.state.swimData = swimData;
+  context.state.rawSwimData = rawData;
   context.state.latestSwimRecordDate = latestSwimRecordDate;
   context.state.swimmerNames = swimmerNames;
 };

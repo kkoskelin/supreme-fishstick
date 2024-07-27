@@ -1,5 +1,4 @@
 import {
-  BadRequestError,
   InsufficientPrivilegesError,
   RequestCanceledError,
   ServerError,

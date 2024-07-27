@@ -7,11 +7,9 @@ const teamKeyMap = {
   'Mazomanie': 'M',
   'MAZO': 'M',
   'Mt. Horeb': 'H',
-  'Mt. Horeb': 'H',
   'Sauk Prairie': 'K',
   'Spring Green': 'G',
   'Sun Prairie': 'P',
-  'Wis. Dells': 'W',
   'Wis. Dells': 'W',
 };
 
@@ -37,7 +35,7 @@ function convertTimeToSeconds(timeStr) {
   }
 }
 
-function transformEntry(entry) {
+function simplifyEntryFormat(entry) {
   try {
     const place = isNaN(parseInt(entry.Place, 10)) ? undefined : parseInt(entry.Place, 10);
     const eventNumber = parseInt(entry['Event #'].replace('#', ''), 10);
@@ -102,7 +100,7 @@ function writeJSON(filePath, data) {
   const records = [];
   for (let file of args) {
     const csvData = await readCSV(file);
-    records.push(... csvData.map(transformEntry))
+    records.push(... csvData.map(simplifyEntryFormat))
   }
   records.sort(sortByEventThenTime);
 

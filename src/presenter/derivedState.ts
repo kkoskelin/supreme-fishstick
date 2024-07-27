@@ -9,10 +9,13 @@ import {
 } from '../data/events';
 import { FormattedSwimRecord } from '../types/FormattedSwimRecord';
 import { Gender } from '../types/Gender';
+import { RawSwimRecord, SwimRecordIndex } from '../types/RawSwimRecord';
 import { State } from '../types/State';
 import { Stroke } from '../types/Stroke';
 import { SwimRecord } from '../types/SwimRecord';
+import { TeamKeyMap } from '../types/Team';
 import { derived } from 'overmind';
+import { memoize } from 'lodash';
 
 export const timeToSeconds = (time: string): number => {
   const parts: string[] = time.split(':');
@@ -22,72 +25,82 @@ export const timeToSeconds = (time: string): number => {
   return +parts[0] * 60 + +parts[1];
 };
 
-export const secondsToTime = (inputSeconds = 0): string => {
+export const secondsToTime = memoize((inputSeconds = 0): string => {
   const minutes = Math.floor(inputSeconds / 60);
   const seconds = Math.floor(inputSeconds - minutes * 60);
   const fraction = Math.round((inputSeconds - minutes * 60 - seconds) * 100)
     .toString()
     .padStart(2, '0');
   return `${minutes}:${seconds.toString().padStart(2, '0')}.${fraction}`;
-};
+});
 
-export const teamFilter = (team?: string) => {
+
+export const rawTeamFilter = (team?: string) => {
   if (team) {
     const teamRegex = new RegExp(team, 'i');
-    return (record: SwimRecord) => teamRegex.test(record.team);
+    return (record: RawSwimRecord) =>
+      teamRegex.test(TeamKeyMap[record[SwimRecordIndex.TEAM]]);
   } else {
     return undefined;
   }
 };
 
-export const nameFilter = (name?: string) => {
+export const rawNameFilter = (name?: string) => {
   if (name) {
     const nameRegex = new RegExp(name, 'i');
-    return (record: SwimRecord) => nameRegex.test(record.displayName);
+    return (record: RawSwimRecord) =>
+      nameRegex.test(record[SwimRecordIndex.DISPLAY_NAME]);
   } else {
     return undefined;
   }
 };
 
-export const strokeFilter = (stroke?: Stroke) =>
+export const rawStrokeFilter = (stroke?: Stroke) =>
   stroke != undefined
-    ? (record: SwimRecord) =>
-        EVENTS_BY_STROKE[stroke].includes(record.event.toString())
+    ? (record: RawSwimRecord) =>
+      EVENTS_BY_STROKE[stroke].includes(
+        record[SwimRecordIndex.EVENT].toString(),
+      )
     : undefined;
 
-export const genderFilter = (gender?: Gender) =>
+export const rawGenderFilter = (gender?: Gender) =>
   gender != undefined
-    ? (record: SwimRecord) =>
-        EVENTS_BY_GENDER[gender].includes(record.event.toString())
+    ? (record: RawSwimRecord) =>
+      EVENTS_BY_GENDER[gender].includes(
+        record[SwimRecordIndex.EVENT].toString(),
+      )
     : undefined;
 
-export const distanceFilter = (distance?: Distance) =>
+export const rawDistanceFilter = (distance?: Distance) =>
   distance != undefined
-    ? (record: SwimRecord) =>
-        EVENTS_BY_DISTANCE[distance].includes(record.event.toString())
+    ? (record: RawSwimRecord) =>
+      EVENTS_BY_DISTANCE[distance].includes(
+        record[SwimRecordIndex.EVENT].toString(),
+      )
     : undefined;
 
-export const ageClassFilter = (ageClass?: AgeClass) =>
+export const rawAgeClassFilter = (ageClass?: AgeClass) =>
   ageClass != undefined
-    ? (record: SwimRecord) =>
-        EVENTS_BY_AGE_CLASS[ageClass].includes(record.event.toString())
+    ? (record: RawSwimRecord) =>
+      EVENTS_BY_AGE_CLASS[ageClass].includes(
+        record[SwimRecordIndex.EVENT].toString(),
+      )
     : undefined;
 
-export const yearFilter = (year?: string) =>
+export const rawYearFilter = (year?: string) =>
   year != undefined
-    ? (record: SwimRecord) => record.date.startsWith(year)
+    ? (record: RawSwimRecord) => record[SwimRecordIndex.DATE].startsWith(year)
     : undefined;
 
 export const getBestTimesPerEvent = (
-  records: SwimRecord[],
+  records: FormattedSwimRecord[],
   perSwimmer: boolean = false,
-): SwimRecord[] => {
-  const bestTimes: { [key: string]: SwimRecord } = {};
+): FormattedSwimRecord[] => {
+  const bestTimes: { [key: string]: FormattedSwimRecord } = {};
   records.forEach(record => {
     const key = perSwimmer
       ? record.event
       : `${record.event}-${record.displayName}`;
-    const time: number = +record.convertedTime;
     if (
       !bestTimes[key] ||
       record.convertedTime < bestTimes[key].convertedTime
@@ -112,29 +125,6 @@ function combineFilters<T>(
   };
 }
 
-export const filteredRankings = (state: State): FormattedSwimRecord[] => {
-  const { recordFilter, swimData } = state;
-  const combinedFilter = combineFilters(
-    ageClassFilter(recordFilter.ageClass),
-    distanceFilter(recordFilter.distance),
-    genderFilter(recordFilter.gender),
-    nameFilter(recordFilter.swimmerName),
-    strokeFilter(recordFilter.stroke),
-    teamFilter(recordFilter.team),
-    yearFilter(recordFilter.year),
-  );
-
-  let filteredRecords = swimData.filter(combinedFilter) || [];
-
-  if (recordFilter.bestTimesPerEvent || recordFilter.bestTimesPerSwimmer) {
-    filteredRecords = getBestTimesPerEvent(
-      filteredRecords,
-      state.recordFilter.bestTimesPerSwimmer,
-    );
-  }
-  return filteredRecords.map(formatSwimRecord);
-};
-
 export const formatSwimRecord = (record: SwimRecord): FormattedSwimRecord => {
   return {
     ...record,
@@ -151,11 +141,76 @@ export const formatSwimRecord = (record: SwimRecord): FormattedSwimRecord => {
   };
 };
 
+export const transformRecord = (record: RawSwimRecord): FormattedSwimRecord => {
+  const [
+    age,
+    convertedTime,
+    date,
+    displayName,
+    event,
+    place,
+    team,
+    weekNumber,
+  ] = record;
+  const swimRecord: FormattedSwimRecord = {
+    age,
+    convertedTime,
+    date,
+    displayName,
+    event,
+    exhibition: place == 0,
+    formattedDate: formatDate(date),
+    formattedEvent: formatEvent(event),
+    formattedTime: secondsToTime(convertedTime),
+    place,
+    team: TeamKeyMap[team],
+    weekNumber,
+  };
+  return swimRecord;
+};
+
 export const hasSearchParameters = (state: State): boolean => {
   return Object.keys(state.recordFilter).length > 0;
 };
 
+function formatEvent(event: number): string {
+  return `${EVENT_MAP[event].gender} ${EVENT_MAP[event].ageClass} ${EVENT_MAP[event].distance} ${EVENT_MAP[event].stroke}`;
+}
+
+const formatDate = memoize((date: string): string => {
+  return new Date(`${date}T12:00`).toLocaleDateString('en-US', {
+    day: '2-digit',
+    month: '2-digit',
+    year: '2-digit',
+  });
+});
+
+export const filteredSwimRecords = (state: State): FormattedSwimRecord[] => {
+  const { recordFilter } = state;
+
+  const combinedFilter = combineFilters(
+    rawAgeClassFilter(state.recordFilter.ageClass),
+    rawDistanceFilter(state.recordFilter.distance),
+    rawGenderFilter(state.recordFilter.gender),
+    rawNameFilter(state.recordFilter.swimmerName),
+    rawStrokeFilter(state.recordFilter.stroke),
+    rawTeamFilter(state.recordFilter.team),
+    rawYearFilter(state.recordFilter.year),
+  );
+
+  let filteredRecords = state.rawSwimData
+    .filter(combinedFilter)
+    .map(transformRecord);
+  if (recordFilter.bestTimesPerEvent || recordFilter.bestTimesPerSwimmer) {
+    filteredRecords = getBestTimesPerEvent(
+      filteredRecords,
+      state.recordFilter.bestTimesPerSwimmer,
+    );
+  }
+  return filteredRecords;
+};
+
 export const derivedState = {
-  filteredRankings: derived(filteredRankings),
+  filteredSwimRecords: derived(filteredSwimRecords),
   hasSearchParameters: derived(hasSearchParameters),
 };
