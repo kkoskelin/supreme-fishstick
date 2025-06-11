@@ -11,6 +11,7 @@ export const SwimmerFilter = () => {
     form: { recordFilter },
     latestSwimRecordDate,
     rawSwimData,
+    swimSeasonYears,
     swimmerNames,
   } = useAppState();
   const { clearSearch, submitSearch, updateFilter } = useActions();
@@ -164,11 +165,11 @@ export const SwimmerFilter = () => {
               }}
             >
               <option value="">(all)</option>
-              <option>2024</option>
-              <option>2023</option>
-              <option>2022</option>
-              <option>2021</option>
-              <option>2019</option>
+              {swimSeasonYears.map(year => (
+                <option key={year} value={year}>
+                  {year}
+                </option>
+              ))}
             </select>
           </label>
           <label className="block my-2 sm:inline-block sm:ml-2">

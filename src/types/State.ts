@@ -9,6 +9,7 @@ export type State = {
   latestSwimRecordDate: string;
   recordFilter: RecordFilter;
   rawSwimData: RawSwimRecord[];
+  swimSeasonYears: string[];
   swimmerNames: string[];
   filteredSwimRecords: FormattedSwimRecord[];
   hasSearchParameters: boolean;

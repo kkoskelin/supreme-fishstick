@@ -72,7 +72,12 @@ node csvtoJson.js 20*csv
 popd
 ```
 
-### Build the bundle into a ZIP file
+### Deploy to Github Pages
+
+Currently the .github/workflows/static.yml will build and deploy code pushed to `main` automatically.
+The site is then visible at <https://kkoskelin.github.io/supreme-fishstick/>
+
+### Build the bundle into a ZIP file for deployment anywhere
 
 ```sh
 npm run clean
