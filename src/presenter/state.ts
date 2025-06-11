@@ -13,9 +13,7 @@ years.push('2019');
 export const state: State = {
   currentPage: 'Loading',
   form: {
-    recordFilter: {
-      year: currentYear.toString(),
-    },
+    recordFilter: {},
   },
   latestSwimRecordDate: '...',
   rawSwimData: [],

@@ -3,8 +3,10 @@ import { getLatestSwimRecordAndNamesAndData } from '../../fixtures/swimData';
 
 export const displaySwimmerSearch = (context: Context) => {
   // load most recently-applied filters into the form.
+  const currentYear = new Date().getFullYear().toString();
   context.state.form.recordFilter = {
     ...context.state.recordFilter,
+    year: currentYear,
   };
   context.state.currentPage = 'SearchResults';
   loadSwimData(context);
