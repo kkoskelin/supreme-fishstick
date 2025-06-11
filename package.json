@@ -15,7 +15,7 @@
     "api:deploy": "serverless deploy",
     "api:destroy": "serverless remove",
     "clean": "rm -rf ./dist ./.parcel-cache",
-    "lint": "tsc --noEmit && eslint  --ext .ts,.tsx src/",
+    "lint": "tsc --noEmit && eslint src/",
     "lint:css": "stylelint ./src/**/*.css",
     "lint:css:fix": "stylelint ./src/**/*.css --fix",
     "lint:fix": "npm run lint -- --fix",

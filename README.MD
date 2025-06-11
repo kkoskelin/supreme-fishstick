@@ -76,7 +76,7 @@ popd
 
 ```sh
 npm run clean
-npm run build
+npm run build  (or build:gh)
 zip dist/index.zip dist/*
 ```
 
