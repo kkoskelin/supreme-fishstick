@@ -14,7 +14,8 @@ export function findMostRecentDate(swimData: RawSwimRecord[]): string {
   return latestSwimRecord;
 }
 
-export function getLatestSwimRecordAndNamesAndData() {
+export function getLatestSwimRecordAndNamesAndData(optionalData?: RawSwimRecord[]) {
+  const swimData = optionalData ?? rawData;
   const latestSwimRecordDate = rawData.reduce(greatestDateReducer, '0');
   const allNames = rawData.map(record => record[SwimRecordIndex.DISPLAY_NAME]);
   const swimmerNames = Array.from(new Set(allNames)).sort();

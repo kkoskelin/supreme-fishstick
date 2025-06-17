@@ -59,9 +59,9 @@ Modify your editor's `settings.json` file to include the following preferences:
 Cleaning up the 2024 spreadsheet:
 
 ```sh
-mv ~/Downloads/2024\ Tri\ County\ Swim\ Results\ -\ Tri-County.csv ./src/fixtures/2024.csv
-tail -n +2 ./src/fixtures/2024.csv | sed -e 's/,Tri/\/2024,Tri/g' -e 's/Gender,Age/Gender,AgeRange/g' > temp.csv
-mv temp.csv ./src/fixtures/2024.csv
+mv ~/Downloads/2025\ Tri\ County\ Swim\ Results\ -\ Tri-County.csv ./src/fixtures/2025.csv
+tail -n +2 ./src/fixtures/2025.csv | sed -e 's/,Tri/\/2025,Tri/g' -e 's/Gender,Age/Gender,AgeRange/g' > temp.csv
+mv temp.csv ./src/fixtures/2025.csv
 ```
 
 You may need to edit the JS file below for your desired year.
