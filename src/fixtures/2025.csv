@@ -7548,7 +7548,7 @@ Place,Last Name,First Name,Display Name,Age,Team,Converted Time,Time,EXH,Date,Le
 2,Reeder,Charlie,Charlie Reeder,17,Sun Prairie,28.39,28.39,,7/2/2025,Tri-County,Week 5,#68,Boys,15-18,50,Meter,Fly
 ---,Turner,Clementine,Clementine Turner,7,Baraboo,28.40,28.40,EXH,7/2/2025,Tri-County,Week 5,#11,Girls,8&U,25,Meter,Free
 2,Zaemisch,Danny,Danny Zaemisch,14,Spring Green,28.40,28.40,,7/2/2025,Tri-County,Week 5,#18,Boys,13-14,50,Meter,Free
-1,Cupelli,Freddie,Freddie Cupelli,14,Cross Plains,28.44,28.44,,7/2/2025,Tri-County,Week 5,#66,Boys,13-14,50,Meter,Fly
+1,Cupelli,Freddie,Freddie Cupelli,14,Cross Plains,1:02.89,1:02.89,,7/2/2025,Tri-County,Week 5,#36,Boys,13-14,100,Meter,IM
 2,McCarthy,Declan,Declan McCarthy,8,Sauk Prairie,28.52,28.52,,7/2/2025,Tri-County,Week 5,#39,Girls,8&U,25,Meter,Breast
 ---,Balfanz,Jacob,Jacob Balfanz,17,Baraboo,28.53,28.53,EXH,7/2/2025,Tri-County,Week 5,#20,Boys,15-18,50,Meter,Free
 ---,Geiszler,Benjamin,Benjamin Geiszler,17,Sun Prairie,28.55,28.55,EXH,7/2/2025,Tri-County,Week 5,#20,Boys,15-18,50,Meter,Free
@@ -8799,7 +8799,7 @@ Place,Last Name,First Name,Display Name,Age,Team,Converted Time,Time,EXH,Date,Le
 ---,Haas,Lillian,Lillian Haas,9,Sun Prairie,1:02.64,1:02.64,EXH,7/2/2025,Tri-County,Week 5,#23,Girls,9--10,50,Meter,Back
 ---,Zellmer,Maesie,Maesie Zellmer,9,Baraboo,1:02.78,1:02.78,EXH,7/2/2025,Tri-County,Week 5,#41,Girls,9--10,50,Meter,Breast
 ---,Kazda,Margeaux,Margeaux Kazda,10,Mt. Horeb,1:02.86,1:02.86,EXH,7/9/2025,Tri-County,Week 5,#61,Girls,9--10,50,Meter,Fly
-1,Cupelli,Freddie,Freddie Cupelli,14,Cross Plains,1:02.89,1:02.89,,7/2/2025,Tri-County,Week 5,#36,Boys,13-14,100,Meter,IM
+1,Cupelli,Freddie,Freddie Cupelli,14,Cross Plains,28.44,28.44,,7/2/2025,Tri-County,Week 5,#66,Boys,13-14,50,Meter,Fly
 ---,Helt,Ashlynn,Ashlynn Helt,10,Cross Plains,1:02.92,1:02.92,EXH,7/2/2025,Tri-County,Week 5,#13,Girls,9--10,50,Meter,Free
 6,Marshall,Theresa,Theresa Marshall,10,Sun Prairie,1:02.93,1:02.93,,7/2/2025,Tri-County,Week 5,#61,Girls,9--10,50,Meter,Fly
 ---,Boyes,Aoife,Aoife Boyes,7,Sun Prairie,1:03.08,1:03.08,EXH,7/2/2025,Tri-County,Week 5,#49,Girls,8&U,50,Meter,Free
@@ -11493,3 +11493,764 @@ Place,Last Name,First Name,Display Name,Age,Team,Converted Time,Time,EXH,Date,Le
 ---,Razvi,Ily,Ily Razvi,15,Cross Plains,33.26,33.26,EXH,7/12/2025,Tri-County,Week 6,#68,Boys,15-18,50,Meter,Fly
 ---,Wing,Frank,Frank Wing,15,Cross Plains,35.01,35.01,EXH,7/12/2025,Tri-County,Week 6,#68,Boys,15-18,50,Meter,Fly
 ---,Reese,Owen,Owen Reese,15,Sun Prairie,37.63,37.63,EXH,7/12/2025,Tri-County,Week 6,#68,Boys,15-18,50,Meter,Fly
+1,Johnson,Atalie,Atalie Johnson,8,Sauk Prairie,20.42,20.42,,7/19/2025,Tri-County,Week 7,#11,Girls,8&U,25,Meter,Free
+2,Poulsen,Ella,Ella Poulsen,8,MAZO,21.28,21.28,,7/19/2025,Tri-County,Week 7,#11,Girls,8&U,25,Meter,Free
+---,Zimmerman,Mia,Mia Zimmerman,8,Sauk Prairie,21.67,21.67,EXH,7/19/2025,Tri-County,Week 7,#11,Girls,8&U,25,Meter,Free
+3,Dischler,Maddie,Maddie Dischler,8,Sauk Prairie,23.86,23.86,,7/19/2025,Tri-County,Week 7,#11,Girls,8&U,25,Meter,Free
+4,Zick,Maddy,Maddy Zick,7,Sauk Prairie,23.87,23.87,,7/19/2025,Tri-County,Week 7,#11,Girls,8&U,25,Meter,Free
+5,Frederick,Halle,Halle Frederick,7,MAZO,25.82,25.82,,7/19/2025,Tri-County,Week 7,#11,Girls,8&U,25,Meter,Free
+6,Stokes,Romy,Romy Stokes,7,MAZO,28.26,28.26,,7/19/2025,Tri-County,Week 7,#11,Girls,8&U,25,Meter,Free
+---,Dent,Kaia,Kaia Dent,6,Sauk Prairie,30.16,30.16,EXH,7/19/2025,Tri-County,Week 7,#11,Girls,8&U,25,Meter,Free
+---,Jacobs,Charli,Charli Jacobs,7,Sauk Prairie,30.47,30.47,EXH,7/19/2025,Tri-County,Week 7,#11,Girls,8&U,25,Meter,Free
+---,Coy,Vivian,Vivian Coy,6,Sauk Prairie,31.71,31.71,EXH,7/19/2025,Tri-County,Week 7,#11,Girls,8&U,25,Meter,Free
+---,Conger,Audrey,Audrey Conger,6,MAZO,32.56,32.56,EXH,7/19/2025,Tri-County,Week 7,#11,Girls,8&U,25,Meter,Free
+---,Getgen,Kinsley,Kinsley Getgen,8,Sauk Prairie,36.51,36.51,EXH,7/19/2025,Tri-County,Week 7,#11,Girls,8&U,25,Meter,Free
+---,Lochner,June,June Lochner,6,Sauk Prairie,36.64,36.64,EXH,7/19/2025,Tri-County,Week 7,#11,Girls,8&U,25,Meter,Free
+---,Koch,Kylie,Kylie Koch,7,Sauk Prairie,39.19,39.19,EXH,7/19/2025,Tri-County,Week 7,#11,Girls,8&U,25,Meter,Free
+---,Acker,Everly,Everly Acker,7,Sauk Prairie,42.43,42.43,EXH,7/19/2025,Tri-County,Week 7,#11,Girls,8&U,25,Meter,Free
+---,Samz,Addy,Addy Samz,7,Sauk Prairie,45.58,45.58,EXH,7/19/2025,Tri-County,Week 7,#11,Girls,8&U,25,Meter,Free
+---,Acker,Harper,Harper Acker,6,Sauk Prairie,46.99,46.99,EXH,7/19/2025,Tri-County,Week 7,#11,Girls,8&U,25,Meter,Free
+---,Johnson,Eloise,Eloise Johnson,7,MAZO,49.27,49.27,EXH,7/19/2025,Tri-County,Week 7,#11,Girls,8&U,25,Meter,Free
+1,Stokes,River,River Stokes,7,MAZO,26.65,26.65,,7/19/2025,Tri-County,Week 7,#12,Boys,8&U,25,Meter,Free
+2,Schartner,Clay,Clay Schartner,7,Sauk Prairie,30.97,30.97,,7/19/2025,Tri-County,Week 7,#12,Boys,8&U,25,Meter,Free
+3,Karis,Jackson,Jackson Karis,7,Sauk Prairie,32.15,32.15,,7/19/2025,Tri-County,Week 7,#12,Boys,8&U,25,Meter,Free
+4,Rolo,Brennan,Brennan Rolo,8,MAZO,34.47,34.47,,7/19/2025,Tri-County,Week 7,#12,Boys,8&U,25,Meter,Free
+---,Herbrand,Elliot,Elliot Herbrand,5,Sauk Prairie,43.72,43.72,EXH,7/19/2025,Tri-County,Week 7,#12,Boys,8&U,25,Meter,Free
+---,Marks,Thomas,Thomas Marks,7,MAZO,44.73,44.73,EXH,7/19/2025,Tri-County,Week 7,#12,Boys,8&U,25,Meter,Free
+5,McCarthy,Lachlan,Lachlan McCarthy,5,Sauk Prairie,48.86,48.86,,7/19/2025,Tri-County,Week 7,#12,Boys,8&U,25,Meter,Free
+---,Rolo,JJ,JJ Rolo,5,MAZO,1:01.39,1:01.39,EXH,7/19/2025,Tri-County,Week 7,#12,Boys,8&U,25,Meter,Free
+1,Krueger,Brooklyn,Brooklyn Krueger,9,Sauk Prairie,38.84,38.84,,7/19/2025,Tri-County,Week 7,#13,Girls,9--10,50,Meter,Free
+2,Kearney,Colette,Colette Kearney,9,MAZO,42.41,42.41,,7/19/2025,Tri-County,Week 7,#13,Girls,9--10,50,Meter,Free
+---,Stokes,Margaux,Margaux Stokes,9,MAZO,46.54,46.54,EXH,7/19/2025,Tri-County,Week 7,#13,Girls,9--10,50,Meter,Free
+3,Clarke,Nora,Nora Clarke,9,MAZO,46.80,46.80,,7/19/2025,Tri-County,Week 7,#13,Girls,9--10,50,Meter,Free
+4,Mereau,Elodie,Elodie Mereau,9,Sauk Prairie,47.12,47.12,,7/19/2025,Tri-County,Week 7,#13,Girls,9--10,50,Meter,Free
+---,Gibson,Esme,Esme Gibson,9,Sauk Prairie,47.32,47.32,EXH,7/19/2025,Tri-County,Week 7,#13,Girls,9--10,50,Meter,Free
+5,Daggett,Kira,Kira Daggett,9,MAZO,47.32,47.32,,7/19/2025,Tri-County,Week 7,#13,Girls,9--10,50,Meter,Free
+---,Karls,Elliana,Elliana Karls,9,MAZO,50.01,50.01,EXH,7/19/2025,Tri-County,Week 7,#13,Girls,9--10,50,Meter,Free
+---,George,Marlo,Marlo George,10,Sauk Prairie,50.91,50.91,EXH,7/19/2025,Tri-County,Week 7,#13,Girls,9--10,50,Meter,Free
+6,Breunig,Aubree,Aubree Breunig,9,Sauk Prairie,52.18,52.18,,7/19/2025,Tri-County,Week 7,#13,Girls,9--10,50,Meter,Free
+---,Handel,Nadia,Nadia Handel,9,MAZO,58.19,58.19,EXH,7/19/2025,Tri-County,Week 7,#13,Girls,9--10,50,Meter,Free
+---,Keller,Maddie,Maddie Keller,10,Sauk Prairie,59.14,59.14,EXH,7/19/2025,Tri-County,Week 7,#13,Girls,9--10,50,Meter,Free
+---,Stapleton,Preslee,Preslee Stapleton,10,MAZO,1:02.08,1:02.08,EXH,7/19/2025,Tri-County,Week 7,#13,Girls,9--10,50,Meter,Free
+---,Kunde,Daphne,Daphne Kunde,9,Sauk Prairie,1:09.11,1:09.11,EXH,7/19/2025,Tri-County,Week 7,#13,Girls,9--10,50,Meter,Free
+---,Gaber,Emmalyn,Emmalyn Gaber,9,MAZO,1:23.18,1:23.18,EXH,7/19/2025,Tri-County,Week 7,#13,Girls,9--10,50,Meter,Free
+1,Burton,Benjamin,Benjamin Burton,10,MAZO,44.93,44.93,,7/19/2025,Tri-County,Week 7,#14,Boys,9--10,50,Meter,Free
+2,Barber,Max,Max Barber,9,Sauk Prairie,45.07,45.07,,7/19/2025,Tri-County,Week 7,#14,Boys,9--10,50,Meter,Free
+3,Karls,Boston,Boston Karls,10,MAZO,46.32,46.32,,7/19/2025,Tri-County,Week 7,#14,Boys,9--10,50,Meter,Free
+4,Hubbard,Isaac,Isaac Hubbard,9,MAZO,53.39,53.39,,7/19/2025,Tri-County,Week 7,#14,Boys,9--10,50,Meter,Free
+---,Lucey,Treg,Treg Lucey,9,MAZO,1:03.97,1:03.97,EXH,7/19/2025,Tri-County,Week 7,#14,Boys,9--10,50,Meter,Free
+5,Samz,Calvin,Calvin Samz,9,Sauk Prairie,1:04.13,1:04.13,,7/19/2025,Tri-County,Week 7,#14,Boys,9--10,50,Meter,Free
+1,Graettinger,Addie,Addie Graettinger,11,MAZO,32.26,32.26,,7/19/2025,Tri-County,Week 7,#15,Girls,11-12,50,Meter,Free
+2,Wuerger,Stella,Stella Wuerger,11,Sauk Prairie,33.06,33.06,,7/19/2025,Tri-County,Week 7,#15,Girls,11-12,50,Meter,Free
+3,Statz,Lila,Lila Statz,12,MAZO,34.66,34.66,,7/19/2025,Tri-County,Week 7,#15,Girls,11-12,50,Meter,Free
+---,Moore,Lilly,Lilly Moore,12,MAZO,35.09,35.09,EXH,7/19/2025,Tri-County,Week 7,#15,Girls,11-12,50,Meter,Free
+4,Westphal,Kira,Kira Westphal,11,MAZO,37.28,37.28,,7/19/2025,Tri-County,Week 7,#15,Girls,11-12,50,Meter,Free
+---,Burton,Miriam,Miriam Burton,12,MAZO,39.28,39.28,EXH,7/19/2025,Tri-County,Week 7,#15,Girls,11-12,50,Meter,Free
+---,Dotson,Justice,Justice Dotson,12,MAZO,39.51,39.51,EXH,7/19/2025,Tri-County,Week 7,#15,Girls,11-12,50,Meter,Free
+5,Goodman,Mya,Mya Goodman,12,Sauk Prairie,40.60,40.60,,7/19/2025,Tri-County,Week 7,#15,Girls,11-12,50,Meter,Free
+---,Howard,Lena,Lena Howard,12,Sauk Prairie,41.86,41.86,EXH,7/19/2025,Tri-County,Week 7,#15,Girls,11-12,50,Meter,Free
+6,Hanson,Brynn,Brynn Hanson,11,Sauk Prairie,43.55,43.55,,7/19/2025,Tri-County,Week 7,#15,Girls,11-12,50,Meter,Free
+---,Gaber,Addison,Addison Gaber,12,MAZO,45.86,45.86,EXH,7/19/2025,Tri-County,Week 7,#15,Girls,11-12,50,Meter,Free
+---,Dotson,Nora,Nora Dotson,11,MAZO,51.02,51.02,EXH,7/19/2025,Tri-County,Week 7,#15,Girls,11-12,50,Meter,Free
+1,Doescher,Klay,Klay Doescher,11,MAZO,29.78,29.78,,7/19/2025,Tri-County,Week 7,#16,Boys,11-12,50,Meter,Free
+2,Mereau,Max,Max Mereau,12,Sauk Prairie,30.53,30.53,,7/19/2025,Tri-County,Week 7,#16,Boys,11-12,50,Meter,Free
+3,Robles,Iker,Iker Robles,12,Sauk Prairie,39.59,39.59,,7/19/2025,Tri-County,Week 7,#16,Boys,11-12,50,Meter,Free
+4,Sandberg,Will,Will Sandberg,12,Sauk Prairie,40.59,40.59,,7/19/2025,Tri-County,Week 7,#16,Boys,11-12,50,Meter,Free
+5,Garcia,Sebastian,Sebastian Garcia,11,MAZO,41.04,41.04,,7/19/2025,Tri-County,Week 7,#16,Boys,11-12,50,Meter,Free
+---,Opsahl,Pryce,Pryce Opsahl,11,Sauk Prairie,43.17,43.17,EXH,7/19/2025,Tri-County,Week 7,#16,Boys,11-12,50,Meter,Free
+---,Sparks,Wyatt,Wyatt Sparks,12,Sauk Prairie,44.83,44.83,EXH,7/19/2025,Tri-County,Week 7,#16,Boys,11-12,50,Meter,Free
+6,Meyers,Finn,Finn Meyers,12,MAZO,44.85,44.85,,7/19/2025,Tri-County,Week 7,#16,Boys,11-12,50,Meter,Free
+---,Kehrli,Dexter,Dexter Kehrli,12,Sauk Prairie,45.29,45.29,EXH,7/19/2025,Tri-County,Week 7,#16,Boys,11-12,50,Meter,Free
+---,Lohr,Carson,Carson Lohr,12,Sauk Prairie,49.75,49.75,EXH,7/19/2025,Tri-County,Week 7,#16,Boys,11-12,50,Meter,Free
+---,Lochner,Hank,Hank Lochner,11,Sauk Prairie,50.96,50.96,EXH,7/19/2025,Tri-County,Week 7,#16,Boys,11-12,50,Meter,Free
+---,Smith,Griff,Griff Smith,11,MAZO,58.11,58.11,EXH,7/19/2025,Tri-County,Week 7,#16,Boys,11-12,50,Meter,Free
+1,Gregg,Christine,Christine Gregg,13,Sauk Prairie,33.88,33.88,,7/19/2025,Tri-County,Week 7,#17,Girls,13-14,50,Meter,Free
+---,Jaquish,Paisley,Paisley Jaquish,13,Sauk Prairie,38.96,38.96,EXH,7/19/2025,Tri-County,Week 7,#17,Girls,13-14,50,Meter,Free
+2,Leaf,Anna,Anna Leaf,13,Sauk Prairie,39.64,39.64,,7/19/2025,Tri-County,Week 7,#17,Girls,13-14,50,Meter,Free
+3,Crowson,Lucy,Lucy Crowson,11,MAZO,39.75,39.75,,7/19/2025,Tri-County,Week 7,#17,Girls,13-14,50,Meter,Free
+4,Abernathy,Maren,Maren Abernathy,13,Sauk Prairie,40.99,40.99,,7/19/2025,Tri-County,Week 7,#17,Girls,13-14,50,Meter,Free
+---,Calderon,Ava,Ava Calderon,14,Sauk Prairie,43.58,43.58,EXH,7/19/2025,Tri-County,Week 7,#17,Girls,13-14,50,Meter,Free
+5,Johnson,Sophia,Sophia Johnson,12,MAZO,47.59,47.59,,7/19/2025,Tri-County,Week 7,#17,Girls,13-14,50,Meter,Free
+6,Ruskosky,Lauren,Lauren Ruskosky,13,MAZO,49.42,49.42,,7/19/2025,Tri-County,Week 7,#17,Girls,13-14,50,Meter,Free
+1,Gregg,Joshua,Joshua Gregg,14,Sauk Prairie,29.42,29.42,,7/19/2025,Tri-County,Week 7,#18,Boys,13-14,50,Meter,Free
+2,Burton,Max,Max Burton,14,MAZO,29.86,29.86,,7/19/2025,Tri-County,Week 7,#18,Boys,13-14,50,Meter,Free
+3,Welch,Basil,Basil Welch,13,Sauk Prairie,32.29,32.29,,7/19/2025,Tri-County,Week 7,#18,Boys,13-14,50,Meter,Free
+4,Poulsen,Caleb,Caleb Poulsen,13,MAZO,35.36,35.36,,7/19/2025,Tri-County,Week 7,#18,Boys,13-14,50,Meter,Free
+5,Garcia,Diego,Diego Garcia,13,MAZO,35.93,35.93,,7/19/2025,Tri-County,Week 7,#18,Boys,13-14,50,Meter,Free
+1,Himebauch,Kate,Kate Himebauch,18,Sauk Prairie,31.50,31.50,,7/19/2025,Tri-County,Week 7,#19,Girls,15-18,50,Meter,Free
+2,Klein,Natalie,Natalie Klein,15,Sauk Prairie,32.26,32.26,,7/19/2025,Tri-County,Week 7,#19,Girls,15-18,50,Meter,Free
+3,Bare,Gracia,Gracia Bare,15,Sauk Prairie,32.95,32.95,,7/19/2025,Tri-County,Week 7,#19,Girls,15-18,50,Meter,Free
+4,Henning,Danika,Danika Henning,15,MAZO,33.98,33.98,,7/19/2025,Tri-County,Week 7,#19,Girls,15-18,50,Meter,Free
+1,Gregg,Caleb,Caleb Gregg,16,Sauk Prairie,26.96,26.96,,7/19/2025,Tri-County,Week 7,#20,Boys,15-18,50,Meter,Free
+2,Sutherland,Finn,Finn Sutherland,17,MAZO,29.26,29.26,,7/19/2025,Tri-County,Week 7,#20,Boys,15-18,50,Meter,Free
+3,Burton,Joseph,Joseph Burton,17,MAZO,29.83,29.83,,7/19/2025,Tri-County,Week 7,#20,Boys,15-18,50,Meter,Free
+1,McCarthy,Declan,Declan McCarthy,8,Sauk Prairie,22.55,22.55,,7/19/2025,Tri-County,Week 7,#21,Girls,8&U,25,Meter,Back
+2,Lochner,Allie,Allie Lochner,8,Sauk Prairie,23.07,23.07,,7/19/2025,Tri-County,Week 7,#21,Girls,8&U,25,Meter,Back
+3,Herbrand,Ella,Ella Herbrand,8,Sauk Prairie,25.08,25.08,,7/19/2025,Tri-County,Week 7,#21,Girls,8&U,25,Meter,Back
+4,Hubbard,Chelsea,Chelsea Hubbard,7,MAZO,25.70,25.70,,7/19/2025,Tri-County,Week 7,#21,Girls,8&U,25,Meter,Back
+---,Johnson,Atalie,Atalie Johnson,8,Sauk Prairie,25.73,25.73,EXH,7/19/2025,Tri-County,Week 7,#21,Girls,8&U,25,Meter,Back
+---,Argall,Gabbi,Gabbi Argall,8,Sauk Prairie,28.45,28.45,EXH,7/19/2025,Tri-County,Week 7,#21,Girls,8&U,25,Meter,Back
+5,Karls,Grace,Grace Karls,7,MAZO,31.62,31.62,,7/19/2025,Tri-County,Week 7,#21,Girls,8&U,25,Meter,Back
+---,Conger,Audrey,Audrey Conger,6,MAZO,32.43,32.43,EXH,7/19/2025,Tri-County,Week 7,#21,Girls,8&U,25,Meter,Back
+---,Zick,Maddy,Maddy Zick,7,Sauk Prairie,32.58,32.58,EXH,7/19/2025,Tri-County,Week 7,#21,Girls,8&U,25,Meter,Back
+6,Frederick,Halle,Halle Frederick,7,MAZO,34.39,34.39,,7/19/2025,Tri-County,Week 7,#21,Girls,8&U,25,Meter,Back
+---,Lochner,June,June Lochner,6,Sauk Prairie,35.68,35.68,EXH,7/19/2025,Tri-County,Week 7,#21,Girls,8&U,25,Meter,Back
+---,Coy,Vivian,Vivian Coy,6,Sauk Prairie,38.07,38.07,EXH,7/19/2025,Tri-County,Week 7,#21,Girls,8&U,25,Meter,Back
+---,Jacobs,Charli,Charli Jacobs,7,Sauk Prairie,38.78,38.78,EXH,7/19/2025,Tri-County,Week 7,#21,Girls,8&U,25,Meter,Back
+---,Samz,Addy,Addy Samz,7,Sauk Prairie,42.80,42.80,EXH,7/19/2025,Tri-County,Week 7,#21,Girls,8&U,25,Meter,Back
+---,Acker,Everly,Everly Acker,7,Sauk Prairie,46.54,46.54,EXH,7/19/2025,Tri-County,Week 7,#21,Girls,8&U,25,Meter,Back
+---,Getgen,Kinsley,Kinsley Getgen,8,Sauk Prairie,47.76,47.76,EXH,7/19/2025,Tri-County,Week 7,#21,Girls,8&U,25,Meter,Back
+---,Koch,Kylie,Kylie Koch,7,Sauk Prairie,50.37,50.37,EXH,7/19/2025,Tri-County,Week 7,#21,Girls,8&U,25,Meter,Back
+---,Acker,Harper,Harper Acker,6,Sauk Prairie,52.85,52.85,EXH,7/19/2025,Tri-County,Week 7,#21,Girls,8&U,25,Meter,Back
+1,Meinholz,Rowan,Rowan Meinholz,8,MAZO,28.16,28.16,,7/19/2025,Tri-County,Week 7,#22,Boys,8&U,25,Meter,Back
+---,Rolo,Brennan,Brennan Rolo,8,MAZO,31.10,31.10,EXH,7/19/2025,Tri-County,Week 7,#22,Boys,8&U,25,Meter,Back
+2,Karis,Jackson,Jackson Karis,7,Sauk Prairie,33.76,33.76,,7/19/2025,Tri-County,Week 7,#22,Boys,8&U,25,Meter,Back
+3,Sydow,Milo,Milo Sydow,8,MAZO,38.07,38.07,,7/19/2025,Tri-County,Week 7,#22,Boys,8&U,25,Meter,Back
+4,Schartner,Clay,Clay Schartner,7,Sauk Prairie,50.69,50.69,,7/19/2025,Tri-County,Week 7,#22,Boys,8&U,25,Meter,Back
+5,McCarthy,Lachlan,Lachlan McCarthy,5,Sauk Prairie,52.40,52.40,,7/19/2025,Tri-County,Week 7,#22,Boys,8&U,25,Meter,Back
+---,Herbrand,Elliot,Elliot Herbrand,5,Sauk Prairie,57.10,57.10,EXH,7/19/2025,Tri-County,Week 7,#22,Boys,8&U,25,Meter,Back
+---,Rolo,JJ,JJ Rolo,5,MAZO,1:04.65,1:04.65,EXH,7/19/2025,Tri-County,Week 7,#22,Boys,8&U,25,Meter,Back
+1,Herbrand,Vivianne,Vivianne Herbrand,10,Sauk Prairie,42.69,42.69,,7/19/2025,Tri-County,Week 7,#23,Girls,9--10,50,Meter,Back
+2,Birckhead,Lena,Lena Birckhead,10,MAZO,43.92,43.92,,7/19/2025,Tri-County,Week 7,#23,Girls,9--10,50,Meter,Back
+3,Brunner,Rae,Rae Brunner,10,MAZO,59.08,59.08,,7/19/2025,Tri-County,Week 7,#23,Girls,9--10,50,Meter,Back
+4,Breunig,Aubree,Aubree Breunig,9,Sauk Prairie,1:02.97,1:02.97,,7/19/2025,Tri-County,Week 7,#23,Girls,9--10,50,Meter,Back
+---,George,Marlo,Marlo George,10,Sauk Prairie,1:03.19,1:03.19,EXH,7/19/2025,Tri-County,Week 7,#23,Girls,9--10,50,Meter,Back
+5,Karls,Elliana,Elliana Karls,9,MAZO,1:04.03,1:04.03,,7/19/2025,Tri-County,Week 7,#23,Girls,9--10,50,Meter,Back
+6,Gibson,Esme,Esme Gibson,9,Sauk Prairie,1:07.33,1:07.33,,7/19/2025,Tri-County,Week 7,#23,Girls,9--10,50,Meter,Back
+---,Stapleton,Preslee,Preslee Stapleton,10,MAZO,1:12.14,1:12.14,EXH,7/19/2025,Tri-County,Week 7,#23,Girls,9--10,50,Meter,Back
+---,Keller,Maddie,Maddie Keller,10,Sauk Prairie,1:20.14,1:20.14,EXH,7/19/2025,Tri-County,Week 7,#23,Girls,9--10,50,Meter,Back
+1,Cichanowicz,Hunter,Hunter Cichanowicz,9,Sauk Prairie,59.20,59.20,,7/19/2025,Tri-County,Week 7,#24,Boys,9--10,50,Meter,Back
+2,Hubbard,Isaac,Isaac Hubbard,9,MAZO,1:04.47,1:04.47,,7/19/2025,Tri-County,Week 7,#24,Boys,9--10,50,Meter,Back
+3,Barber,Max,Max Barber,9,Sauk Prairie,1:05.08,1:05.08,,7/19/2025,Tri-County,Week 7,#24,Boys,9--10,50,Meter,Back
+4,Dotson,Jeremiah,Jeremiah Dotson,9,MAZO,1:06.63,1:06.63,,7/19/2025,Tri-County,Week 7,#24,Boys,9--10,50,Meter,Back
+5,Sparks,Emry,Emry Sparks,10,Sauk Prairie,1:10.20,1:10.20,,7/19/2025,Tri-County,Week 7,#24,Boys,9--10,50,Meter,Back
+---,Samz,Calvin,Calvin Samz,9,Sauk Prairie,1:13.16,1:13.16,EXH,7/19/2025,Tri-County,Week 7,#24,Boys,9--10,50,Meter,Back
+6,Jones,Bo,Bo Jones,9,MAZO,1:13.35,1:13.35,,7/19/2025,Tri-County,Week 7,#24,Boys,9--10,50,Meter,Back
+1,Stanton,Grace,Grace Stanton,11,MAZO,38.62,38.62,,7/19/2025,Tri-County,Week 7,#25,Girls,11--12,50,Meter,Back
+2,Wuerger,Stella,Stella Wuerger,11,Sauk Prairie,40.92,40.92,,7/19/2025,Tri-County,Week 7,#25,Girls,11--12,50,Meter,Back
+3,Statz,Lila,Lila Statz,12,MAZO,43.38,43.38,,7/19/2025,Tri-County,Week 7,#25,Girls,11--12,50,Meter,Back
+4,Burton,Miriam,Miriam Burton,12,MAZO,46.68,46.68,,7/19/2025,Tri-County,Week 7,#25,Girls,11--12,50,Meter,Back
+5,Myers,Paige,Paige Myers,11,Sauk Prairie,50.50,50.50,,7/19/2025,Tri-County,Week 7,#25,Girls,11--12,50,Meter,Back
+6,Scarborough,Elsa,Elsa Scarborough,11,Sauk Prairie,54.95,54.95,,7/19/2025,Tri-County,Week 7,#25,Girls,11--12,50,Meter,Back
+---,Reyes Guethlein,Marisol,Marisol Reyes Guethlein,12,Sauk Prairie,55.82,55.82,EXH,7/19/2025,Tri-County,Week 7,#25,Girls,11--12,50,Meter,Back
+---,Gaber,Addison,Addison Gaber,12,MAZO,1:00.62,1:00.62,EXH,7/19/2025,Tri-County,Week 7,#25,Girls,11--12,50,Meter,Back
+1,Mereau,Max,Max Mereau,12,Sauk Prairie,37.73,37.73,,7/19/2025,Tri-County,Week 7,#26,Boys,11--12,50,Meter,Back
+2,Stanton,Noah,Noah Stanton,11,MAZO,40.43,40.43,,7/19/2025,Tri-County,Week 7,#26,Boys,11--12,50,Meter,Back
+3,Meyer,Boone,Boone Meyer,11,MAZO,46.55,46.55,,7/19/2025,Tri-County,Week 7,#26,Boys,11--12,50,Meter,Back
+4,Meyer,Logan,Logan Meyer,12,Sauk Prairie,47.34,47.34,,7/19/2025,Tri-County,Week 7,#26,Boys,11--12,50,Meter,Back
+5,Sparks,Wyatt,Wyatt Sparks,12,Sauk Prairie,49.19,49.19,,7/19/2025,Tri-County,Week 7,#26,Boys,11--12,50,Meter,Back
+6,Garcia,Sebastian,Sebastian Garcia,11,MAZO,56.36,56.36,,7/19/2025,Tri-County,Week 7,#26,Boys,11--12,50,Meter,Back
+---,Lochner,Hank,Hank Lochner,11,Sauk Prairie,1:00.22,1:00.22,EXH,7/19/2025,Tri-County,Week 7,#26,Boys,11--12,50,Meter,Back
+---,Szudy,Otto,Otto Szudy,12,MAZO,1:01.61,1:01.61,EXH,7/19/2025,Tri-County,Week 7,#26,Boys,11--12,50,Meter,Back
+---,Smith,Griff,Griff Smith,11,MAZO,1:23.27,1:23.27,EXH,7/19/2025,Tri-County,Week 7,#26,Boys,11--12,50,Meter,Back
+1,Gregg,Christine,Christine Gregg,13,Sauk Prairie,38.80,38.80,,7/19/2025,Tri-County,Week 7,#27,Girls,13-14,50,Meter,Back
+2,Crowson,Lucy,Lucy Crowson,11,MAZO,49.17,49.17,,7/19/2025,Tri-County,Week 7,#27,Girls,13-14,50,Meter,Back
+3,Leaf,Anna,Anna Leaf,13,Sauk Prairie,51.08,51.08,,7/19/2025,Tri-County,Week 7,#27,Girls,13-14,50,Meter,Back
+4,Murphy,Stella,Stella Murphy,13,Sauk Prairie,54.34,54.34,,7/19/2025,Tri-County,Week 7,#27,Girls,13-14,50,Meter,Back
+5,Johnson,Sophia,Sophia Johnson,12,MAZO,1:01.07,1:01.07,,7/19/2025,Tri-County,Week 7,#27,Girls,13-14,50,Meter,Back
+1,Burton,Max,Max Burton,14,MAZO,38.45,38.45,,7/19/2025,Tri-County,Week 7,#28,Boys,13-14,50,Meter,Back
+2,Welch,Basil,Basil Welch,13,Sauk Prairie,38.52,38.52,,7/19/2025,Tri-County,Week 7,#28,Boys,13-14,50,Meter,Back
+3,Garcia,Diego,Diego Garcia,13,MAZO,43.94,43.94,,7/19/2025,Tri-County,Week 7,#28,Boys,13-14,50,Meter,Back
+4,Argall,Bryce,Bryce Argall,13,Sauk Prairie,50.70,50.70,,7/19/2025,Tri-County,Week 7,#28,Boys,13-14,50,Meter,Back
+1,Frey,Katie,Katie Frey,16,Sauk Prairie,39.16,39.16,,7/19/2025,Tri-County,Week 7,#29,Girls,15-18,50,Meter,Back
+2,Bare,Gracia,Gracia Bare,15,Sauk Prairie,40.36,40.36,,7/19/2025,Tri-County,Week 7,#29,Girls,15-18,50,Meter,Back
+3,Meyer,Haydee,Haydee Meyer,15,Sauk Prairie,47.98,47.98,,7/19/2025,Tri-County,Week 7,#29,Girls,15-18,50,Meter,Back
+1,Rinabarger,Reid,Reid Rinabarger,15,Sauk Prairie,34.27,34.27,,7/19/2025,Tri-County,Week 7,#30,Boys,15-18,50,Meter,Back
+2,Sutherland,Finn,Finn Sutherland,17,MAZO,37.33,37.33,,7/19/2025,Tri-County,Week 7,#30,Boys,15-18,50,Meter,Back
+3,Abernathy,Finn,Finn Abernathy,16,Sauk Prairie,45.16,45.16,,7/19/2025,Tri-County,Week 7,#30,Boys,15-18,50,Meter,Back
+1,Mereau,Elodie,Elodie Mereau,9,Sauk Prairie,1:50.19,1:50.19,,7/19/2025,Tri-County,Week 7,#31,Girls,9--10,100,Meter,IM
+2,Stokes,Margaux,Margaux Stokes,9,MAZO,1:59.90,1:59.90,,7/19/2025,Tri-County,Week 7,#31,Girls,9--10,100,Meter,IM
+3,Robles,Luna,Luna Robles,9,Sauk Prairie,2:06.94,2:06.94,,7/19/2025,Tri-County,Week 7,#31,Girls,9--10,100,Meter,IM
+4,Daggett,Kira,Kira Daggett,9,MAZO,2:13.82,2:13.82,,7/19/2025,Tri-County,Week 7,#31,Girls,9--10,100,Meter,IM
+5,Sorg,Tenley,Tenley Sorg,10,Sauk Prairie,2:14.87,2:14.87,,7/19/2025,Tri-County,Week 7,#31,Girls,9--10,100,Meter,IM
+6,Handel,Nadia,Nadia Handel,9,MAZO,2:37.87,2:37.87,,7/19/2025,Tri-County,Week 7,#31,Girls,9--10,100,Meter,IM
+1,Wuerger,Wilson,Wilson Wuerger,9,Sauk Prairie,1:34.50,1:34.50,,7/19/2025,Tri-County,Week 7,#32,Boys,9--10,100,Meter,IM
+2,Doescher,Deklan,Deklan Doescher,9,MAZO,1:37.82,1:37.82,,7/19/2025,Tri-County,Week 7,#32,Boys,9--10,100,Meter,IM
+3,Graettinger,Jamo,Jamo Graettinger,9,MAZO,1:51.87,1:51.87,,7/19/2025,Tri-County,Week 7,#32,Boys,9--10,100,Meter,IM
+4,Burton,Benjamin,Benjamin Burton,10,MAZO,2:12.27,2:12.27,,7/19/2025,Tri-County,Week 7,#32,Boys,9--10,100,Meter,IM
+---,Borud,Jackson,Jackson Borud,10,MAZO,2:22.33,2:22.33,EXH,7/19/2025,Tri-County,Week 7,#32,Boys,9--10,100,Meter,IM
+5,Sparks,Emry,Emry Sparks,10,Sauk Prairie,2:49.40,2:49.40,,7/19/2025,Tri-County,Week 7,#32,Boys,9--10,100,Meter,IM
+---,Dotson,Nora,Nora Dotson,11,MAZO,1:14.91,1:14.91,EXH,7/19/2025,Tri-County,Week 7,#33,Girls,11-12,100,Meter,IM
+1,Stanton,Grace,Grace Stanton,11,MAZO,1:24.59,1:24.59,,7/19/2025,Tri-County,Week 7,#33,Girls,11-12,100,Meter,IM
+2,Tigert,Raegan,Raegan Tigert,12,MAZO,1:26.92,1:26.92,,7/19/2025,Tri-County,Week 7,#33,Girls,11-12,100,Meter,IM
+3,Cook,Izzy,Izzy Cook,12,Sauk Prairie,1:27.71,1:27.71,,7/19/2025,Tri-County,Week 7,#33,Girls,11-12,100,Meter,IM
+4,Goodman,Mya,Mya Goodman,12,Sauk Prairie,1:49.37,1:49.37,,7/19/2025,Tri-County,Week 7,#33,Girls,11-12,100,Meter,IM
+5,Dotson,Justice,Justice Dotson,12,MAZO,1:51.77,1:51.77,,7/19/2025,Tri-County,Week 7,#33,Girls,11-12,100,Meter,IM
+6,Sorg,Jaelyn,Jaelyn Sorg,12,Sauk Prairie,1:53.82,1:53.82,,7/19/2025,Tri-County,Week 7,#33,Girls,11-12,100,Meter,IM
+---,Reyes Guethlein,Marisol,Marisol Reyes Guethlein,12,Sauk Prairie,2:08.08,2:08.08,EXH,7/19/2025,Tri-County,Week 7,#33,Girls,11-12,100,Meter,IM
+1,Doescher,Klay,Klay Doescher,11,MAZO,1:13.92,1:13.92,,7/19/2025,Tri-County,Week 7,#34,Boys,11-12,100,Meter,IM
+2,Wuerger,Donovan,Donovan Wuerger,12,Sauk Prairie,1:14.13,1:14.13,,7/19/2025,Tri-County,Week 7,#34,Boys,11-12,100,Meter,IM
+3,Stanton,Noah,Noah Stanton,11,MAZO,1:29.93,1:29.93,,7/19/2025,Tri-County,Week 7,#34,Boys,11-12,100,Meter,IM
+4,Sandberg,Will,Will Sandberg,12,Sauk Prairie,1:43.24,1:43.24,,7/19/2025,Tri-County,Week 7,#34,Boys,11-12,100,Meter,IM
+---,Lohr,Carson,Carson Lohr,12,Sauk Prairie,1:56.58,1:56.58,EXH,7/19/2025,Tri-County,Week 7,#34,Boys,11-12,100,Meter,IM
+5,Kehrli,Dexter,Dexter Kehrli,12,Sauk Prairie,1:57.07,1:57.07,,7/19/2025,Tri-County,Week 7,#34,Boys,11-12,100,Meter,IM
+1,Himebauch,Alyssa,Alyssa Himebauch,14,Sauk Prairie,1:18.08,1:18.08,,7/19/2025,Tri-County,Week 7,#35,Girls,13-14,100,Meter,IM
+2,Birckhead,Alli,Alli Birckhead,14,MAZO,1:28.40,1:28.40,,7/19/2025,Tri-County,Week 7,#35,Girls,13-14,100,Meter,IM
+3,Jaquish,Paisley,Paisley Jaquish,13,Sauk Prairie,1:49.20,1:49.20,,7/19/2025,Tri-County,Week 7,#35,Girls,13-14,100,Meter,IM
+---,Murphy,Stella,Stella Murphy,13,Sauk Prairie,1:52.19,1:52.19,EXH,7/19/2025,Tri-County,Week 7,#35,Girls,13-14,100,Meter,IM
+4,Ruskosky,Lauren,Lauren Ruskosky,13,MAZO,2:03.42,2:03.42,,7/19/2025,Tri-County,Week 7,#35,Girls,13-14,100,Meter,IM
+1,Gregg,Joshua,Joshua Gregg,14,Sauk Prairie,1:19.16,1:19.16,,7/19/2025,Tri-County,Week 7,#36,Boys,13-14,100,Meter,IM
+2,Doescher,Kade,Kade Doescher,13,MAZO,1:26.97,1:26.97,,7/19/2025,Tri-County,Week 7,#36,Boys,13-14,100,Meter,IM
+3,Argall,Bryce,Bryce Argall,13,Sauk Prairie,1:32.36,1:32.36,,7/19/2025,Tri-County,Week 7,#36,Boys,13-14,100,Meter,IM
+4,Gregg,Jeremiah,Jeremiah Gregg,13,Sauk Prairie,1:41.30,1:41.30,,7/19/2025,Tri-County,Week 7,#36,Boys,13-14,100,Meter,IM
+1,Schultze,Annabelle,Annabelle Schultze,15,Sauk Prairie,1:18.30,1:18.30,,7/19/2025,Tri-County,Week 7,#37,Girls,15-18,100,Meter,IM
+2,Gregg,Charlotte,Charlotte Gregg,16,Sauk Prairie,1:24.46,1:24.46,,7/19/2025,Tri-County,Week 7,#37,Girls,15-18,100,Meter,IM
+3,Henning,Danika,Danika Henning,15,MAZO,1:31.08,1:31.08,,7/19/2025,Tri-County,Week 7,#37,Girls,15-18,100,Meter,IM
+---,Handschke,Claire,Claire Handschke,16,Sauk Prairie,1:36.72,1:36.72,EXH,7/19/2025,Tri-County,Week 7,#37,Girls,15-18,100,Meter,IM
+4,Meyer,Haydee,Haydee Meyer,15,Sauk Prairie,1:42.70,1:42.70,,7/19/2025,Tri-County,Week 7,#37,Girls,15-18,100,Meter,IM
+1,Welch,Cy,Cy Welch,15,Sauk Prairie,1:12.55,1:12.55,,7/19/2025,Tri-County,Week 7,#38,Boys,15-18,100,Meter,IM
+2,Birkett,Brayden,Brayden Birkett,15,Sauk Prairie,1:20.88,1:20.88,,7/19/2025,Tri-County,Week 7,#38,Boys,15-18,100,Meter,IM
+3,Sutherland,Finn,Finn Sutherland,17,MAZO,1:21.05,1:21.05,,7/19/2025,Tri-County,Week 7,#38,Boys,15-18,100,Meter,IM
+4,Burton,Joseph,Joseph Burton,17,MAZO,1:24.59,1:24.59,,7/19/2025,Tri-County,Week 7,#38,Boys,15-18,100,Meter,IM
+5,Quayle,Ian,Ian Quayle,17,Sauk Prairie,1:24.68,1:24.68,,7/19/2025,Tri-County,Week 7,#38,Boys,15-18,100,Meter,IM
+---,Abernathy,Finn,Finn Abernathy,16,Sauk Prairie,1:45.24,1:45.24,EXH,7/19/2025,Tri-County,Week 7,#38,Boys,15-18,100,Meter,IM
+1,Herbrand,Ella,Ella Herbrand,8,Sauk Prairie,24.75,24.75,,7/19/2025,Tri-County,Week 7,#39,Girls,8&U,25,Meter,Breast
+2,Lochner,Allie,Allie Lochner,8,Sauk Prairie,28.09,28.09,,7/19/2025,Tri-County,Week 7,#39,Girls,8&U,25,Meter,Breast
+3,Stokes,Romy,Romy Stokes,7,MAZO,31.59,31.59,,7/19/2025,Tri-County,Week 7,#39,Girls,8&U,25,Meter,Breast
+4,Hubbard,Chelsea,Chelsea Hubbard,7,MAZO,31.92,31.92,,7/19/2025,Tri-County,Week 7,#39,Girls,8&U,25,Meter,Breast
+5,Dent,Kaia,Kaia Dent,6,Sauk Prairie,37.29,37.29,,7/19/2025,Tri-County,Week 7,#39,Girls,8&U,25,Meter,Breast
+1,Dent,Jordan,Jordan Dent,8,Sauk Prairie,22.55,22.55,,7/19/2025,Tri-County,Week 7,#40,Boys,8&U,25,Meter,Breast
+2,Sydow,Milo,Milo Sydow,8,MAZO,28.94,28.94,,7/19/2025,Tri-County,Week 7,#40,Boys,8&U,25,Meter,Breast
+3,Meinholz,Rowan,Rowan Meinholz,8,MAZO,29.25,29.25,,7/19/2025,Tri-County,Week 7,#40,Boys,8&U,25,Meter,Breast
+4,Borud,Henry,Henry Borud,8,MAZO,36.49,36.49,,7/19/2025,Tri-County,Week 7,#40,Boys,8&U,25,Meter,Breast
+---,Stokes,River,River Stokes,7,MAZO,43.36,43.36,EXH,7/19/2025,Tri-County,Week 7,#40,Boys,8&U,25,Meter,Breast
+1,Herbrand,Vivianne,Vivianne Herbrand,10,Sauk Prairie,47.89,47.89,,7/19/2025,Tri-County,Week 7,#41,Girls,9--10,50,Meter,Breast
+2,Birckhead,Lena,Lena Birckhead,10,MAZO,49.43,49.43,,7/19/2025,Tri-County,Week 7,#41,Girls,9--10,50,Meter,Breast
+3,Stokes,Margaux,Margaux Stokes,9,MAZO,54.06,54.06,,7/19/2025,Tri-County,Week 7,#41,Girls,9--10,50,Meter,Breast
+4,Krueger,Brooklyn,Brooklyn Krueger,9,Sauk Prairie,57.86,57.86,,7/19/2025,Tri-County,Week 7,#41,Girls,9--10,50,Meter,Breast
+---,Stieve,Evie,Evie Stieve,9,Sauk Prairie,1:07.84,1:07.84,EXH,7/19/2025,Tri-County,Week 7,#41,Girls,9--10,50,Meter,Breast
+5,Brunner,Rae,Rae Brunner,10,MAZO,1:08.01,1:08.01,,7/19/2025,Tri-County,Week 7,#41,Girls,9--10,50,Meter,Breast
+---,Handel,Nadia,Nadia Handel,9,MAZO,1:14.39,1:14.39,EXH,7/19/2025,Tri-County,Week 7,#41,Girls,9--10,50,Meter,Breast
+---,Kunde,Daphne,Daphne Kunde,9,Sauk Prairie,1:24.64,1:24.64,EXH,7/19/2025,Tri-County,Week 7,#41,Girls,9--10,50,Meter,Breast
+---,Gaber,Emmalyn,Emmalyn Gaber,9,MAZO,1:34.05,1:34.05,EXH,7/19/2025,Tri-County,Week 7,#41,Girls,9--10,50,Meter,Breast
+1,Doescher,Deklan,Deklan Doescher,9,MAZO,53.19,53.19,,7/19/2025,Tri-County,Week 7,#42,Boys,9--10,50,Meter,Breast
+2,Graettinger,Jamo,Jamo Graettinger,9,MAZO,59.39,59.39,,7/19/2025,Tri-County,Week 7,#42,Boys,9--10,50,Meter,Breast
+---,Hubbard,Isaac,Isaac Hubbard,9,MAZO,1:03.70,1:03.70,EXH,7/19/2025,Tri-County,Week 7,#42,Boys,9--10,50,Meter,Breast
+3,Borud,Jackson,Jackson Borud,10,MAZO,1:07.35,1:07.35,,7/19/2025,Tri-County,Week 7,#42,Boys,9--10,50,Meter,Breast
+---,Lucey,Treg,Treg Lucey,9,MAZO,1:16.58,1:16.58,EXH,7/19/2025,Tri-County,Week 7,#42,Boys,9--10,50,Meter,Breast
+1,Graettinger,Addie,Addie Graettinger,11,MAZO,41.36,41.36,,7/19/2025,Tri-County,Week 7,#43,Girls,11-12,50,Meter,Breast
+2,Moore,Lilly,Lilly Moore,12,MAZO,46.92,46.92,,7/19/2025,Tri-County,Week 7,#43,Girls,11-12,50,Meter,Breast
+3,Cook,Izzy,Izzy Cook,12,Sauk Prairie,48.21,48.21,,7/19/2025,Tri-County,Week 7,#43,Girls,11-12,50,Meter,Breast
+4,Westphal,Kira,Kira Westphal,11,MAZO,50.82,50.82,,7/19/2025,Tri-County,Week 7,#43,Girls,11-12,50,Meter,Breast
+---,Ludt,Ava,Ava Ludt,12,MAZO,53.96,53.96,EXH,7/19/2025,Tri-County,Week 7,#43,Girls,11-12,50,Meter,Breast
+---,Dotson,Nora,Nora Dotson,11,MAZO,57.51,57.51,EXH,7/19/2025,Tri-County,Week 7,#43,Girls,11-12,50,Meter,Breast
+5,Hanson,Brynn,Brynn Hanson,11,Sauk Prairie,1:09.36,1:09.36,,7/19/2025,Tri-County,Week 7,#43,Girls,11-12,50,Meter,Breast
+6,Reyes Guethlein,Marisol,Marisol Reyes Guethlein,12,Sauk Prairie,1:10.31,1:10.31,,7/19/2025,Tri-County,Week 7,#43,Girls,11-12,50,Meter,Breast
+---,Howard,Lena,Lena Howard,12,Sauk Prairie,1:12.82,1:12.82,EXH,7/19/2025,Tri-County,Week 7,#43,Girls,11-12,50,Meter,Breast
+1,Doescher,Klay,Klay Doescher,11,MAZO,38.76,38.76,,7/19/2025,Tri-County,Week 7,#44,Boys,11-12,50,Meter,Breast
+2,Wuerger,Donovan,Donovan Wuerger,12,Sauk Prairie,40.23,40.23,,7/19/2025,Tri-County,Week 7,#44,Boys,11-12,50,Meter,Breast
+3,Meyer,Everett,Everett Meyer,12,Sauk Prairie,53.36,53.36,,7/19/2025,Tri-County,Week 7,#44,Boys,11-12,50,Meter,Breast
+4,Meyers,Finn,Finn Meyers,12,MAZO,53.41,53.41,,7/19/2025,Tri-County,Week 7,#44,Boys,11-12,50,Meter,Breast
+5,Kehrli,Dexter,Dexter Kehrli,12,Sauk Prairie,1:05.65,1:05.65,,7/19/2025,Tri-County,Week 7,#44,Boys,11-12,50,Meter,Breast
+1,Himebauch,Alyssa,Alyssa Himebauch,14,Sauk Prairie,42.78,42.78,,7/19/2025,Tri-County,Week 7,#45,Girls,13-14,50,Meter,Breast
+2,Birckhead,Alli,Alli Birckhead,14,MAZO,43.03,43.03,,7/19/2025,Tri-County,Week 7,#45,Girls,13-14,50,Meter,Breast
+3,Ruskosky,Lauren,Lauren Ruskosky,13,MAZO,56.17,56.17,,7/19/2025,Tri-County,Week 7,#45,Girls,13-14,50,Meter,Breast
+4,Jaquish,Paisley,Paisley Jaquish,13,Sauk Prairie,57.26,57.26,,7/19/2025,Tri-County,Week 7,#45,Girls,13-14,50,Meter,Breast
+1,Burton,Max,Max Burton,14,MAZO,40.97,40.97,,7/19/2025,Tri-County,Week 7,#46,Boys,13-14,50,Meter,Breast
+2,Doescher,Kade,Kade Doescher,13,MAZO,44.68,44.68,,7/19/2025,Tri-County,Week 7,#46,Boys,13-14,50,Meter,Breast
+3,Welch,Basil,Basil Welch,13,Sauk Prairie,45.59,45.59,,7/19/2025,Tri-County,Week 7,#46,Boys,13-14,50,Meter,Breast
+4,Gregg,Jeremiah,Jeremiah Gregg,13,Sauk Prairie,49.63,49.63,,7/19/2025,Tri-County,Week 7,#46,Boys,13-14,50,Meter,Breast
+1,Gregg,Charlotte,Charlotte Gregg,16,Sauk Prairie,39.99,39.99,,7/19/2025,Tri-County,Week 7,#47,Girls,15-18,50,Meter,Breast
+2,Schultze,Annabelle,Annabelle Schultze,15,Sauk Prairie,42.20,42.20,,7/19/2025,Tri-County,Week 7,#47,Girls,15-18,50,Meter,Breast
+3,Henning,Danika,Danika Henning,15,MAZO,44.26,44.26,,7/19/2025,Tri-County,Week 7,#47,Girls,15-18,50,Meter,Breast
+4,Meyer,Haydee,Haydee Meyer,15,Sauk Prairie,54.96,54.96,,7/19/2025,Tri-County,Week 7,#47,Girls,15-18,50,Meter,Breast
+1,Gregg,Caleb,Caleb Gregg,16,Sauk Prairie,33.66,33.66,,7/19/2025,Tri-County,Week 7,#48,Boys,15-18,50,Meter,Breast
+2,Rinabarger,Reid,Reid Rinabarger,15,Sauk Prairie,39.70,39.70,,7/19/2025,Tri-County,Week 7,#48,Boys,15-18,50,Meter,Breast
+3,Birkett,Brayden,Brayden Birkett,15,Sauk Prairie,49.58,49.58,,7/19/2025,Tri-County,Week 7,#48,Boys,15-18,50,Meter,Breast
+1,Herbrand,Ella,Ella Herbrand,8,Sauk Prairie,43.46,43.46,,7/19/2025,Tri-County,Week 7,#49,Girls,8&U,50,Meter,Free
+2,McCarthy,Declan,Declan McCarthy,8,Sauk Prairie,43.71,43.71,,7/19/2025,Tri-County,Week 7,#49,Girls,8&U,50,Meter,Free
+3,Dischler,Maddie,Maddie Dischler,8,Sauk Prairie,46.61,46.61,,7/19/2025,Tri-County,Week 7,#49,Girls,8&U,50,Meter,Free
+---,Zimmerman,Mia,Mia Zimmerman,8,Sauk Prairie,50.93,50.93,EXH,7/19/2025,Tri-County,Week 7,#49,Girls,8&U,50,Meter,Free
+---,Zick,Maddy,Maddy Zick,7,Sauk Prairie,1:05.99,1:05.99,EXH,7/19/2025,Tri-County,Week 7,#49,Girls,8&U,50,Meter,Free
+---,Dent,Kaia,Kaia Dent,6,Sauk Prairie,1:11.48,1:11.48,EXH,7/19/2025,Tri-County,Week 7,#49,Girls,8&U,50,Meter,Free
+---,Jacobs,Charli,Charli Jacobs,7,Sauk Prairie,1:13.19,1:13.19,EXH,7/19/2025,Tri-County,Week 7,#49,Girls,8&U,50,Meter,Free
+---,Coy,Vivian,Vivian Coy,6,Sauk Prairie,1:13.24,1:13.24,EXH,7/19/2025,Tri-County,Week 7,#49,Girls,8&U,50,Meter,Free
+4,Kearney,Cecilia,Cecilia Kearney,7,MAZO,1:17.95,1:17.95,,7/19/2025,Tri-County,Week 7,#49,Girls,8&U,50,Meter,Free
+---,Lochner,June,June Lochner,6,Sauk Prairie,1:23.14,1:23.14,EXH,7/19/2025,Tri-County,Week 7,#49,Girls,8&U,50,Meter,Free
+5,Conger,Audrey,Audrey Conger,6,MAZO,1:24.50,1:24.50,,7/19/2025,Tri-County,Week 7,#49,Girls,8&U,50,Meter,Free
+---,Getgen,Kinsley,Kinsley Getgen,8,Sauk Prairie,1:24.63,1:24.63,EXH,7/19/2025,Tri-County,Week 7,#49,Girls,8&U,50,Meter,Free
+---,Samz,Addy,Addy Samz,7,Sauk Prairie,1:27.95,1:27.95,EXH,7/19/2025,Tri-County,Week 7,#49,Girls,8&U,50,Meter,Free
+---,Acker,Everly,Everly Acker,7,Sauk Prairie,1:32.89,1:32.89,EXH,7/19/2025,Tri-County,Week 7,#49,Girls,8&U,50,Meter,Free
+---,Koch,Kylie,Kylie Koch,7,Sauk Prairie,1:33.36,1:33.36,EXH,7/19/2025,Tri-County,Week 7,#49,Girls,8&U,50,Meter,Free
+6,Johnson,Eloise,Eloise Johnson,7,MAZO,1:49.97,1:49.97,,7/19/2025,Tri-County,Week 7,#49,Girls,8&U,50,Meter,Free
+1,Dent,Jordan,Jordan Dent,8,Sauk Prairie,41.01,41.01,,7/19/2025,Tri-County,Week 7,#50,Boys,8&U,50,Meter,Free
+2,Borud,Henry,Henry Borud,8,MAZO,1:00.11,1:00.11,,7/19/2025,Tri-County,Week 7,#50,Boys,8&U,50,Meter,Free
+3,Stokes,River,River Stokes,7,MAZO,1:02.62,1:02.62,,7/19/2025,Tri-County,Week 7,#50,Boys,8&U,50,Meter,Free
+4,Karis,Jackson,Jackson Karis,7,Sauk Prairie,1:08.80,1:08.80,,7/19/2025,Tri-County,Week 7,#50,Boys,8&U,50,Meter,Free
+---,Schartner,Clay,Clay Schartner,7,Sauk Prairie,1:08.96,1:08.96,EXH,7/19/2025,Tri-County,Week 7,#50,Boys,8&U,50,Meter,Free
+---,Rolo,Brennan,Brennan Rolo,8,MAZO,1:22.01,1:22.01,EXH,7/19/2025,Tri-County,Week 7,#50,Boys,8&U,50,Meter,Free
+5,McCarthy,Lachlan,Lachlan McCarthy,5,Sauk Prairie,1:42.31,1:42.31,,7/19/2025,Tri-County,Week 7,#50,Boys,8&U,50,Meter,Free
+1,Krueger,Brooklyn,Brooklyn Krueger,9,Sauk Prairie,1:28.76,1:28.76,,7/19/2025,Tri-County,Week 7,#51,Girls,9--10,100,Meter,Free
+2,Clarke,Nora,Nora Clarke,9,MAZO,1:46.95,1:46.95,,7/19/2025,Tri-County,Week 7,#51,Girls,9--10,100,Meter,Free
+3,Robles,Luna,Luna Robles,9,Sauk Prairie,1:47.07,1:47.07,,7/19/2025,Tri-County,Week 7,#51,Girls,9--10,100,Meter,Free
+4,Daggett,Kira,Kira Daggett,9,MAZO,1:52.08,1:52.08,,7/19/2025,Tri-County,Week 7,#51,Girls,9--10,100,Meter,Free
+5,Brunner,Rae,Rae Brunner,10,MAZO,1:54.89,1:54.89,,7/19/2025,Tri-County,Week 7,#51,Girls,9--10,100,Meter,Free
+6,Slaney,Jayde,Jayde Slaney,9,Sauk Prairie,1:55.57,1:55.57,,7/19/2025,Tri-County,Week 7,#51,Girls,9--10,100,Meter,Free
+---,Karls,Elliana,Elliana Karls,9,MAZO,1:56.47,1:56.47,EXH,7/19/2025,Tri-County,Week 7,#51,Girls,9--10,100,Meter,Free
+---,Stapleton,Preslee,Preslee Stapleton,10,MAZO,2:23.20,2:23.20,EXH,7/19/2025,Tri-County,Week 7,#51,Girls,9--10,100,Meter,Free
+---,Kunde,Daphne,Daphne Kunde,9,Sauk Prairie,2:23.73,2:23.73,EXH,7/19/2025,Tri-County,Week 7,#51,Girls,9--10,100,Meter,Free
+1,Wuerger,Wilson,Wilson Wuerger,9,Sauk Prairie,1:25.60,1:25.60,,7/19/2025,Tri-County,Week 7,#52,Boys,9--10,100,Meter,Free
+2,Borud,Jackson,Jackson Borud,10,MAZO,1:49.14,1:49.14,,7/19/2025,Tri-County,Week 7,#52,Boys,9--10,100,Meter,Free
+3,Karls,Boston,Boston Karls,10,MAZO,1:54.18,1:54.18,,7/19/2025,Tri-County,Week 7,#52,Boys,9--10,100,Meter,Free
+4,Jones,Bo,Bo Jones,9,MAZO,2:05.11,2:05.11,,7/19/2025,Tri-County,Week 7,#52,Boys,9--10,100,Meter,Free
+5,Samz,Calvin,Calvin Samz,9,Sauk Prairie,2:32.55,2:32.55,,7/19/2025,Tri-County,Week 7,#52,Boys,9--10,100,Meter,Free
+1,Graettinger,Addie,Addie Graettinger,11,MAZO,1:11.77,1:11.77,,7/19/2025,Tri-County,Week 7,#53,Girls,11-12,100,Meter,Free
+2,Tigert,Raegan,Raegan Tigert,12,MAZO,1:15.07,1:15.07,,7/19/2025,Tri-County,Week 7,#53,Girls,11-12,100,Meter,Free
+3,Wuerger,Stella,Stella Wuerger,11,Sauk Prairie,1:15.26,1:15.26,,7/19/2025,Tri-County,Week 7,#53,Girls,11-12,100,Meter,Free
+---,Moore,Lilly,Lilly Moore,12,MAZO,1:21.86,1:21.86,EXH,7/19/2025,Tri-County,Week 7,#53,Girls,11-12,100,Meter,Free
+4,Statz,Lila,Lila Statz,12,MAZO,1:25.68,1:25.68,,7/19/2025,Tri-County,Week 7,#53,Girls,11-12,100,Meter,Free
+---,Burton,Miriam,Miriam Burton,12,MAZO,1:26.39,1:26.39,EXH,7/19/2025,Tri-County,Week 7,#53,Girls,11-12,100,Meter,Free
+---,Ludt,Ava,Ava Ludt,12,MAZO,1:33.88,1:33.88,EXH,7/19/2025,Tri-County,Week 7,#53,Girls,11-12,100,Meter,Free
+5,Sorg,Jaelyn,Jaelyn Sorg,12,Sauk Prairie,1:36.85,1:36.85,,7/19/2025,Tri-County,Week 7,#53,Girls,11-12,100,Meter,Free
+---,Myers,Paige,Paige Myers,11,Sauk Prairie,1:40.27,1:40.27,EXH,7/19/2025,Tri-County,Week 7,#53,Girls,11-12,100,Meter,Free
+6,Scarborough,Elsa,Elsa Scarborough,11,Sauk Prairie,1:41.47,1:41.47,,7/19/2025,Tri-County,Week 7,#53,Girls,11-12,100,Meter,Free
+---,Howard,Lena,Lena Howard,12,Sauk Prairie,1:41.69,1:41.69,EXH,7/19/2025,Tri-County,Week 7,#53,Girls,11-12,100,Meter,Free
+---,Hanson,Brynn,Brynn Hanson,11,Sauk Prairie,1:46.14,1:46.14,EXH,7/19/2025,Tri-County,Week 7,#53,Girls,11-12,100,Meter,Free
+---,Gaber,Addison,Addison Gaber,12,MAZO,1:55.64,1:55.64,EXH,7/19/2025,Tri-County,Week 7,#53,Girls,11-12,100,Meter,Free
+1,Stanton,Noah,Noah Stanton,11,MAZO,1:16.21,1:16.21,,7/19/2025,Tri-County,Week 7,#54,Boys,11-12,100,Meter,Free
+2,Robles,Iker,Iker Robles,12,Sauk Prairie,1:27.64,1:27.64,,7/19/2025,Tri-County,Week 7,#54,Boys,11-12,100,Meter,Free
+3,Meyer,Boone,Boone Meyer,11,MAZO,1:30.31,1:30.31,,7/19/2025,Tri-County,Week 7,#54,Boys,11-12,100,Meter,Free
+4,Opsahl,Pryce,Pryce Opsahl,11,Sauk Prairie,1:33.85,1:33.85,,7/19/2025,Tri-County,Week 7,#54,Boys,11-12,100,Meter,Free
+5,Meyers,Finn,Finn Meyers,12,MAZO,1:45.22,1:45.22,,7/19/2025,Tri-County,Week 7,#54,Boys,11-12,100,Meter,Free
+6,Meyer,Logan,Logan Meyer,12,Sauk Prairie,1:48.08,1:48.08,,7/19/2025,Tri-County,Week 7,#54,Boys,11-12,100,Meter,Free
+---,Szudy,Otto,Otto Szudy,12,MAZO,1:48.49,1:48.49,EXH,7/19/2025,Tri-County,Week 7,#54,Boys,11-12,100,Meter,Free
+---,Whaley,Grayson,Grayson Whaley,12,Sauk Prairie,1:54.70,1:54.70,EXH,7/19/2025,Tri-County,Week 7,#54,Boys,11-12,100,Meter,Free
+---,Smith,Griff,Griff Smith,11,MAZO,2:26.90,2:26.90,EXH,7/19/2025,Tri-County,Week 7,#54,Boys,11-12,100,Meter,Free
+1,Gregg,Christine,Christine Gregg,13,Sauk Prairie,2:46.28,2:46.28,,7/19/2025,Tri-County,Week 7,#55,Girls,13-14,200,Meter,Free
+2,Birckhead,Alli,Alli Birckhead,14,MAZO,3:02.69,3:02.69,,7/19/2025,Tri-County,Week 7,#55,Girls,13-14,200,Meter,Free
+3,Leaf,Anna,Anna Leaf,13,Sauk Prairie,3:26.68,3:26.68,,7/19/2025,Tri-County,Week 7,#55,Girls,13-14,200,Meter,Free
+4,Calderon,Ava,Ava Calderon,14,Sauk Prairie,3:43.83,3:43.83,,7/19/2025,Tri-County,Week 7,#55,Girls,13-14,200,Meter,Free
+1,Gregg,Joshua,Joshua Gregg,14,Sauk Prairie,2:37.88,2:37.88,,7/19/2025,Tri-County,Week 7,#56,Boys,13-14,200,Meter,Free
+2,Doescher,Kade,Kade Doescher,13,MAZO,2:42.50,2:42.50,,7/19/2025,Tri-County,Week 7,#56,Boys,13-14,200,Meter,Free
+3,Garcia,Diego,Diego Garcia,13,MAZO,3:19.51,3:19.51,,7/19/2025,Tri-County,Week 7,#56,Boys,13-14,200,Meter,Free
+1,Drew,Emerson,Emerson Drew,18,Sauk Prairie,2:36.51,2:36.51,,7/19/2025,Tri-County,Week 7,#57,Girls,15-18,200,Meter,Free
+2,Bare,Gracia,Gracia Bare,15,Sauk Prairie,2:57.82,2:57.82,,7/19/2025,Tri-County,Week 7,#57,Girls,15-18,200,Meter,Free
+3,Handschke,Claire,Claire Handschke,16,Sauk Prairie,3:07.56,3:07.56,,7/19/2025,Tri-County,Week 7,#57,Girls,15-18,200,Meter,Free
+1,Burton,Joseph,Joseph Burton,17,MAZO,2:34.47,2:34.47,,7/19/2025,Tri-County,Week 7,#58,Boys,15-18,200,Meter,Free
+2,Quayle,Ian,Ian Quayle,17,Sauk Prairie,2:41.61,2:41.61,,7/19/2025,Tri-County,Week 7,#58,Boys,15-18,200,Meter,Free
+3,Schultze,Evan,Evan Schultze,18,Sauk Prairie,2:48.20,2:48.20,,7/19/2025,Tri-County,Week 7,#58,Boys,15-18,200,Meter,Free
+4,Abernathy,Finn,Finn Abernathy,16,Sauk Prairie,3:17.23,3:17.23,,7/19/2025,Tri-County,Week 7,#58,Boys,15-18,200,Meter,Free
+1,Gaffney,Rose,Rose Gaffney,7,Wis. Dells,20.86,20.86,,7/19/2025,Tri-County,Week 7,#11,Girls,8&U,25,Meter,Free
+2,Pulvermacher,Emelyn,Emelyn Pulvermacher,8,Spring Green,21.37,21.37,,7/19/2025,Tri-County,Week 7,#11,Girls,8&U,25,Meter,Free
+3,Halverson,Blakely,Blakely Halverson,7,Spring Green,25.06,25.06,,7/19/2025,Tri-County,Week 7,#11,Girls,8&U,25,Meter,Free
+---,Ringelstetter,Myra,Myra Ringelstetter,8,Spring Green,25.69,25.69,EXH,7/19/2025,Tri-County,Week 7,#11,Girls,8&U,25,Meter,Free
+---,Stanek,Annie,Annie Stanek,7,Spring Green,26.69,26.69,EXH,7/19/2025,Tri-County,Week 7,#11,Girls,8&U,25,Meter,Free
+4,McCall,Morgan,Morgan McCall,8,Spring Green,27.09,27.09,,7/19/2025,Tri-County,Week 7,#11,Girls,8&U,25,Meter,Free
+5,Meunier,Chloe,Chloe Meunier,8,Wis. Dells,30.40,30.40,,7/19/2025,Tri-County,Week 7,#11,Girls,8&U,25,Meter,Free
+---,Heckendorf,Ava,Ava Heckendorf,6,Spring Green,30.43,30.43,EXH,7/19/2025,Tri-County,Week 7,#11,Girls,8&U,25,Meter,Free
+6,Kienbaum,Ava,Ava Kienbaum,8,Wis. Dells,31.85,31.85,,7/19/2025,Tri-County,Week 7,#11,Girls,8&U,25,Meter,Free
+---,Weidner,Iris,Iris Weidner,8,Spring Green,33.18,33.18,EXH,7/19/2025,Tri-County,Week 7,#11,Girls,8&U,25,Meter,Free
+---,Eisenbrandt,Mildred,Mildred Eisenbrandt,7,Spring Green,35.82,35.82,EXH,7/19/2025,Tri-County,Week 7,#11,Girls,8&U,25,Meter,Free
+---,Wohl,Orli,Orli Wohl,6,Spring Green,36.51,36.51,EXH,7/19/2025,Tri-County,Week 7,#11,Girls,8&U,25,Meter,Free
+---,Torkelson,Mia,Mia Torkelson,6,Wis. Dells,40.76,40.76,EXH,7/19/2025,Tri-County,Week 7,#11,Girls,8&U,25,Meter,Free
+---,Johnson,Emilie,Emilie Johnson,5,Wis. Dells,42.38,42.38,EXH,7/19/2025,Tri-County,Week 7,#11,Girls,8&U,25,Meter,Free
+---,Jorgenson,Violet,Violet Jorgenson,7,Wis. Dells,44.65,44.65,EXH,7/19/2025,Tri-County,Week 7,#11,Girls,8&U,25,Meter,Free
+---,Murphy,Ava,Ava Murphy,5,Spring Green,47.38,47.38,EXH,7/19/2025,Tri-County,Week 7,#11,Girls,8&U,25,Meter,Free
+1,Wood,Paxton,Paxton Wood,8,Spring Green,17.20,17.20,,7/19/2025,Tri-County,Week 7,#12,Boys,8&U,25,Meter,Free
+2,Galiv,Daniil,Daniil Galiv,7,Wis. Dells,21.12,21.12,,7/19/2025,Tri-County,Week 7,#12,Boys,8&U,25,Meter,Free
+3,Gaffney,Will,Will Gaffney,7,Wis. Dells,21.35,21.35,,7/19/2025,Tri-County,Week 7,#12,Boys,8&U,25,Meter,Free
+4,Crowley,Lucas,Lucas Crowley,7,Wis. Dells,21.65,21.65,,7/19/2025,Tri-County,Week 7,#12,Boys,8&U,25,Meter,Free
+5,Robinson,Miles,Miles Robinson,6,Spring Green,22.50,22.50,,7/19/2025,Tri-County,Week 7,#12,Boys,8&U,25,Meter,Free
+---,Vichkov,Michael,Michael Vichkov,7,Wis. Dells,24.54,24.54,EXH,7/19/2025,Tri-County,Week 7,#12,Boys,8&U,25,Meter,Free
+---,Soupir,Boden,Boden Soupir,7,Wis. Dells,27.24,27.24,EXH,7/19/2025,Tri-County,Week 7,#12,Boys,8&U,25,Meter,Free
+---,Isaksson,Bowie,Bowie Isaksson,8,Spring Green,27.38,27.38,EXH,7/19/2025,Tri-County,Week 7,#12,Boys,8&U,25,Meter,Free
+---,Bautista,Emiliano,Emiliano Bautista,8,Wis. Dells,28.20,28.20,EXH,7/19/2025,Tri-County,Week 7,#12,Boys,8&U,25,Meter,Free
+---,Furukawa,Seiji,Seiji Furukawa,8,Spring Green,28.53,28.53,EXH,7/19/2025,Tri-County,Week 7,#12,Boys,8&U,25,Meter,Free
+---,Muntinga,Cole,Cole Muntinga,8,Wis. Dells,31.66,31.66,EXH,7/19/2025,Tri-County,Week 7,#12,Boys,8&U,25,Meter,Free
+---,Powers,Harrison,Harrison Powers,7,Wis. Dells,32.24,32.24,EXH,7/19/2025,Tri-County,Week 7,#12,Boys,8&U,25,Meter,Free
+---,Meunier,Perrin,Perrin Meunier,7,Wis. Dells,49.99,49.99,EXH,7/19/2025,Tri-County,Week 7,#12,Boys,8&U,25,Meter,Free
+---,Mueller,Dallas,Dallas Mueller,7,Spring Green,54.37,54.37,EXH,7/19/2025,Tri-County,Week 7,#12,Boys,8&U,25,Meter,Free
+---,Ellefson,Andrew,Andrew Ellefson,5,Spring Green,55.95,55.95,EXH,7/19/2025,Tri-County,Week 7,#12,Boys,8&U,25,Meter,Free
+---,Ramirez,Aston,Aston Ramirez,6,Spring Green,1:18.72,1:18.72,EXH,7/19/2025,Tri-County,Week 7,#12,Boys,8&U,25,Meter,Free
+---,Hoefferle,Carter,Carter Hoefferle,6,Wis. Dells,1:20.98,1:20.98,EXH,7/19/2025,Tri-County,Week 7,#12,Boys,8&U,25,Meter,Free
+1,Banchikova,Alissa,Alissa Banchikova,9,Wis. Dells,36.09,36.09,,7/19/2025,Tri-County,Week 7,#13,Girls,9--10,50,Meter,Free
+2,Grassl,Keira,Keira Grassl,9,Wis. Dells,37.95,37.95,,7/19/2025,Tri-County,Week 7,#13,Girls,9--10,50,Meter,Free
+3,Johnson,Noelle,Noelle Johnson,10,Wis. Dells,38.38,38.38,,7/19/2025,Tri-County,Week 7,#13,Girls,9--10,50,Meter,Free
+---,Crowley,Kendall,Kendall Crowley,10,Wis. Dells,39.74,39.74,EXH,7/19/2025,Tri-County,Week 7,#13,Girls,9--10,50,Meter,Free
+---,Morse,Olivia,Olivia Morse,10,Wis. Dells,40.42,40.42,EXH,7/19/2025,Tri-County,Week 7,#13,Girls,9--10,50,Meter,Free
+---,Pugh,Charlotte,Charlotte Pugh,10,Wis. Dells,41.89,41.89,EXH,7/19/2025,Tri-County,Week 7,#13,Girls,9--10,50,Meter,Free
+---,Torkelson,Ellie,Ellie Torkelson,9,Wis. Dells,45.87,45.87,EXH,7/19/2025,Tri-County,Week 7,#13,Girls,9--10,50,Meter,Free
+---,Roberts,Atlyn,Atlyn Roberts,10,Wis. Dells,45.96,45.96,EXH,7/19/2025,Tri-County,Week 7,#13,Girls,9--10,50,Meter,Free
+4,Quigley,Lillian,Lillian Quigley,10,Spring Green,46.87,46.87,,7/19/2025,Tri-County,Week 7,#13,Girls,9--10,50,Meter,Free
+---,Kienbaum,Ella,Ella Kienbaum,10,Wis. Dells,46.99,46.99,EXH,7/19/2025,Tri-County,Week 7,#13,Girls,9--10,50,Meter,Free
+5,Halverson,Lexi,Lexi Halverson,10,Spring Green,48.06,48.06,,7/19/2025,Tri-County,Week 7,#13,Girls,9--10,50,Meter,Free
+---,Soupir,Brynlee,Brynlee Soupir,10,Wis. Dells,48.40,48.40,EXH,7/19/2025,Tri-County,Week 7,#13,Girls,9--10,50,Meter,Free
+---,Hoefferle,Alix,Alix Hoefferle,9,Wis. Dells,48.73,48.73,EXH,7/19/2025,Tri-County,Week 7,#13,Girls,9--10,50,Meter,Free
+---,Jurgenson,Asia,Asia Jurgenson,9,Wis. Dells,50.26,50.26,EXH,7/19/2025,Tri-County,Week 7,#13,Girls,9--10,50,Meter,Free
+---,Jorgenson,Lillian,Lillian Jorgenson,9,Wis. Dells,51.35,51.35,EXH,7/19/2025,Tri-County,Week 7,#13,Girls,9--10,50,Meter,Free
+---,Hammond,Aurora,Aurora Hammond,10,Wis. Dells,52.57,52.57,EXH,7/19/2025,Tri-County,Week 7,#13,Girls,9--10,50,Meter,Free
+---,Draper,Reagan,Reagan Draper,10,Wis. Dells,53.01,53.01,EXH,7/19/2025,Tri-County,Week 7,#13,Girls,9--10,50,Meter,Free
+---,Hitzeman,Ava,Ava Hitzeman,10,Wis. Dells,53.24,53.24,EXH,7/19/2025,Tri-County,Week 7,#13,Girls,9--10,50,Meter,Free
+---,Powers,Cadence,Cadence Powers,9,Wis. Dells,1:03.66,1:03.66,EXH,7/19/2025,Tri-County,Week 7,#13,Girls,9--10,50,Meter,Free
+6,Druckrey,Nadia,Nadia Druckrey,9,Spring Green,1:07.36,1:07.36,,7/19/2025,Tri-County,Week 7,#13,Girls,9--10,50,Meter,Free
+1,Stanek,Jack,Jack Stanek,9,Spring Green,38.59,38.59,,7/19/2025,Tri-County,Week 7,#14,Boys,9--10,50,Meter,Free
+2,Larson,Theo,Theo Larson,9,Spring Green,39.08,39.08,,7/19/2025,Tri-County,Week 7,#14,Boys,9--10,50,Meter,Free
+3,Muntinga,Liam,Liam Muntinga,10,Wis. Dells,39.25,39.25,,7/19/2025,Tri-County,Week 7,#14,Boys,9--10,50,Meter,Free
+---,Ellefson,Blake,Blake Ellefson,10,Spring Green,42.38,42.38,EXH,7/19/2025,Tri-County,Week 7,#14,Boys,9--10,50,Meter,Free
+---,Bateman,Nathan,Nathan Bateman,10,Spring Green,42.87,42.87,EXH,7/19/2025,Tri-County,Week 7,#14,Boys,9--10,50,Meter,Free
+4,Larson,Nolan,Nolan Larson,9,Spring Green,43.23,43.23,,7/19/2025,Tri-County,Week 7,#14,Boys,9--10,50,Meter,Free
+---,Wood,Roman,Roman Wood,10,Spring Green,44.00,44.00,EXH,7/19/2025,Tri-County,Week 7,#14,Boys,9--10,50,Meter,Free
+---,Denu,Tucker,Tucker Denu,10,Spring Green,45.20,45.20,EXH,7/19/2025,Tri-County,Week 7,#14,Boys,9--10,50,Meter,Free
+5,Nehring,Liam,Liam Nehring,10,Wis. Dells,47.59,47.59,,7/19/2025,Tri-County,Week 7,#14,Boys,9--10,50,Meter,Free
+---,Pulvermacher,Ben,Ben Pulvermacher,10,Spring Green,58.28,58.28,EXH,7/19/2025,Tri-County,Week 7,#14,Boys,9--10,50,Meter,Free
+6,Bautista,Angel,Angel Bautista,9,Wis. Dells,1:15.35,1:15.35,,7/19/2025,Tri-County,Week 7,#14,Boys,9--10,50,Meter,Free
+---,Denu,Everett,Everett Denu,9,Spring Green,1:42.85,1:42.85,EXH,7/19/2025,Tri-County,Week 7,#14,Boys,9--10,50,Meter,Free
+---,Jordan,Kaden,Kaden Jordan,9,Spring Green,1:58.84,1:58.84,EXH,7/19/2025,Tri-County,Week 7,#14,Boys,9--10,50,Meter,Free
+1,Crothers,Cassidy,Cassidy Crothers,12,Wis. Dells,32.79,32.79,,7/19/2025,Tri-County,Week 7,#15,Girls,11-12,50,Meter,Free
+2,Gaffney,Isabella,Isabella Gaffney,12,Wis. Dells,34.80,34.80,,7/19/2025,Tri-County,Week 7,#15,Girls,11-12,50,Meter,Free
+3,Schroeder,Quinn,Quinn Schroeder,11,Spring Green,35.46,35.46,,7/19/2025,Tri-County,Week 7,#15,Girls,11-12,50,Meter,Free
+4,Beernink,Jenna,Jenna Beernink,11,Wis. Dells,35.66,35.66,,7/19/2025,Tri-County,Week 7,#15,Girls,11-12,50,Meter,Free
+---,Horras,Evelyn,Evelyn Horras,11,Wis. Dells,36.60,36.60,EXH,7/19/2025,Tri-County,Week 7,#15,Girls,11-12,50,Meter,Free
+5,Schauf,Hannah,Hannah Schauf,12,Spring Green,38.12,38.12,,7/19/2025,Tri-County,Week 7,#15,Girls,11-12,50,Meter,Free
+---,Kurtz,Braelyn,Braelyn Kurtz,11,Wis. Dells,38.89,38.89,EXH,7/19/2025,Tri-County,Week 7,#15,Girls,11-12,50,Meter,Free
+---,Haugen,Madilyn,Madilyn Haugen,12,Spring Green,40.28,40.28,EXH,7/19/2025,Tri-County,Week 7,#15,Girls,11-12,50,Meter,Free
+---,Hoch,Nora,Nora Hoch,11,Wis. Dells,41.81,41.81,EXH,7/19/2025,Tri-County,Week 7,#15,Girls,11-12,50,Meter,Free
+---,Markuson,Piper,Piper Markuson,11,Spring Green,42.09,42.09,EXH,7/19/2025,Tri-County,Week 7,#15,Girls,11-12,50,Meter,Free
+6,Nachreiner,Vada,Vada Nachreiner,12,Spring Green,42.30,42.30,,7/19/2025,Tri-County,Week 7,#15,Girls,11-12,50,Meter,Free
+---,Klaas,Eva,Eva Klaas,11,Spring Green,44.19,44.19,EXH,7/19/2025,Tri-County,Week 7,#15,Girls,11-12,50,Meter,Free
+---,Van Hallgren,Hildy,Hildy Van Hallgren,11,Spring Green,44.56,44.56,EXH,7/19/2025,Tri-County,Week 7,#15,Girls,11-12,50,Meter,Free
+---,Montry,Maddie,Maddie Montry,11,Spring Green,48.60,48.60,EXH,7/19/2025,Tri-County,Week 7,#15,Girls,11-12,50,Meter,Free
+---,Miles,Anne,Anne Miles,11,Wis. Dells,49.34,49.34,EXH,7/19/2025,Tri-County,Week 7,#15,Girls,11-12,50,Meter,Free
+---,Wedige,Ella,Ella Wedige,11,Spring Green,55.20,55.20,EXH,7/19/2025,Tri-County,Week 7,#15,Girls,11-12,50,Meter,Free
+1,Dischler,Simon,Simon Dischler,12,Spring Green,29.92,29.92,,7/19/2025,Tri-County,Week 7,#16,Boys,11-12,50,Meter,Free
+2,Zaemisch Jr.,JJ,JJ Zaemisch Jr.,12,Spring Green,30.88,30.88,,7/19/2025,Tri-County,Week 7,#16,Boys,11-12,50,Meter,Free
+3,Brunson,Logan,Logan Brunson,12,Spring Green,32.51,32.51,,7/19/2025,Tri-County,Week 7,#16,Boys,11-12,50,Meter,Free
+---,Spurley,Rex,Rex Spurley,11,Spring Green,49.77,49.77,EXH,7/19/2025,Tri-County,Week 7,#16,Boys,11-12,50,Meter,Free
+---,Maxwell,Cooper,Cooper Maxwell,11,Spring Green,55.49,55.49,EXH,7/19/2025,Tri-County,Week 7,#16,Boys,11-12,50,Meter,Free
+1,Schaefer,Cora,Cora Schaefer,13,Wis. Dells,29.74,29.74,,7/19/2025,Tri-County,Week 7,#17,Girls,13-14,50,Meter,Free
+2,Miller,Lillian,Lillian Miller,14,Spring Green,31.07,31.07,,7/19/2025,Tri-County,Week 7,#17,Girls,13-14,50,Meter,Free
+3,Anliker,Ella,Ella Anliker,14,Spring Green,32.64,32.64,,7/19/2025,Tri-County,Week 7,#17,Girls,13-14,50,Meter,Free
+4,Alexander,Kailin,Kailin Alexander,14,Spring Green,34.56,34.56,,7/19/2025,Tri-County,Week 7,#17,Girls,13-14,50,Meter,Free
+---,Schauf,Hailey,Hailey Schauf,14,Spring Green,35.46,35.46,EXH,7/19/2025,Tri-County,Week 7,#17,Girls,13-14,50,Meter,Free
+---,Isaksson,Willow,Willow Isaksson,13,Spring Green,36.12,36.12,EXH,7/19/2025,Tri-County,Week 7,#17,Girls,13-14,50,Meter,Free
+5,Richardson,Brooke,Brooke Richardson,13,Wis. Dells,36.27,36.27,,7/19/2025,Tri-County,Week 7,#17,Girls,13-14,50,Meter,Free
+---,Jorgenson,Isabella,Isabella Jorgenson,13,Wis. Dells,36.61,36.61,EXH,7/19/2025,Tri-County,Week 7,#17,Girls,13-14,50,Meter,Free
+6,Nehring,Norah,Norah Nehring,13,Wis. Dells,37.06,37.06,,7/19/2025,Tri-County,Week 7,#17,Girls,13-14,50,Meter,Free
+---,Maxwell,Kinley,Kinley Maxwell,13,Spring Green,39.62,39.62,EXH,7/19/2025,Tri-County,Week 7,#17,Girls,13-14,50,Meter,Free
+1,Banchikov,Alex,Alex Banchikov,13,Wis. Dells,27.35,27.35,,7/19/2025,Tri-County,Week 7,#18,Boys,13-14,50,Meter,Free
+2,Zaemisch,Danny,Danny Zaemisch,14,Spring Green,29.12,29.12,,7/19/2025,Tri-County,Week 7,#18,Boys,13-14,50,Meter,Free
+3,Dischler,Fletcher,Fletcher Dischler,14,Spring Green,31.09,31.09,,7/19/2025,Tri-County,Week 7,#18,Boys,13-14,50,Meter,Free
+4,Ropicky,Andrew,Andrew Ropicky,14,Wis. Dells,33.89,33.89,,7/19/2025,Tri-County,Week 7,#18,Boys,13-14,50,Meter,Free
+5,O'Brien,Lucas,Lucas O'Brien,13,Wis. Dells,35.54,35.54,,7/19/2025,Tri-County,Week 7,#18,Boys,13-14,50,Meter,Free
+---,Goranov,Daniel,Daniel Goranov,14,Wis. Dells,36.71,36.71,EXH,7/19/2025,Tri-County,Week 7,#18,Boys,13-14,50,Meter,Free
+---,Hoch,Beckett,Beckett Hoch,13,Wis. Dells,41.24,41.24,EXH,7/19/2025,Tri-County,Week 7,#18,Boys,13-14,50,Meter,Free
+1,Olson,Elisa,Elisa Olson,16,Spring Green,29.82,29.82,,7/19/2025,Tri-County,Week 7,#19,Girls,15-18,50,Meter,Free
+2,Montry,Preslee,Preslee Montry,15,Spring Green,31.39,31.39,,7/19/2025,Tri-County,Week 7,#19,Girls,15-18,50,Meter,Free
+3,Paulsen,Riley,Riley Paulsen,17,Wis. Dells,32.14,32.14,,7/19/2025,Tri-County,Week 7,#19,Girls,15-18,50,Meter,Free
+4,Buringa,Emma,Emma Buringa,15,Spring Green,34.09,34.09,,7/19/2025,Tri-County,Week 7,#19,Girls,15-18,50,Meter,Free
+5,Duffy,Nora,Nora Duffy,15,Wis. Dells,34.81,34.81,,7/19/2025,Tri-County,Week 7,#19,Girls,15-18,50,Meter,Free
+---,Klaas,Madeleine,Madeleine Klaas,15,Spring Green,36.24,36.24,EXH,7/19/2025,Tri-County,Week 7,#19,Girls,15-18,50,Meter,Free
+---,Needham,Marissa,Marissa Needham,18,Spring Green,37.89,37.89,EXH,7/19/2025,Tri-County,Week 7,#19,Girls,15-18,50,Meter,Free
+1,Gaffney,Brendan,Brendan Gaffney,18,Wis. Dells,29.04,29.04,,7/19/2025,Tri-County,Week 7,#20,Boys,15-18,50,Meter,Free
+2,Spurley,Rhet,Rhet Spurley,16,Spring Green,29.32,29.32,,7/19/2025,Tri-County,Week 7,#20,Boys,15-18,50,Meter,Free
+3,Klaas,Jack,Jack Klaas,16,Spring Green,33.81,33.81,,7/19/2025,Tri-County,Week 7,#20,Boys,15-18,50,Meter,Free
+1,Hanson,Kinsley,Kinsley Hanson,8,Spring Green,24.57,24.57,,7/19/2025,Tri-County,Week 7,#21,Girls,8&U,25,Meter,Back
+2,Soule,Clare,Clare Soule,8,Wis. Dells,24.66,24.66,,7/19/2025,Tri-County,Week 7,#21,Girls,8&U,25,Meter,Back
+3,McCall,Morgan,Morgan McCall,8,Spring Green,29.54,29.54,,7/19/2025,Tri-County,Week 7,#21,Girls,8&U,25,Meter,Back
+---,Beno,Addi,Addi Beno,7,Spring Green,29.88,29.88,EXH,7/19/2025,Tri-County,Week 7,#21,Girls,8&U,25,Meter,Back
+---,Olson,Lucille,Lucille Olson,7,Wis. Dells,31.39,31.39,EXH,7/19/2025,Tri-County,Week 7,#21,Girls,8&U,25,Meter,Back
+---,Bauer,Nora,Nora Bauer,8,Spring Green,32.43,32.43,EXH,7/19/2025,Tri-County,Week 7,#21,Girls,8&U,25,Meter,Back
+4,Meunier,Chloe,Chloe Meunier,8,Wis. Dells,36.32,36.32,,7/19/2025,Tri-County,Week 7,#21,Girls,8&U,25,Meter,Back
+---,Torkelson,Mia,Mia Torkelson,6,Wis. Dells,42.01,42.01,EXH,7/19/2025,Tri-County,Week 7,#21,Girls,8&U,25,Meter,Back
+---,Jorgenson,Violet,Violet Jorgenson,7,Wis. Dells,42.68,42.68,EXH,7/19/2025,Tri-County,Week 7,#21,Girls,8&U,25,Meter,Back
+5,Ramirez,Lydia,Lydia Ramirez,7,Wis. Dells,42.70,42.70,,7/19/2025,Tri-County,Week 7,#21,Girls,8&U,25,Meter,Back
+---,Kienbaum,Ava,Ava Kienbaum,8,Wis. Dells,43.05,43.05,EXH,7/19/2025,Tri-County,Week 7,#21,Girls,8&U,25,Meter,Back
+---,Johnson,Emilie,Emilie Johnson,5,Wis. Dells,1:09.25,1:09.25,EXH,7/19/2025,Tri-County,Week 7,#21,Girls,8&U,25,Meter,Back
+1,Miller,Carter,Carter Miller,8,Spring Green,23.10,23.10,,7/19/2025,Tri-County,Week 7,#22,Boys,8&U,25,Meter,Back
+2,Gaffney,Will,Will Gaffney,7,Wis. Dells,28.19,28.19,,7/19/2025,Tri-County,Week 7,#22,Boys,8&U,25,Meter,Back
+3,Vichkov,Michael,Michael Vichkov,7,Wis. Dells,30.37,30.37,,7/19/2025,Tri-County,Week 7,#22,Boys,8&U,25,Meter,Back
+4,Aron,Everett,Everett Aron,8,Spring Green,30.49,30.49,,7/19/2025,Tri-County,Week 7,#22,Boys,8&U,25,Meter,Back
+5,Soupir,Boden,Boden Soupir,7,Wis. Dells,32.01,32.01,,7/19/2025,Tri-County,Week 7,#22,Boys,8&U,25,Meter,Back
+---,Powers,Harrison,Harrison Powers,7,Wis. Dells,34.35,34.35,EXH,7/19/2025,Tri-County,Week 7,#22,Boys,8&U,25,Meter,Back
+---,Milbach,Jordan,Jordan Milbach,7,Wis. Dells,35.44,35.44,EXH,7/19/2025,Tri-County,Week 7,#22,Boys,8&U,25,Meter,Back
+---,Bautista,Emiliano,Emiliano Bautista,8,Wis. Dells,35.62,35.62,EXH,7/19/2025,Tri-County,Week 7,#22,Boys,8&U,25,Meter,Back
+---,Furukawa,Seiji,Seiji Furukawa,8,Spring Green,36.99,36.99,EXH,7/19/2025,Tri-County,Week 7,#22,Boys,8&U,25,Meter,Back
+---,Muntinga,Cole,Cole Muntinga,8,Wis. Dells,37.79,37.79,EXH,7/19/2025,Tri-County,Week 7,#22,Boys,8&U,25,Meter,Back
+---,Mueller,Dallas,Dallas Mueller,7,Spring Green,37.98,37.98,EXH,7/19/2025,Tri-County,Week 7,#22,Boys,8&U,25,Meter,Back
+---,Meunier,Perrin,Perrin Meunier,7,Wis. Dells,44.74,44.74,EXH,7/19/2025,Tri-County,Week 7,#22,Boys,8&U,25,Meter,Back
+---,Hoefferle,Carter,Carter Hoefferle,6,Wis. Dells,1:09.28,1:09.28,EXH,7/19/2025,Tri-County,Week 7,#22,Boys,8&U,25,Meter,Back
+1,Johnson,Noelle,Noelle Johnson,10,Wis. Dells,44.77,44.77,,7/19/2025,Tri-County,Week 7,#23,Girls,9--10,50,Meter,Back
+2,Crowley,Rylee,Rylee Crowley,9,Wis. Dells,50.02,50.02,,7/19/2025,Tri-County,Week 7,#23,Girls,9--10,50,Meter,Back
+3,Shelton,Cora,Cora Shelton,9,Spring Green,53.84,53.84,,7/19/2025,Tri-County,Week 7,#23,Girls,9--10,50,Meter,Back
+---,Halverson,Lexi,Lexi Halverson,10,Spring Green,54.03,54.03,EXH,7/19/2025,Tri-County,Week 7,#23,Girls,9--10,50,Meter,Back
+---,Jurgenson,Asia,Asia Jurgenson,9,Wis. Dells,55.84,55.84,EXH,7/19/2025,Tri-County,Week 7,#23,Girls,9--10,50,Meter,Back
+---,Draper,Reagan,Reagan Draper,10,Wis. Dells,1:05.21,1:05.21,EXH,7/19/2025,Tri-County,Week 7,#23,Girls,9--10,50,Meter,Back
+---,Powers,Cadence,Cadence Powers,9,Wis. Dells,1:13.32,1:13.32,EXH,7/19/2025,Tri-County,Week 7,#23,Girls,9--10,50,Meter,Back
+---,Hitzeman,Ava,Ava Hitzeman,10,Wis. Dells,1:15.12,1:15.12,EXH,7/19/2025,Tri-County,Week 7,#23,Girls,9--10,50,Meter,Back
+---,Druckrey,Nadia,Nadia Druckrey,9,Spring Green,1:24.18,1:24.18,EXH,7/19/2025,Tri-County,Week 7,#23,Girls,9--10,50,Meter,Back
+1,Larson,Theo,Theo Larson,9,Spring Green,48.16,48.16,,7/19/2025,Tri-County,Week 7,#24,Boys,9--10,50,Meter,Back
+2,Heckendorf,Carter,Carter Heckendorf,10,Spring Green,48.64,48.64,,7/19/2025,Tri-County,Week 7,#24,Boys,9--10,50,Meter,Back
+3,Richardson,Parker,Parker Richardson,9,Wis. Dells,52.07,52.07,,7/19/2025,Tri-County,Week 7,#24,Boys,9--10,50,Meter,Back
+4,Nehring,Liam,Liam Nehring,10,Wis. Dells,56.36,56.36,,7/19/2025,Tri-County,Week 7,#24,Boys,9--10,50,Meter,Back
+5,Stanek,Jack,Jack Stanek,9,Spring Green,57.62,57.62,,7/19/2025,Tri-County,Week 7,#24,Boys,9--10,50,Meter,Back
+6,Bautista,Angel,Angel Bautista,9,Wis. Dells,1:36.66,1:36.66,,7/19/2025,Tri-County,Week 7,#24,Boys,9--10,50,Meter,Back
+1,Galiv,Milana,Milana Galiv,12,Wis. Dells,37.12,37.12,,7/19/2025,Tri-County,Week 7,#25,Girls,11--12,50,Meter,Back
+2,Cobbs,Lilah,Lilah Cobbs,12,Wis. Dells,43.97,43.97,,7/19/2025,Tri-County,Week 7,#25,Girls,11--12,50,Meter,Back
+3,Schauf,Hannah,Hannah Schauf,12,Spring Green,49.32,49.32,,7/19/2025,Tri-County,Week 7,#25,Girls,11--12,50,Meter,Back
+4,Markuson,Piper,Piper Markuson,11,Spring Green,50.42,50.42,,7/19/2025,Tri-County,Week 7,#25,Girls,11--12,50,Meter,Back
+5,Hoch,Nora,Nora Hoch,11,Wis. Dells,52.27,52.27,,7/19/2025,Tri-County,Week 7,#25,Girls,11--12,50,Meter,Back
+---,Montry,Maddie,Maddie Montry,11,Spring Green,58.03,58.03,EXH,7/19/2025,Tri-County,Week 7,#25,Girls,11--12,50,Meter,Back
+---,Wedige,Ella,Ella Wedige,11,Spring Green,1:25.24,1:25.24,EXH,7/19/2025,Tri-County,Week 7,#25,Girls,11--12,50,Meter,Back
+1,Brunson,Logan,Logan Brunson,12,Spring Green,37.73,37.73,,7/19/2025,Tri-County,Week 7,#26,Boys,11--12,50,Meter,Back
+2,Olson,Loren,Loren Olson,12,Wis. Dells,46.85,46.85,,7/19/2025,Tri-County,Week 7,#26,Boys,11--12,50,Meter,Back
+3,McCall,Charles,Charles McCall,11,Spring Green,47.93,47.93,,7/19/2025,Tri-County,Week 7,#26,Boys,11--12,50,Meter,Back
+4,Spurley,Rex,Rex Spurley,11,Spring Green,53.22,53.22,,7/19/2025,Tri-County,Week 7,#26,Boys,11--12,50,Meter,Back
+1,Schaefer,Cora,Cora Schaefer,13,Wis. Dells,33.68,33.68,,7/19/2025,Tri-County,Week 7,#27,Girls,13-14,50,Meter,Back
+2,Afanasyeu,Arianna,Arianna Afanasyeu,13,Wis. Dells,34.72,34.72,,7/19/2025,Tri-County,Week 7,#27,Girls,13-14,50,Meter,Back
+3,Lagerman,Harper,Harper Lagerman,14,Spring Green,35.84,35.84,,7/19/2025,Tri-County,Week 7,#27,Girls,13-14,50,Meter,Back
+4,Foth,Kyra,Kyra Foth,14,Wis. Dells,39.53,39.53,,7/19/2025,Tri-County,Week 7,#27,Girls,13-14,50,Meter,Back
+5,Alexander,Kailin,Kailin Alexander,14,Spring Green,41.27,41.27,,7/19/2025,Tri-County,Week 7,#27,Girls,13-14,50,Meter,Back
+6,Isaksson,Willow,Willow Isaksson,13,Spring Green,43.16,43.16,,7/19/2025,Tri-County,Week 7,#27,Girls,13-14,50,Meter,Back
+---,Klaas,Caroline,Caroline Klaas,13,Spring Green,48.77,48.77,EXH,7/19/2025,Tri-County,Week 7,#27,Girls,13-14,50,Meter,Back
+1,Banchikov,Alex,Alex Banchikov,13,Wis. Dells,32.15,32.15,,7/19/2025,Tri-County,Week 7,#28,Boys,13-14,50,Meter,Back
+2,Zaemisch,Danny,Danny Zaemisch,14,Spring Green,33.99,33.99,,7/19/2025,Tri-County,Week 7,#28,Boys,13-14,50,Meter,Back
+3,Bateman,Evan,Evan Bateman,14,Spring Green,37.68,37.68,,7/19/2025,Tri-County,Week 7,#28,Boys,13-14,50,Meter,Back
+4,Hanson,Keagan,Keagan Hanson,13,Spring Green,38.28,38.28,,7/19/2025,Tri-County,Week 7,#28,Boys,13-14,50,Meter,Back
+1,Bowar,Lilly,Lilly Bowar,15,Spring Green,35.75,35.75,,7/19/2025,Tri-County,Week 7,#29,Girls,15-18,50,Meter,Back
+2,Saperstein,Lily,Lily Saperstein,18,Spring Green,35.88,35.88,,7/19/2025,Tri-County,Week 7,#29,Girls,15-18,50,Meter,Back
+3,Weidner,Samantha,Samantha Weidner,16,Wis. Dells,36.16,36.16,,7/19/2025,Tri-County,Week 7,#29,Girls,15-18,50,Meter,Back
+4,Paulsen,Riley,Riley Paulsen,17,Wis. Dells,37.49,37.49,,7/19/2025,Tri-County,Week 7,#29,Girls,15-18,50,Meter,Back
+5,Buringa,Emma,Emma Buringa,15,Spring Green,39.95,39.95,,7/19/2025,Tri-County,Week 7,#29,Girls,15-18,50,Meter,Back
+---,Needham,Marissa,Marissa Needham,18,Spring Green,42.27,42.27,EXH,7/19/2025,Tri-County,Week 7,#29,Girls,15-18,50,Meter,Back
+---,Langrehr,Megan,Megan Langrehr,18,Spring Green,43.18,43.18,EXH,7/19/2025,Tri-County,Week 7,#29,Girls,15-18,50,Meter,Back
+---,Klaas,Madeleine,Madeleine Klaas,15,Spring Green,43.82,43.82,EXH,7/19/2025,Tri-County,Week 7,#29,Girls,15-18,50,Meter,Back
+6,Fait,Sydney,Sydney Fait,15,Wis. Dells,44.37,44.37,,7/19/2025,Tri-County,Week 7,#29,Girls,15-18,50,Meter,Back
+---,Ellefson,Morgan,Morgan Ellefson,15,Spring Green,45.82,45.82,EXH,7/19/2025,Tri-County,Week 7,#29,Girls,15-18,50,Meter,Back
+1,Saperstein,Eli,Eli Saperstein,16,Spring Green,34.98,34.98,,7/19/2025,Tri-County,Week 7,#30,Boys,15-18,50,Meter,Back
+2,Klaas,Jack,Jack Klaas,16,Spring Green,46.11,46.11,,7/19/2025,Tri-County,Week 7,#30,Boys,15-18,50,Meter,Back
+1,Banchikova,Alissa,Alissa Banchikova,9,Wis. Dells,1:33.94,1:33.94,,7/19/2025,Tri-County,Week 7,#31,Girls,9--10,100,Meter,IM
+2,Hunter,Kaitlynn,Kaitlynn Hunter,9,Spring Green,1:41.23,1:41.23,,7/19/2025,Tri-County,Week 7,#31,Girls,9--10,100,Meter,IM
+3,Crowley,Rylee,Rylee Crowley,9,Wis. Dells,1:47.04,1:47.04,,7/19/2025,Tri-County,Week 7,#31,Girls,9--10,100,Meter,IM
+4,Milbach,Sydney,Sydney Milbach,9,Wis. Dells,1:55.28,1:55.28,,7/19/2025,Tri-County,Week 7,#31,Girls,9--10,100,Meter,IM
+5,Shelton,Cora,Cora Shelton,9,Spring Green,1:55.64,1:55.64,,7/19/2025,Tri-County,Week 7,#31,Girls,9--10,100,Meter,IM
+---,Snow,Ellisyn,Ellisyn Snow,10,Wis. Dells,1:59.03,1:59.03,EXH,7/19/2025,Tri-County,Week 7,#31,Girls,9--10,100,Meter,IM
+---,Pugh,Charlotte,Charlotte Pugh,10,Wis. Dells,2:03.93,2:03.93,EXH,7/19/2025,Tri-County,Week 7,#31,Girls,9--10,100,Meter,IM
+6,Wittenwyler,Auria,Auria Wittenwyler,9,Spring Green,2:09.67,2:09.67,,7/19/2025,Tri-County,Week 7,#31,Girls,9--10,100,Meter,IM
+---,Soupir,Brynlee,Brynlee Soupir,10,Wis. Dells,2:10.09,2:10.09,EXH,7/19/2025,Tri-County,Week 7,#31,Girls,9--10,100,Meter,IM
+1,Heckendorf,Carter,Carter Heckendorf,10,Spring Green,1:45.59,1:45.59,,7/19/2025,Tri-County,Week 7,#32,Boys,9--10,100,Meter,IM
+2,Dischler,Topher,Topher Dischler,10,Spring Green,1:45.77,1:45.77,,7/19/2025,Tri-County,Week 7,#32,Boys,9--10,100,Meter,IM
+3,Muntinga,Liam,Liam Muntinga,10,Wis. Dells,1:53.57,1:53.57,,7/19/2025,Tri-County,Week 7,#32,Boys,9--10,100,Meter,IM
+4,Ellefson,Blake,Blake Ellefson,10,Spring Green,2:03.64,2:03.64,,7/19/2025,Tri-County,Week 7,#32,Boys,9--10,100,Meter,IM
+5,Hill,Ollie,Ollie Hill,10,Wis. Dells,2:28.30,2:28.30,,7/19/2025,Tri-County,Week 7,#32,Boys,9--10,100,Meter,IM
+1,Galiv,Milana,Milana Galiv,12,Wis. Dells,1:20.90,1:20.90,,7/19/2025,Tri-County,Week 7,#33,Girls,11-12,100,Meter,IM
+2,Richards,Riley,Riley Richards,11,Spring Green,1:28.51,1:28.51,,7/19/2025,Tri-County,Week 7,#33,Girls,11-12,100,Meter,IM
+3,Beernink,Jenna,Jenna Beernink,11,Wis. Dells,1:29.04,1:29.04,,7/19/2025,Tri-County,Week 7,#33,Girls,11-12,100,Meter,IM
+4,Cobbs,Lilah,Lilah Cobbs,12,Wis. Dells,1:40.90,1:40.90,,7/19/2025,Tri-County,Week 7,#33,Girls,11-12,100,Meter,IM
+5,Nachreiner,Vada,Vada Nachreiner,12,Spring Green,1:46.45,1:46.45,,7/19/2025,Tri-County,Week 7,#33,Girls,11-12,100,Meter,IM
+6,Van Hallgren,Hildy,Hildy Van Hallgren,11,Spring Green,1:55.64,1:55.64,,7/19/2025,Tri-County,Week 7,#33,Girls,11-12,100,Meter,IM
+1,Brunson,Logan,Logan Brunson,12,Spring Green,1:24.50,1:24.50,,7/19/2025,Tri-County,Week 7,#34,Boys,11-12,100,Meter,IM
+2,Farland,Raeshon,Raeshon Farland,12,Spring Green,1:40.61,1:40.61,,7/19/2025,Tri-County,Week 7,#34,Boys,11-12,100,Meter,IM
+---,Karls,Henry,Henry Karls,11,Spring Green,1:50.08,1:50.08,EXH,7/19/2025,Tri-County,Week 7,#34,Boys,11-12,100,Meter,IM
+---,McCall,Charles,Charles McCall,11,Spring Green,1:52.34,1:52.34,EXH,7/19/2025,Tri-County,Week 7,#34,Boys,11-12,100,Meter,IM
+1,Afanasyeu,Arianna,Arianna Afanasyeu,13,Wis. Dells,1:12.65,1:12.65,,7/19/2025,Tri-County,Week 7,#35,Girls,13-14,100,Meter,IM
+2,Lauterbach,Laikyn,Laikyn Lauterbach,13,Spring Green,1:14.95,1:14.95,,7/19/2025,Tri-County,Week 7,#35,Girls,13-14,100,Meter,IM
+3,Foth,Kyra,Kyra Foth,14,Wis. Dells,1:26.70,1:26.70,,7/19/2025,Tri-County,Week 7,#35,Girls,13-14,100,Meter,IM
+4,Anliker,Ella,Ella Anliker,14,Spring Green,1:28.01,1:28.01,,7/19/2025,Tri-County,Week 7,#35,Girls,13-14,100,Meter,IM
+5,Richardson,Brooke,Brooke Richardson,13,Wis. Dells,1:36.02,1:36.02,,7/19/2025,Tri-County,Week 7,#35,Girls,13-14,100,Meter,IM
+6,Maxwell,Kinley,Kinley Maxwell,13,Spring Green,1:38.86,1:38.86,,7/19/2025,Tri-County,Week 7,#35,Girls,13-14,100,Meter,IM
+---,Ropicky,Bella,Bella Ropicky,13,Wis. Dells,1:39.65,1:39.65,EXH,7/19/2025,Tri-County,Week 7,#35,Girls,13-14,100,Meter,IM
+---,Nehring,Norah,Norah Nehring,13,Wis. Dells,1:40.03,1:40.03,EXH,7/19/2025,Tri-County,Week 7,#35,Girls,13-14,100,Meter,IM
+---,Klaas,Caroline,Caroline Klaas,13,Spring Green,1:41.26,1:41.26,EXH,7/19/2025,Tri-County,Week 7,#35,Girls,13-14,100,Meter,IM
+1,Banchikov,Alex,Alex Banchikov,13,Wis. Dells,1:12.06,1:12.06,,7/19/2025,Tri-County,Week 7,#36,Boys,13-14,100,Meter,IM
+2,Schroeder,Micah,Micah Schroeder,13,Spring Green,1:26.93,1:26.93,,7/19/2025,Tri-County,Week 7,#36,Boys,13-14,100,Meter,IM
+3,Bateman,Evan,Evan Bateman,14,Spring Green,1:31.43,1:31.43,,7/19/2025,Tri-County,Week 7,#36,Boys,13-14,100,Meter,IM
+4,Goranov,Daniel,Daniel Goranov,14,Wis. Dells,1:33.12,1:33.12,,7/19/2025,Tri-County,Week 7,#36,Boys,13-14,100,Meter,IM
+5,Hoch,Beckett,Beckett Hoch,13,Wis. Dells,1:50.85,1:50.85,,7/19/2025,Tri-County,Week 7,#36,Boys,13-14,100,Meter,IM
+1,Olson,Elisa,Elisa Olson,16,Spring Green,1:13.73,1:13.73,,7/19/2025,Tri-County,Week 7,#37,Girls,15-18,100,Meter,IM
+2,Lagerman,Marley,Marley Lagerman,16,Spring Green,1:18.46,1:18.46,,7/19/2025,Tri-County,Week 7,#37,Girls,15-18,100,Meter,IM
+3,Weidner,Samantha,Samantha Weidner,16,Wis. Dells,1:18.59,1:18.59,,7/19/2025,Tri-County,Week 7,#37,Girls,15-18,100,Meter,IM
+4,Paulsen,Riley,Riley Paulsen,17,Wis. Dells,1:22.44,1:22.44,,7/19/2025,Tri-County,Week 7,#37,Girls,15-18,100,Meter,IM
+5,Gavinski,Vivian,Vivian Gavinski,15,Wis. Dells,1:27.26,1:27.26,,7/19/2025,Tri-County,Week 7,#37,Girls,15-18,100,Meter,IM
+---,Langrehr,Megan,Megan Langrehr,18,Spring Green,1:30.69,1:30.69,EXH,7/19/2025,Tri-County,Week 7,#37,Girls,15-18,100,Meter,IM
+6,Ellefson,Morgan,Morgan Ellefson,15,Spring Green,1:31.36,1:31.36,,7/19/2025,Tri-County,Week 7,#37,Girls,15-18,100,Meter,IM
+---,Klaas,Madeleine,Madeleine Klaas,15,Spring Green,1:32.37,1:32.37,EXH,7/19/2025,Tri-County,Week 7,#37,Girls,15-18,100,Meter,IM
+---,Fait,Sydney,Sydney Fait,15,Wis. Dells,1:35.94,1:35.94,EXH,7/19/2025,Tri-County,Week 7,#37,Girls,15-18,100,Meter,IM
+---,Contreras,Mareli,Mareli Contreras,16,Wis. Dells,1:41.89,1:41.89,EXH,7/19/2025,Tri-County,Week 7,#37,Girls,15-18,100,Meter,IM
+1,Gaffney,Brendan,Brendan Gaffney,18,Wis. Dells,1:13.02,1:13.02,,7/19/2025,Tri-County,Week 7,#38,Boys,15-18,100,Meter,IM
+2,Saperstein,Eli,Eli Saperstein,16,Spring Green,1:15.18,1:15.18,,7/19/2025,Tri-County,Week 7,#38,Boys,15-18,100,Meter,IM
+3,Nachreiner,Sumner,Sumner Nachreiner,17,Spring Green,1:16.44,1:16.44,,7/19/2025,Tri-County,Week 7,#38,Boys,15-18,100,Meter,IM
+1,Gaffney,Rose,Rose Gaffney,7,Wis. Dells,27.12,27.12,,7/19/2025,Tri-County,Week 7,#39,Girls,8&U,25,Meter,Breast
+2,Stanek,Annie,Annie Stanek,7,Spring Green,30.63,30.63,,7/19/2025,Tri-County,Week 7,#39,Girls,8&U,25,Meter,Breast
+3,Richards,Ember,Ember Richards,7,Spring Green,31.45,31.45,,7/19/2025,Tri-County,Week 7,#39,Girls,8&U,25,Meter,Breast
+4,Stevens,Rose Mary,Rose Mary Stevens,8,Wis. Dells,43.71,43.71,,7/19/2025,Tri-County,Week 7,#39,Girls,8&U,25,Meter,Breast
+---,Druckrey,Annika,Annika Druckrey,7,Spring Green,52.87,52.87,EXH,7/19/2025,Tri-County,Week 7,#39,Girls,8&U,25,Meter,Breast
+1,Aron,Everett,Everett Aron,8,Spring Green,26.37,26.37,,7/19/2025,Tri-County,Week 7,#40,Boys,8&U,25,Meter,Breast
+2,Shelton,Drew,Drew Shelton,8,Spring Green,26.98,26.98,,7/19/2025,Tri-County,Week 7,#40,Boys,8&U,25,Meter,Breast
+3,Crowley,Lucas,Lucas Crowley,7,Wis. Dells,33.62,33.62,,7/19/2025,Tri-County,Week 7,#40,Boys,8&U,25,Meter,Breast
+1,Banchikova,Alissa,Alissa Banchikova,9,Wis. Dells,46.74,46.74,,7/19/2025,Tri-County,Week 7,#41,Girls,9--10,50,Meter,Breast
+2,Hunter,Kaitlynn,Kaitlynn Hunter,9,Spring Green,53.04,53.04,,7/19/2025,Tri-County,Week 7,#41,Girls,9--10,50,Meter,Breast
+3,Crowley,Rylee,Rylee Crowley,9,Wis. Dells,54.71,54.71,,7/19/2025,Tri-County,Week 7,#41,Girls,9--10,50,Meter,Breast
+---,Snow,Ellisyn,Ellisyn Snow,10,Wis. Dells,55.51,55.51,EXH,7/19/2025,Tri-County,Week 7,#41,Girls,9--10,50,Meter,Breast
+---,Olson,Sutton,Sutton Olson,10,Wis. Dells,56.76,56.76,EXH,7/19/2025,Tri-County,Week 7,#41,Girls,9--10,50,Meter,Breast
+4,Milbach,Sydney,Sydney Milbach,9,Wis. Dells,58.54,58.54,,7/19/2025,Tri-County,Week 7,#41,Girls,9--10,50,Meter,Breast
+---,Roberts,Atlyn,Atlyn Roberts,10,Wis. Dells,1:01.52,1:01.52,EXH,7/19/2025,Tri-County,Week 7,#41,Girls,9--10,50,Meter,Breast
+5,Halverson,Lexi,Lexi Halverson,10,Spring Green,1:02.82,1:02.82,,7/19/2025,Tri-County,Week 7,#41,Girls,9--10,50,Meter,Breast
+6,Shelton,Cora,Cora Shelton,9,Spring Green,1:02.93,1:02.93,,7/19/2025,Tri-County,Week 7,#41,Girls,9--10,50,Meter,Breast
+---,Jorgenson,Lillian,Lillian Jorgenson,9,Wis. Dells,1:03.49,1:03.49,EXH,7/19/2025,Tri-County,Week 7,#41,Girls,9--10,50,Meter,Breast
+---,Hoefferle,Alix,Alix Hoefferle,9,Wis. Dells,1:08.82,1:08.82,EXH,7/19/2025,Tri-County,Week 7,#41,Girls,9--10,50,Meter,Breast
+---,Soupir,Brynlee,Brynlee Soupir,10,Wis. Dells,1:08.93,1:08.93,EXH,7/19/2025,Tri-County,Week 7,#41,Girls,9--10,50,Meter,Breast
+---,Quigley,Lillian,Lillian Quigley,10,Spring Green,1:09.61,1:09.61,EXH,7/19/2025,Tri-County,Week 7,#41,Girls,9--10,50,Meter,Breast
+---,Draper,Reagan,Reagan Draper,10,Wis. Dells,1:13.07,1:13.07,EXH,7/19/2025,Tri-County,Week 7,#41,Girls,9--10,50,Meter,Breast
+---,Powers,Cadence,Cadence Powers,9,Wis. Dells,1:19.52,1:19.52,EXH,7/19/2025,Tri-County,Week 7,#41,Girls,9--10,50,Meter,Breast
+2,Richardson,Parker,Parker Richardson,9,Wis. Dells,55.04,55.04,,7/19/2025,Tri-County,Week 7,#42,Boys,9--10,50,Meter,Breast
+1,Dischler,Topher,Topher Dischler,10,Spring Green,55.04,55.04,,7/19/2025,Tri-County,Week 7,#42,Boys,9--10,50,Meter,Breast
+3,Ellefson,Blake,Blake Ellefson,10,Spring Green,1:00.18,1:00.18,,7/19/2025,Tri-County,Week 7,#42,Boys,9--10,50,Meter,Breast
+4,Denu,Tucker,Tucker Denu,10,Spring Green,1:02.67,1:02.67,,7/19/2025,Tri-County,Week 7,#42,Boys,9--10,50,Meter,Breast
+5,Hill,Ollie,Ollie Hill,10,Wis. Dells,1:34.03,1:34.03,,7/19/2025,Tri-County,Week 7,#42,Boys,9--10,50,Meter,Breast
+---,Denu,Everett,Everett Denu,9,Spring Green,1:35.43,1:35.43,EXH,7/19/2025,Tri-County,Week 7,#42,Boys,9--10,50,Meter,Breast
+1,Beernink,Jenna,Jenna Beernink,11,Wis. Dells,42.48,42.48,,7/19/2025,Tri-County,Week 7,#43,Girls,11-12,50,Meter,Breast
+2,Gaffney,Isabella,Isabella Gaffney,12,Wis. Dells,45.43,45.43,,7/19/2025,Tri-County,Week 7,#43,Girls,11-12,50,Meter,Breast
+3,Schroeder,Quinn,Quinn Schroeder,11,Spring Green,50.62,50.62,,7/19/2025,Tri-County,Week 7,#43,Girls,11-12,50,Meter,Breast
+4,Horras,Evelyn,Evelyn Horras,11,Wis. Dells,53.90,53.90,,7/19/2025,Tri-County,Week 7,#43,Girls,11-12,50,Meter,Breast
+5,Nachreiner,Vada,Vada Nachreiner,12,Spring Green,54.95,54.95,,7/19/2025,Tri-County,Week 7,#43,Girls,11-12,50,Meter,Breast
+---,Hoch,Nora,Nora Hoch,11,Wis. Dells,55.36,55.36,EXH,7/19/2025,Tri-County,Week 7,#43,Girls,11-12,50,Meter,Breast
+---,Kurtz,Braelyn,Braelyn Kurtz,11,Wis. Dells,57.48,57.48,EXH,7/19/2025,Tri-County,Week 7,#43,Girls,11-12,50,Meter,Breast
+6,Klaas,Eva,Eva Klaas,11,Spring Green,1:02.09,1:02.09,,7/19/2025,Tri-County,Week 7,#43,Girls,11-12,50,Meter,Breast
+1,Farland,Raeshon,Raeshon Farland,12,Spring Green,46.40,46.40,,7/19/2025,Tri-County,Week 7,#44,Boys,11-12,50,Meter,Breast
+2,Oppert,Finn,Finn Oppert,11,Spring Green,51.58,51.58,,7/19/2025,Tri-County,Week 7,#44,Boys,11-12,50,Meter,Breast
+3,Karls,Henry,Henry Karls,11,Spring Green,53.45,53.45,,7/19/2025,Tri-County,Week 7,#44,Boys,11-12,50,Meter,Breast
+1,Afanasyeu,Arianna,Arianna Afanasyeu,13,Wis. Dells,37.68,37.68,,7/19/2025,Tri-County,Week 7,#45,Girls,13-14,50,Meter,Breast
+2,Miller,Lillian,Lillian Miller,14,Spring Green,40.51,40.51,,7/19/2025,Tri-County,Week 7,#45,Girls,13-14,50,Meter,Breast
+3,Maxwell,Kinley,Kinley Maxwell,13,Spring Green,44.84,44.84,,7/19/2025,Tri-County,Week 7,#45,Girls,13-14,50,Meter,Breast
+4,Schauf,Hailey,Hailey Schauf,14,Spring Green,47.55,47.55,,7/19/2025,Tri-County,Week 7,#45,Girls,13-14,50,Meter,Breast
+5,Nehring,Norah,Norah Nehring,13,Wis. Dells,49.75,49.75,,7/19/2025,Tri-County,Week 7,#45,Girls,13-14,50,Meter,Breast
+---,Klaas,Caroline,Caroline Klaas,13,Spring Green,53.55,53.55,EXH,7/19/2025,Tri-County,Week 7,#45,Girls,13-14,50,Meter,Breast
+6,Jorgenson,Isabella,Isabella Jorgenson,13,Wis. Dells,57.97,57.97,,7/19/2025,Tri-County,Week 7,#45,Girls,13-14,50,Meter,Breast
+1,Radkiewicz,Cash,Cash Radkiewicz,14,Wis. Dells,36.46,36.46,,7/19/2025,Tri-County,Week 7,#46,Boys,13-14,50,Meter,Breast
+2,Hanson,Keagan,Keagan Hanson,13,Spring Green,43.04,43.04,,7/19/2025,Tri-County,Week 7,#46,Boys,13-14,50,Meter,Breast
+3,Goranov,Daniel,Daniel Goranov,14,Wis. Dells,47.90,47.90,,7/19/2025,Tri-County,Week 7,#46,Boys,13-14,50,Meter,Breast
+4,Hoch,Beckett,Beckett Hoch,13,Wis. Dells,1:01.48,1:01.48,,7/19/2025,Tri-County,Week 7,#46,Boys,13-14,50,Meter,Breast
+1,Weidner,Samantha,Samantha Weidner,16,Wis. Dells,39.03,39.03,,7/19/2025,Tri-County,Week 7,#47,Girls,15-18,50,Meter,Breast
+2,Olson,Elisa,Elisa Olson,16,Spring Green,39.40,39.40,,7/19/2025,Tri-County,Week 7,#47,Girls,15-18,50,Meter,Breast
+3,Gavinski,Vivian,Vivian Gavinski,15,Wis. Dells,42.01,42.01,,7/19/2025,Tri-County,Week 7,#47,Girls,15-18,50,Meter,Breast
+4,Saperstein,Lily,Lily Saperstein,18,Spring Green,46.13,46.13,,7/19/2025,Tri-County,Week 7,#47,Girls,15-18,50,Meter,Breast
+5,Ellefson,Morgan,Morgan Ellefson,15,Spring Green,46.57,46.57,,7/19/2025,Tri-County,Week 7,#47,Girls,15-18,50,Meter,Breast
+6,Fait,Sydney,Sydney Fait,15,Wis. Dells,50.87,50.87,,7/19/2025,Tri-County,Week 7,#47,Girls,15-18,50,Meter,Breast
+---,Contreras,Mareli,Mareli Contreras,16,Wis. Dells,52.39,52.39,EXH,7/19/2025,Tri-County,Week 7,#47,Girls,15-18,50,Meter,Breast
+1,Nachreiner,Sumner,Sumner Nachreiner,17,Spring Green,36.56,36.56,,7/19/2025,Tri-County,Week 7,#48,Boys,15-18,50,Meter,Breast
+2,Truschinski,Gus,Gus Truschinski,16,Spring Green,39.94,39.94,,7/19/2025,Tri-County,Week 7,#48,Boys,15-18,50,Meter,Breast
+3,Crothers,Will,Will Crothers,15,Wis. Dells,42.34,42.34,,7/19/2025,Tri-County,Week 7,#48,Boys,15-18,50,Meter,Breast
+1,Gaffney,Rose,Rose Gaffney,7,Wis. Dells,47.09,47.09,,7/19/2025,Tri-County,Week 7,#49,Girls,8&U,50,Meter,Free
+2,Pulvermacher,Emelyn,Emelyn Pulvermacher,8,Spring Green,47.13,47.13,,7/19/2025,Tri-County,Week 7,#49,Girls,8&U,50,Meter,Free
+3,Soule,Clare,Clare Soule,8,Wis. Dells,49.89,49.89,,7/19/2025,Tri-County,Week 7,#49,Girls,8&U,50,Meter,Free
+4,Olson,Lucille,Lucille Olson,7,Wis. Dells,55.70,55.70,,7/19/2025,Tri-County,Week 7,#49,Girls,8&U,50,Meter,Free
+5,Halverson,Blakely,Blakely Halverson,7,Spring Green,57.45,57.45,,7/19/2025,Tri-County,Week 7,#49,Girls,8&U,50,Meter,Free
+6,Stanek,Annie,Annie Stanek,7,Spring Green,57.77,57.77,,7/19/2025,Tri-County,Week 7,#49,Girls,8&U,50,Meter,Free
+---,Ringelstetter,Myra,Myra Ringelstetter,8,Spring Green,58.70,58.70,EXH,7/19/2025,Tri-County,Week 7,#49,Girls,8&U,50,Meter,Free
+---,Heckendorf,Ava,Ava Heckendorf,6,Spring Green,1:00.62,1:00.62,EXH,7/19/2025,Tri-County,Week 7,#49,Girls,8&U,50,Meter,Free
+---,Bauer,Nora,Nora Bauer,8,Spring Green,1:03.62,1:03.62,EXH,7/19/2025,Tri-County,Week 7,#49,Girls,8&U,50,Meter,Free
+---,Stevens,Rose Mary,Rose Mary Stevens,8,Wis. Dells,1:09.26,1:09.26,EXH,7/19/2025,Tri-County,Week 7,#49,Girls,8&U,50,Meter,Free
+---,Tichenor,Arlow,Arlow Tichenor,8,Spring Green,1:14.37,1:14.37,EXH,7/19/2025,Tri-County,Week 7,#49,Girls,8&U,50,Meter,Free
+---,Druckrey,Annika,Annika Druckrey,7,Spring Green,1:22.13,1:22.13,EXH,7/19/2025,Tri-County,Week 7,#49,Girls,8&U,50,Meter,Free
+---,Murphy,Maya,Maya Murphy,7,Spring Green,1:24.57,1:24.57,EXH,7/19/2025,Tri-County,Week 7,#49,Girls,8&U,50,Meter,Free
+---,Johnson,Emilie,Emilie Johnson,5,Wis. Dells,1:28.48,1:28.48,EXH,7/19/2025,Tri-County,Week 7,#49,Girls,8&U,50,Meter,Free
+1,Shelton,Drew,Drew Shelton,8,Spring Green,44.20,44.20,,7/19/2025,Tri-County,Week 7,#50,Boys,8&U,50,Meter,Free
+2,Galiv,Daniil,Daniil Galiv,7,Wis. Dells,46.83,46.83,,7/19/2025,Tri-County,Week 7,#50,Boys,8&U,50,Meter,Free
+3,Gaffney,Will,Will Gaffney,7,Wis. Dells,47.57,47.57,,7/19/2025,Tri-County,Week 7,#50,Boys,8&U,50,Meter,Free
+4,Miller,Carter,Carter Miller,8,Spring Green,53.26,53.26,,7/19/2025,Tri-County,Week 7,#50,Boys,8&U,50,Meter,Free
+5,Vichkov,Michael,Michael Vichkov,7,Wis. Dells,56.37,56.37,,7/19/2025,Tri-County,Week 7,#50,Boys,8&U,50,Meter,Free
+---,Isaksson,Bowie,Bowie Isaksson,8,Spring Green,1:03.77,1:03.77,EXH,7/19/2025,Tri-County,Week 7,#50,Boys,8&U,50,Meter,Free
+6,Robinson,Miles,Miles Robinson,6,Spring Green,1:04.01,1:04.01,,7/19/2025,Tri-County,Week 7,#50,Boys,8&U,50,Meter,Free
+---,Soupir,Boden,Boden Soupir,7,Wis. Dells,1:08.09,1:08.09,EXH,7/19/2025,Tri-County,Week 7,#50,Boys,8&U,50,Meter,Free
+---,Furukawa,Seiji,Seiji Furukawa,8,Spring Green,1:10.43,1:10.43,EXH,7/19/2025,Tri-County,Week 7,#50,Boys,8&U,50,Meter,Free
+---,Bautista,Emiliano,Emiliano Bautista,8,Wis. Dells,1:11.31,1:11.31,EXH,7/19/2025,Tri-County,Week 7,#50,Boys,8&U,50,Meter,Free
+---,Milbach,Jordan,Jordan Milbach,7,Wis. Dells,1:23.87,1:23.87,EXH,7/19/2025,Tri-County,Week 7,#50,Boys,8&U,50,Meter,Free
+1,Robinson,Margaret,Margaret Robinson,9,Spring Green,1:21.94,1:21.94,,7/19/2025,Tri-County,Week 7,#51,Girls,9--10,100,Meter,Free
+2,Johnson,Noelle,Noelle Johnson,10,Wis. Dells,1:26.59,1:26.59,,7/19/2025,Tri-County,Week 7,#51,Girls,9--10,100,Meter,Free
+3,Crowley,Kendall,Kendall Crowley,10,Wis. Dells,1:29.52,1:29.52,,7/19/2025,Tri-County,Week 7,#51,Girls,9--10,100,Meter,Free
+4,Morse,Olivia,Olivia Morse,10,Wis. Dells,1:37.23,1:37.23,,7/19/2025,Tri-County,Week 7,#51,Girls,9--10,100,Meter,Free
+---,Olson,Sutton,Sutton Olson,10,Wis. Dells,1:41.39,1:41.39,EXH,7/19/2025,Tri-County,Week 7,#51,Girls,9--10,100,Meter,Free
+---,Milbach,Sydney,Sydney Milbach,9,Wis. Dells,1:41.53,1:41.53,EXH,7/19/2025,Tri-County,Week 7,#51,Girls,9--10,100,Meter,Free
+---,Torkelson,Ellie,Ellie Torkelson,9,Wis. Dells,1:44.19,1:44.19,EXH,7/19/2025,Tri-County,Week 7,#51,Girls,9--10,100,Meter,Free
+---,Kienbaum,Ella,Ella Kienbaum,10,Wis. Dells,1:45.75,1:45.75,EXH,7/19/2025,Tri-County,Week 7,#51,Girls,9--10,100,Meter,Free
+---,Roberts,Atlyn,Atlyn Roberts,10,Wis. Dells,1:52.27,1:52.27,EXH,7/19/2025,Tri-County,Week 7,#51,Girls,9--10,100,Meter,Free
+5,Wittenwyler,Auria,Auria Wittenwyler,9,Spring Green,1:53.45,1:53.45,,7/19/2025,Tri-County,Week 7,#51,Girls,9--10,100,Meter,Free
+---,Hoefferle,Alix,Alix Hoefferle,9,Wis. Dells,1:53.87,1:53.87,EXH,7/19/2025,Tri-County,Week 7,#51,Girls,9--10,100,Meter,Free
+1,Larson,Theo,Theo Larson,9,Spring Green,1:26.16,1:26.16,,7/19/2025,Tri-County,Week 7,#52,Boys,9--10,100,Meter,Free
+2,Muntinga,Liam,Liam Muntinga,10,Wis. Dells,1:32.59,1:32.59,,7/19/2025,Tri-County,Week 7,#52,Boys,9--10,100,Meter,Free
+3,Heckendorf,Carter,Carter Heckendorf,10,Spring Green,1:32.76,1:32.76,,7/19/2025,Tri-County,Week 7,#52,Boys,9--10,100,Meter,Free
+4,Larson,Nolan,Nolan Larson,9,Spring Green,1:40.21,1:40.21,,7/19/2025,Tri-County,Week 7,#52,Boys,9--10,100,Meter,Free
+---,Bateman,Nathan,Nathan Bateman,10,Spring Green,1:42.76,1:42.76,EXH,7/19/2025,Tri-County,Week 7,#52,Boys,9--10,100,Meter,Free
+---,Denu,Tucker,Tucker Denu,10,Spring Green,1:52.17,1:52.17,EXH,7/19/2025,Tri-County,Week 7,#52,Boys,9--10,100,Meter,Free
+---,Wood,Roman,Roman Wood,10,Spring Green,1:52.32,1:52.32,EXH,7/19/2025,Tri-County,Week 7,#52,Boys,9--10,100,Meter,Free
+---,Pulvermacher,Ben,Ben Pulvermacher,10,Spring Green,2:07.73,2:07.73,EXH,7/19/2025,Tri-County,Week 7,#52,Boys,9--10,100,Meter,Free
+1,Gaffney,Isabella,Isabella Gaffney,12,Wis. Dells,1:16.27,1:16.27,,7/19/2025,Tri-County,Week 7,#53,Girls,11-12,100,Meter,Free
+2,Schroeder,Quinn,Quinn Schroeder,11,Spring Green,1:22.82,1:22.82,,7/19/2025,Tri-County,Week 7,#53,Girls,11-12,100,Meter,Free
+3,Schauf,Hannah,Hannah Schauf,12,Spring Green,1:26.81,1:26.81,,7/19/2025,Tri-County,Week 7,#53,Girls,11-12,100,Meter,Free
+4,Cobbs,Lilah,Lilah Cobbs,12,Wis. Dells,1:29.29,1:29.29,,7/19/2025,Tri-County,Week 7,#53,Girls,11-12,100,Meter,Free
+5,Haugen,Madilyn,Madilyn Haugen,12,Spring Green,1:34.12,1:34.12,,7/19/2025,Tri-County,Week 7,#53,Girls,11-12,100,Meter,Free
+6,Kurtz,Braelyn,Braelyn Kurtz,11,Wis. Dells,1:34.15,1:34.15,,7/19/2025,Tri-County,Week 7,#53,Girls,11-12,100,Meter,Free
+---,Miles,Anne,Anne Miles,11,Wis. Dells,1:58.24,1:58.24,EXH,7/19/2025,Tri-County,Week 7,#53,Girls,11-12,100,Meter,Free
+1,Dischler,Simon,Simon Dischler,12,Spring Green,1:10.02,1:10.02,,7/19/2025,Tri-County,Week 7,#54,Boys,11-12,100,Meter,Free
+2,Zaemisch Jr.,JJ,JJ Zaemisch Jr.,12,Spring Green,1:13.56,1:13.56,,7/19/2025,Tri-County,Week 7,#54,Boys,11-12,100,Meter,Free
+3,Farland,Raeshon,Raeshon Farland,12,Spring Green,1:24.09,1:24.09,,7/19/2025,Tri-County,Week 7,#54,Boys,11-12,100,Meter,Free
+4,Olson,Loren,Loren Olson,12,Wis. Dells,1:24.92,1:24.92,,7/19/2025,Tri-County,Week 7,#54,Boys,11-12,100,Meter,Free
+---,McCall,Charles,Charles McCall,11,Spring Green,1:34.70,1:34.70,EXH,7/19/2025,Tri-County,Week 7,#54,Boys,11-12,100,Meter,Free
+---,Oppert,Finn,Finn Oppert,11,Spring Green,1:40.34,1:40.34,EXH,7/19/2025,Tri-County,Week 7,#54,Boys,11-12,100,Meter,Free
+---,Spurley,Rex,Rex Spurley,11,Spring Green,1:58.78,1:58.78,EXH,7/19/2025,Tri-County,Week 7,#54,Boys,11-12,100,Meter,Free
+1,Lagerman,Harper,Harper Lagerman,14,Spring Green,2:30.84,2:30.84,,7/19/2025,Tri-County,Week 7,#55,Girls,13-14,200,Meter,Free
+2,Miller,Lillian,Lillian Miller,14,Spring Green,2:37.06,2:37.06,,7/19/2025,Tri-County,Week 7,#55,Girls,13-14,200,Meter,Free
+4,Ropicky,Bella,Bella Ropicky,13,Wis. Dells,3:02.02,3:02.02,,7/19/2025,Tri-County,Week 7,#55,Girls,13-14,200,Meter,Free
+3,Schauf,Hailey,Hailey Schauf,14,Spring Green,3:02.11,3:02.11,,7/19/2025,Tri-County,Week 7,#55,Girls,13-14,200,Meter,Free
+1,Radkiewicz,Cash,Cash Radkiewicz,14,Wis. Dells,2:14.08,2:14.08,,7/19/2025,Tri-County,Week 7,#56,Boys,13-14,200,Meter,Free
+2,Hanson,Keagan,Keagan Hanson,13,Spring Green,2:38.26,2:38.26,,7/19/2025,Tri-County,Week 7,#56,Boys,13-14,200,Meter,Free
+3,Dischler,Fletcher,Fletcher Dischler,14,Spring Green,2:42.62,2:42.62,,7/19/2025,Tri-County,Week 7,#56,Boys,13-14,200,Meter,Free
+4,O'Brien,Lucas,Lucas O'Brien,13,Wis. Dells,3:02.35,3:02.35,,7/19/2025,Tri-County,Week 7,#56,Boys,13-14,200,Meter,Free
+1,Lagerman,Marley,Marley Lagerman,16,Spring Green,2:33.78,2:33.78,,7/19/2025,Tri-County,Week 7,#57,Girls,15-18,200,Meter,Free
+2,Montry,Preslee,Preslee Montry,15,Spring Green,2:40.35,2:40.35,,7/19/2025,Tri-County,Week 7,#57,Girls,15-18,200,Meter,Free
+3,Needham,Marissa,Marissa Needham,18,Spring Green,2:50.18,2:50.18,,7/19/2025,Tri-County,Week 7,#57,Girls,15-18,200,Meter,Free
+4,Duffy,Nora,Nora Duffy,15,Wis. Dells,2:52.70,2:52.70,,7/19/2025,Tri-County,Week 7,#57,Girls,15-18,200,Meter,Free
+1,Spurley,Rhet,Rhet Spurley,16,Spring Green,2:39.84,2:39.84,,7/19/2025,Tri-County,Week 7,#58,Boys,15-18,200,Meter,Free
+2,Crothers,Will,Will Crothers,15,Wis. Dells,2:42.09,2:42.09,,7/19/2025,Tri-County,Week 7,#58,Boys,15-18,200,Meter,Free
+3,Saperstein,Eli,Eli Saperstein,16,Spring Green,2:45.35,2:45.35,,7/19/2025,Tri-County,Week 7,#58,Boys,15-18,200,Meter,Free
+1,Soule,Clare,Clare Soule,8,Wis. Dells,23.95,23.95,,7/19/2025,Tri-County,Week 7,#59,Girls,8&U,25,Meter,Fly
+2,Richards,Ember,Ember Richards,7,Spring Green,24.41,24.41,,7/19/2025,Tri-County,Week 7,#59,Girls,8&U,25,Meter,Fly
+3,Olson,Lucille,Lucille Olson,7,Wis. Dells,27.10,27.10,,7/19/2025,Tri-County,Week 7,#59,Girls,8&U,25,Meter,Fly
+4,Hanson,Kinsley,Kinsley Hanson,8,Spring Green,30.28,30.28,,7/19/2025,Tri-County,Week 7,#59,Girls,8&U,25,Meter,Fly
+5,Halverson,Blakely,Blakely Halverson,7,Spring Green,31.81,31.81,,7/19/2025,Tri-County,Week 7,#59,Girls,8&U,25,Meter,Fly
+---,Bauer,Nora,Nora Bauer,8,Spring Green,32.98,32.98,EXH,7/19/2025,Tri-County,Week 7,#59,Girls,8&U,25,Meter,Fly
+---,Ramirez,Lydia,Lydia Ramirez,7,Wis. Dells,45.78,45.78,EXH,7/19/2025,Tri-County,Week 7,#59,Girls,8&U,25,Meter,Fly
+1,Wood,Paxton,Paxton Wood,8,Spring Green,21.81,21.81,,7/19/2025,Tri-County,Week 7,#60,Boys,8&U,25,Meter,Fly
+2,Shelton,Drew,Drew Shelton,8,Spring Green,22.56,22.56,,7/19/2025,Tri-County,Week 7,#60,Boys,8&U,25,Meter,Fly
+3,Galiv,Daniil,Daniil Galiv,7,Wis. Dells,23.31,23.31,,7/19/2025,Tri-County,Week 7,#60,Boys,8&U,25,Meter,Fly
+4,Crowley,Lucas,Lucas Crowley,7,Wis. Dells,30.16,30.16,,7/19/2025,Tri-County,Week 7,#60,Boys,8&U,25,Meter,Fly
+1,Robinson,Margaret,Margaret Robinson,9,Spring Green,40.23,40.23,,7/19/2025,Tri-County,Week 7,#61,Girls,9--10,50,Meter,Fly
+2,Hunter,Kaitlynn,Kaitlynn Hunter,9,Spring Green,43.37,43.37,,7/19/2025,Tri-County,Week 7,#61,Girls,9--10,50,Meter,Fly
+3,Crowley,Kendall,Kendall Crowley,10,Wis. Dells,55.19,55.19,,7/19/2025,Tri-County,Week 7,#61,Girls,9--10,50,Meter,Fly
+4,Olson,Sutton,Sutton Olson,10,Wis. Dells,59.66,59.66,,7/19/2025,Tri-County,Week 7,#61,Girls,9--10,50,Meter,Fly
+1,Dischler,Topher,Topher Dischler,10,Spring Green,46.24,46.24,,7/19/2025,Tri-County,Week 7,#62,Boys,9--10,50,Meter,Fly
+2,Stanek,Jack,Jack Stanek,9,Spring Green,53.32,53.32,,7/19/2025,Tri-County,Week 7,#62,Boys,9--10,50,Meter,Fly
+3,Larson,Nolan,Nolan Larson,9,Spring Green,57.32,57.32,,7/19/2025,Tri-County,Week 7,#62,Boys,9--10,50,Meter,Fly
+---,Wood,Roman,Roman Wood,10,Spring Green,1:14.42,1:14.42,EXH,7/19/2025,Tri-County,Week 7,#62,Boys,9--10,50,Meter,Fly
+4,Hill,Ollie,Ollie Hill,10,Wis. Dells,1:19.11,1:19.11,,7/19/2025,Tri-County,Week 7,#62,Boys,9--10,50,Meter,Fly
+1,Galiv,Milana,Milana Galiv,12,Wis. Dells,35.18,35.18,,7/19/2025,Tri-County,Week 7,#63,Girls,11-12,50,Meter,Fly
+2,Richards,Riley,Riley Richards,11,Spring Green,37.60,37.60,,7/19/2025,Tri-County,Week 7,#63,Girls,11-12,50,Meter,Fly
+3,Crothers,Cassidy,Cassidy Crothers,12,Wis. Dells,44.14,44.14,,7/19/2025,Tri-County,Week 7,#63,Girls,11-12,50,Meter,Fly
+4,Horras,Evelyn,Evelyn Horras,11,Wis. Dells,49.04,49.04,,7/19/2025,Tri-County,Week 7,#63,Girls,11-12,50,Meter,Fly
+5,Markuson,Piper,Piper Markuson,11,Spring Green,51.53,51.53,,7/19/2025,Tri-County,Week 7,#63,Girls,11-12,50,Meter,Fly
+---,Haugen,Madilyn,Madilyn Haugen,12,Spring Green,54.79,54.79,EXH,7/19/2025,Tri-County,Week 7,#63,Girls,11-12,50,Meter,Fly
+---,Montry,Maddie,Maddie Montry,11,Spring Green,1:01.40,1:01.40,EXH,7/19/2025,Tri-County,Week 7,#63,Girls,11-12,50,Meter,Fly
+6,Klaas,Eva,Eva Klaas,11,Spring Green,1:02.33,1:02.33,,7/19/2025,Tri-County,Week 7,#63,Girls,11-12,50,Meter,Fly
+1,Zaemisch Jr.,JJ,JJ Zaemisch Jr.,12,Spring Green,35.10,35.10,,7/19/2025,Tri-County,Week 7,#64,Boys,11-12,50,Meter,Fly
+2,Dischler,Simon,Simon Dischler,12,Spring Green,35.60,35.60,,7/19/2025,Tri-County,Week 7,#64,Boys,11-12,50,Meter,Fly
+3,Olson,Loren,Loren Olson,12,Wis. Dells,42.13,42.13,,7/19/2025,Tri-County,Week 7,#64,Boys,11-12,50,Meter,Fly
+4,Karls,Henry,Henry Karls,11,Spring Green,51.45,51.45,,7/19/2025,Tri-County,Week 7,#64,Boys,11-12,50,Meter,Fly
+1,Schaefer,Cora,Cora Schaefer,13,Wis. Dells,31.85,31.85,,7/19/2025,Tri-County,Week 7,#65,Girls,13-14,50,Meter,Fly
+2,Lauterbach,Laikyn,Laikyn Lauterbach,13,Spring Green,32.54,32.54,,7/19/2025,Tri-County,Week 7,#65,Girls,13-14,50,Meter,Fly
+3,Foth,Kyra,Kyra Foth,14,Wis. Dells,36.29,36.29,,7/19/2025,Tri-County,Week 7,#65,Girls,13-14,50,Meter,Fly
+4,Isaksson,Willow,Willow Isaksson,13,Spring Green,41.16,41.16,,7/19/2025,Tri-County,Week 7,#65,Girls,13-14,50,Meter,Fly
+5,Alexander,Kailin,Kailin Alexander,14,Spring Green,41.43,41.43,,7/19/2025,Tri-County,Week 7,#65,Girls,13-14,50,Meter,Fly
+---,Ropicky,Bella,Bella Ropicky,13,Wis. Dells,46.81,46.81,EXH,7/19/2025,Tri-County,Week 7,#65,Girls,13-14,50,Meter,Fly
+1,Radkiewicz,Cash,Cash Radkiewicz,14,Wis. Dells,30.18,30.18,,7/19/2025,Tri-County,Week 7,#66,Boys,13-14,50,Meter,Fly
+2,Dischler,Fletcher,Fletcher Dischler,14,Spring Green,36.46,36.46,,7/19/2025,Tri-County,Week 7,#66,Boys,13-14,50,Meter,Fly
+3,Ropicky,Andrew,Andrew Ropicky,14,Wis. Dells,36.84,36.84,,7/19/2025,Tri-County,Week 7,#66,Boys,13-14,50,Meter,Fly
+4,Schroeder,Micah,Micah Schroeder,13,Spring Green,37.51,37.51,,7/19/2025,Tri-County,Week 7,#66,Boys,13-14,50,Meter,Fly
+5,O'Brien,Lucas,Lucas O'Brien,13,Wis. Dells,42.21,42.21,,7/19/2025,Tri-County,Week 7,#66,Boys,13-14,50,Meter,Fly
+1,Bowar,Lilly,Lilly Bowar,15,Spring Green,33.79,33.79,,7/19/2025,Tri-County,Week 7,#67,Girls,15-18,50,Meter,Fly
+2,Lagerman,Marley,Marley Lagerman,16,Spring Green,33.94,33.94,,7/19/2025,Tri-County,Week 7,#67,Girls,15-18,50,Meter,Fly
+3,Gavinski,Vivian,Vivian Gavinski,15,Wis. Dells,39.02,39.02,,7/19/2025,Tri-County,Week 7,#67,Girls,15-18,50,Meter,Fly
+4,Contreras,Mareli,Mareli Contreras,16,Wis. Dells,49.19,49.19,,7/19/2025,Tri-County,Week 7,#67,Girls,15-18,50,Meter,Fly
+1,Gaffney,Brendan,Brendan Gaffney,18,Wis. Dells,30.98,30.98,,7/19/2025,Tri-County,Week 7,#68,Boys,15-18,50,Meter,Fly
+2,Truschinski,Gus,Gus Truschinski,16,Spring Green,31.10,31.10,,7/19/2025,Tri-County,Week 7,#68,Boys,15-18,50,Meter,Fly
+3,Nachreiner,Sumner,Sumner Nachreiner,17,Spring Green,33.22,33.22,,7/19/2025,Tri-County,Week 7,#68,Boys,15-18,50,Meter,Fly
+4,Klaas,Jack,Jack Klaas,16,Spring Green,48.30,48.30,,7/19/2025,Tri-County,Week 7,#68,Boys,15-18,50,Meter,Fly
