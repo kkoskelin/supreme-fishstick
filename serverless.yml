@@ -1,0 +1,135 @@
+service: supreme-fishstick-api
+
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: us-east-1
+  stage: ${opt:stage, 'dev'}
+  memorySize: 512
+  timeout: 30
+  environment:
+    SWIM_RECORDS_TABLE: ${self:custom.swimRecordsTable}
+    STAGE: ${self:provider.stage}
+  iam:
+    role:
+      statements:
+        - Effect: Allow
+          Action:
+            - dynamodb:Query
+            - dynamodb:Scan
+            - dynamodb:GetItem
+            - dynamodb:PutItem
+            - dynamodb:UpdateItem
+            - dynamodb:DeleteItem
+          Resource:
+            - !GetAtt SwimRecordsTable.Arn
+            - !Sub '${SwimRecordsTable.Arn}/index/*'
+
+custom:
+  swimRecordsTable: ${self:service}-swim-records-${self:provider.stage}
+
+functions:
+  # Placeholder API functions - to be implemented
+  # getRecords:
+  #   handler: api/handlers/records.getRecords
+  #   events:
+  #     - http:
+  #         path: /records
+  #         method: get
+  #         cors: true
+  
+  # getRecordsBySwimmer:
+  #   handler: api/handlers/records.getRecordsBySwimmer
+  #   events:
+  #     - http:
+  #         path: /records/swimmer/{swimmerId}
+  #         method: get
+  #         cors: true
+
+resources:
+  Resources:
+    SwimRecordsTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        TableName: ${self:custom.swimRecordsTable}
+        BillingMode: PAY_PER_REQUEST
+        AttributeDefinitions:
+          # Primary Key Attributes
+          - AttributeName: PK
+            AttributeType: S
+          - AttributeName: SK
+            AttributeType: S
+          # GSI Key Attributes
+          - AttributeName: GSI1PK
+            AttributeType: S
+          - AttributeName: GSI1SK
+            AttributeType: S
+          - AttributeName: GSI2PK
+            AttributeType: S
+          - AttributeName: GSI2SK
+            AttributeType: S
+          - AttributeName: GSI3PK
+            AttributeType: S
+          - AttributeName: GSI3SK
+            AttributeType: N
+        KeySchema:
+          - AttributeName: PK
+            KeyType: HASH
+          - AttributeName: SK
+            KeyType: RANGE
+        GlobalSecondaryIndexes:
+          # GSI1: Query by Swimmer Name
+          # PK: SWIMMER#<displayName>
+          # SK: DATE#<date>#EVENT#<eventId>
+          - IndexName: GSI1
+            KeySchema:
+              - AttributeName: GSI1PK
+                KeyType: HASH
+              - AttributeName: GSI1SK
+                KeyType: RANGE
+            Projection:
+              ProjectionType: ALL
+          # GSI2: Query by Team
+          # PK: TEAM#<teamCode>
+          # SK: DATE#<date>#SWIMMER#<displayName>
+          - IndexName: GSI2
+            KeySchema:
+              - AttributeName: GSI2PK
+                KeyType: HASH
+              - AttributeName: GSI2SK
+                KeyType: RANGE
+            Projection:
+              ProjectionType: ALL
+          # GSI3: Query by Event for rankings/best times
+          # PK: EVENT#<eventNumber>
+          # SK: <convertedTime> (numeric for sorting by time)
+          - IndexName: GSI3
+            KeySchema:
+              - AttributeName: GSI3PK
+                KeyType: HASH
+              - AttributeName: GSI3SK
+                KeyType: RANGE
+            Projection:
+              ProjectionType: ALL
+        Tags:
+          - Key: Environment
+            Value: ${self:provider.stage}
+          - Key: Application
+            Value: ${self:service}
+        StreamSpecification:
+          StreamViewType: NEW_AND_OLD_IMAGES
+
+  Outputs:
+    SwimRecordsTableName:
+      Description: Name of the DynamoDB table for swim records
+      Value: !Ref SwimRecordsTable
+      Export:
+        Name: ${self:service}-swim-records-table-${self:provider.stage}
+    
+    SwimRecordsTableArn:
+      Description: ARN of the DynamoDB table for swim records
+      Value: !GetAtt SwimRecordsTable.Arn
+      Export:
+        Name: ${self:service}-swim-records-table-arn-${self:provider.stage}
