@@ -20,18 +20,29 @@ export function findMostRecentDate(swimData: RawSwimRecord[]): string {
 }
 
 /**
- * Fetch all swim records, latest date, and swimmer names using the configured gateway.
- * This is now async since it may call an API.
+ * Fetch metadata (latest date and swimmer names) without loading all records.
+ * Records will be fetched on-demand when user performs a search.
  */
 export async function getLatestSwimRecordAndNamesAndData() {
-  // Fetch all data using the configured gateway
-  const rawData = await gateway.fetchRecords();
+  // Only fetch metadata on initial load, not all records
   const latestSwimRecordDate = await gateway.getLatestDate();
   const swimmerNames = await gateway.getSwimmerNames();
 
   return {
     latestSwimRecordDate,
-    rawData,
+    rawData: [], // Start with empty data - will be populated on search
     swimmerNames,
   };
+}
+
+/**
+ * Fetch swim records with optional filters using the configured gateway.
+ */
+export async function fetchSwimRecords(filter?: {
+  swimmerName?: string;
+  team?: string;
+  year?: string;
+  limit?: number;
+}) {
+  return await gateway.fetchRecords(filter);
 }
