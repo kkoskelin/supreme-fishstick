@@ -23,7 +23,8 @@
     "prepare": "husky install",
     "start": "parcel",
     "open": "parcel --open",
-    "test": "jest --config jest.config.js --collectCoverage true src/"
+    "test": "jest --config jest.config.js --collectCoverage true src/",
+    "migrate": "node scripts/migrateToSupabase.js"
   },
   "dependencies": {
     "@babel/core": "^7.24.7",
