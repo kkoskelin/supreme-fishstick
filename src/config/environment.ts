@@ -25,10 +25,9 @@ function getConfig(): EnvironmentConfig {
 export const config = getConfig();
 
 // Log configuration on startup (helpful for debugging)
-if (process.env.NODE_ENV === 'development') {
-  console.log('Environment Config:', {
-    gatewayType: config.gatewayType,
-    apiBaseUrl: config.apiBaseUrl || '(same origin)',
-    nodeEnv: process.env.NODE_ENV
-  });
-}
+console.log('[BUILD-TIME] Environment Config:', {
+  REACT_APP_USE_API: process.env.REACT_APP_USE_API,
+  gatewayType: config.gatewayType,
+  apiBaseUrl: config.apiBaseUrl || '(same origin)',
+  nodeEnv: process.env.NODE_ENV
+});
