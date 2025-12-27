@@ -1,16 +1,26 @@
 import { ISwimDataGateway, SwimDataFilter } from './ISwimDataGateway';
 import { RawSwimRecord, SwimRecordIndex } from '../types/RawSwimRecord';
-import staticData from '../fixtures/swimData.json';
 
 /**
  * Static implementation of ISwimDataGateway that uses bundled JSON data.
  * This is the current/legacy implementation before API migration.
+ * Uses lazy loading to avoid bundling data when API gateway is used.
  */
 export class StaticSwimDataGateway implements ISwimDataGateway {
-  private data: RawSwimRecord[] = staticData as RawSwimRecord[];
+  private data: RawSwimRecord[] | null = null;
+
+  private async loadData(): Promise<RawSwimRecord[]> {
+    if (this.data === null) {
+      // Dynamic import to avoid bundling when not used
+      const module = await import('../fixtures/swimData.json');
+      this.data = module.default as RawSwimRecord[];
+    }
+    return this.data;
+  }
 
   async fetchRecords(filter?: SwimDataFilter): Promise<RawSwimRecord[]> {
-    let results = [...this.data];
+    const data = await this.loadData();
+    let results = [...data];
 
     // Apply filters in-memory
     if (filter?.swimmerName) {
@@ -42,14 +52,16 @@ export class StaticSwimDataGateway implements ISwimDataGateway {
   }
 
   async getLatestDate(): Promise<string> {
-    return this.data.reduce((latest, record) => {
+    const data = await this.loadData();
+    return data.reduce((latest, record) => {
       const date = record[SwimRecordIndex.DATE];
       return date > latest ? date : latest;
     }, '0');
   }
 
   async getSwimmerNames(): Promise<string[]> {
-    const names = this.data.map(r => r[SwimRecordIndex.DISPLAY_NAME]);
+    const data = await this.loadData();
+    const names = data.map(r => r[SwimRecordIndex.DISPLAY_NAME]);
     return Array.from(new Set(names)).sort();
   }
 }
