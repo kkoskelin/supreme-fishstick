@@ -61,8 +61,20 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
     if (error) throw error;
 
-    // Extract display_name strings from RPC function result
-    const names = data?.map((row: any) => row.display_name) || [];
+    // Handle different return formats from RPC function
+    // SETOF TEXT returns plain strings, TABLE returns objects with display_name
+    let names: string[] = [];
+    if (data && data.length > 0) {
+      if (typeof data[0] === 'string') {
+        // Plain strings from SETOF TEXT
+        names = data as string[];
+      } else if (typeof data[0] === 'object' && data[0] !== null) {
+        // Objects from TABLE - extract display_name or get_unique_swimmer_names property
+        names = data.map((row: any) =>
+          row.display_name || row.get_unique_swimmer_names || String(row)
+        );
+      }
+    }
 
     res.status(200).json({
       success: true,
