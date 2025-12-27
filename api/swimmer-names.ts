@@ -21,22 +21,49 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   }
 
   try {
+    // Use raw SQL to get distinct swimmer names efficiently
     const { data, error } = await supabase
-      .from('swim_records')
-      .select('display_name')
-      .order('display_name');
+      .rpc('get_unique_swimmer_names');
+
+    // Fallback to JavaScript deduplication if RPC function doesn't exist
+    if (error && error.message?.includes('function') && error.message?.includes('does not exist')) {
+      // Fetch all records with pagination to get all unique names
+      let allNames: string[] = [];
+      let page = 0;
+      const pageSize = 1000;
+      let hasMore = true;
+
+      while (hasMore) {
+        const { data: pageData, error: pageError } = await supabase
+          .from('swim_records')
+          .select('display_name')
+          .range(page * pageSize, (page + 1) * pageSize - 1);
+
+        if (pageError) throw pageError;
+
+        if (pageData && pageData.length > 0) {
+          allNames.push(...pageData.map(r => r.display_name));
+          page++;
+          hasMore = pageData.length === pageSize;
+        } else {
+          hasMore = false;
+        }
+      }
+
+      const uniqueNames = Array.from(new Set(allNames)).sort();
+      return res.status(200).json({
+        success: true,
+        count: uniqueNames.length,
+        names: uniqueNames
+      });
+    }
 
     if (error) throw error;
 
-    // Get unique names
-    const uniqueNames = Array.from(
-      new Set(data?.map(r => r.display_name) || [])
-    ).sort();
-
     res.status(200).json({
       success: true,
-      count: uniqueNames.length,
-      names: uniqueNames
+      count: data?.length || 0,
+      names: data || []
     });
   } catch (error: any) {
     console.error('API Error:', error);
