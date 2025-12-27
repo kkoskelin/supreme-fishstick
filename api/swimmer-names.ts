@@ -23,7 +23,8 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   try {
     // Use raw SQL to get distinct swimmer names efficiently
     const { data, error } = await supabase
-      .rpc('get_unique_swimmer_names');
+      .rpc('get_unique_swimmer_names')
+      .limit(10000); // Set high limit to get all unique names
 
     // Fallback to JavaScript deduplication if RPC function doesn't exist
     if (error && error.message?.includes('function') && error.message?.includes('does not exist')) {
@@ -60,10 +61,13 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
     if (error) throw error;
 
+    // Extract display_name strings from RPC function result
+    const names = data?.map((row: any) => row.display_name) || [];
+
     res.status(200).json({
       success: true,
-      count: data?.length || 0,
-      names: data || []
+      count: names.length,
+      names: names
     });
   } catch (error: any) {
     console.error('API Error:', error);
