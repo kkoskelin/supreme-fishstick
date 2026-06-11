@@ -4,7 +4,7 @@ import { Provider } from 'overmind-react';
 import { overmindApp } from './presenter/presenter';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import logo from './MadisonSwimming-Logo-Small.webp';
+import logo from 'url:./MadisonSwimming-Logo-Small.webp';
 
 import './styles.css';
 
