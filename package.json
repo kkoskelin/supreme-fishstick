@@ -46,6 +46,7 @@
     "parcel": "^2.16.4",
     "postcss": "^8.5.15",
     "postcss-loader": "^7.3.4",
+    "posthtml": "^0.16.7",
     "prettier": "^3.8.4",
     "process": "^0.11.10",
     "react-data-table-component": "^7.7.1",

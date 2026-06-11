@@ -65,6 +65,9 @@ importers:
       postcss-loader:
         specifier: ^7.3.4
         version: 7.3.4(postcss@8.5.15)(typescript@5.9.3)(webpack@5.100.0(@swc/core@1.15.41(@swc/helpers@0.5.23))(postcss@8.5.15))
+      posthtml:
+        specifier: ^0.16.7
+        version: 0.16.7
       prettier:
         specifier: ^3.8.4
         version: 3.8.4
