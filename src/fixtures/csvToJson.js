@@ -1,4 +1,5 @@
 const fs = require('fs');
+const path = require('path');
 const csv = require('csv-parser');
 
 const teamKeyMap = {
@@ -71,7 +72,7 @@ function simplifyEntryFormat(entry) {
     return arrayFormat;
   } catch (error) {
     console.error('Error transforming entry:', entry, error);
-    throw e;
+    throw error;
   }
 }
 
@@ -96,7 +97,7 @@ function writeJSON(filePath, data) {
 
 (async()=>{
   const args = process.argv.slice(2);
-  const jsonFilePath = './swimData.json';
+  const jsonFilePath = path.join(__dirname, 'swimData.json');
   const records = [];
   for (let file of args) {
     const csvData = await readCSV(file);
