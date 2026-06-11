@@ -12,7 +12,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Provider value={overmindApp}>
       <main>
-        <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+        <div className="p-px">
           <img
             className="mx-auto h-16 inline w-auto"
             src={logo}
