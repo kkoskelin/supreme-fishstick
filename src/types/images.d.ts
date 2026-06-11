@@ -1,4 +1,4 @@
 declare module '*.webp' {
   const value: string;
-  export = value;
+  export default value;
 }
