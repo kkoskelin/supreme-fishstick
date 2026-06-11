@@ -6,7 +6,7 @@
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "source": "src/index.html",
   "engines": {
-    "node": ">= 18",
+    "node": ">= 22.13",
     "pnpm": ">= 9"
   },
   "scripts": {
@@ -54,7 +54,7 @@
     "ts-loader": "^9.6.0"
   },
   "volta": {
-    "node": "18.15.0",
+    "node": "22.13.0",
     "pnpm": "11.5.2"
   },
   "devDependencies": {
