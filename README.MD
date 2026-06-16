@@ -1,130 +1,91 @@
-# README
+# Tri-County Swim Results
 
-This site will be deployed to tiiny.host on a temporary basis.
+A React + TypeScript site for browsing Tri-County swim meet results by swimmer, event, and team.
 
-madisonswimming.com is hosted on WIX
-Features we want:
-<https://reachforthewall.org/swimmer-stats/>
-<https://reachforthewall.org/event-stats/>
+**Stack:** React 18, TypeScript, Tailwind CSS, Parcel, Overmind (state), pnpm
 
-Let's try an iframe with react app.
-
-* datatables for react
-* ability to filter on all fields
-* ability to specify sort, print, export
-
-TODO:
-
-* database configuration
-* administrative options for entering historical data
-
-## Engineering setup
-
-### Toolchain Installs
-
-* Volta -- <https://volta.sh/>
-
-For VSCode users:
-
-* ESLint
-* Error Lens
-* GitLens -- Git supercharged
-* PostCSS Language Support -- <https://marketplace.visualstudio.com/items?itemName=csstools.postcss>
-* Sort lines
-* Tailwind CSS Intellisense
-
-Modify your editor's `settings.json` file to include the following preferences:
-
-```json
-    "editor.formatOnSave": true,
-    "eslint.format.enable": true,
-    "editor.codeActionsOnSave": {
-        "source.fixAll": true,
-        "source.fixAll.eslint": true,
-    },
-```
-
-### Install Dependencies
-
-`npm i`
-
-## Application startup
-
-`npm start`
-
-## Prepare the bundle for distribution
-
-### Convert the CSV to JSON
-
-Cleaning up the 2024 spreadsheet:
+## Development
 
 ```sh
-mv ~/Downloads/2025\ Tri\ County\ Swim\ Results\ -\ Tri-County.csv ./src/fixtures/2025.csv
-tail -n +2 ./src/fixtures/2025.csv | sed -e 's/,Tri/\/2025,Tri/g' > temp.csv
-mv temp.csv ./src/fixtures/2025.csv
+pnpm install
+pnpm start        # dev server with hot reload
+pnpm run open     # same, opens browser automatically
 ```
 
-You may need to edit the JS file below for your desired year.
+## Building
 
 ```sh
-pushd src/fixtures
-node csvtoJson.js 20*csv
-popd
+pnpm run clean
+pnpm run build          # production bundle
+pnpm run build:gh       # production bundle for GitHub Pages
+zip dist/index.zip dist/*   # optional: package for upload to static host
 ```
 
-### Deploy to Github Pages
+## Deploying
 
-Currently the .github/workflows/static.yml will build and deploy code pushed to `main` automatically.
-The site is then visible at <https://kkoskelin.github.io/supreme-fishstick/>
+**GitHub Pages** — push to `main`; `.github/workflows/static.yml` builds and deploys automatically.
+Live at: <https://kkoskelin.github.io/supreme-fishstick/>
 
-### Build the bundle into a ZIP file for deployment anywhere
+**Static host (tiiny.host, etc.)** — build, zip, upload `dist/index.zip`.
+
+## Testing
 
 ```sh
-npm run clean
-npm run build  (or build:gh)
-zip dist/index.zip dist/*
+pnpm test                          # Jest with coverage
+npx jest path/to/myFile.test.ts    # single file
 ```
 
-Then upload to tiiny.host or whatever free hosting site you wish.
+## Linting
 
-## Serverless
-
-* Set up AWS Credentials: <https://www.serverless.com/framework/docs/providers/aws/guide/credentials/>
-* Video walkthrough: <https://youtu.be/KngM5bfpttA>
-
-To get serverless template engine thing working:
- `brew install serverless`
-
-From the folder `api/`:
-
-* `sls deploy`
-* `sls remove`
-* `serverless info`      View deployed endpoints and resources
-* `serverless invoke`    Invoke deployed functions
-* `serverless --help`    Discover more commands
-
-## Running Tests
-
-Jest Tests:
-
-```
-npm run test
+```sh
+pnpm run lint          # TypeScript + ESLint
+pnpm run lint:css      # Stylelint
+pnpm run lint:fix      # auto-fix ESLint issues
 ```
 
-Run a single jest test file:
 
+---
+
+## Importing Results from Google Sheets
+
+Results can be imported directly from the shared Google Sheet via `import-latest.sh`. If the manual CSV export is not present in `~/Downloads`, the script falls back to fetching from the sheet automatically.
+
+### One-time Apps Script setup (sheet owner only)
+
+The sheet is not publicly accessible, so a Google Apps Script web app is used to serve the CSV without requiring API keys or a Google Cloud project.
+
+1. Open the Google Sheet → **Extensions → Apps Script**
+2. Add the following function to the existing script (do not replace existing functions):
+
+```javascript
+function doGet() {
+  const sheet = SpreadsheetApp.getActiveSpreadsheet().getSheets()[0];
+  const data = sheet.getDataRange().getValues();
+  const csv = data.map(row =>
+    row.map(cell => {
+      let s;
+      if (cell instanceof Date) {
+        s = `${cell.getMonth() + 1}/${cell.getDate()}/${cell.getFullYear()}`;
+      } else {
+        s = String(cell);
+      }
+      return s.includes(',') || s.includes('"') || s.includes('\n')
+        ? `"${s.replace(/"/g, '""')}"` : s;
+    }).join(',')
+  ).join('\n');
+  return ContentService.createTextOutput(csv).setMimeType(ContentService.MimeType.CSV);
+}
 ```
-npx jest path/to/myFile.test.ts
-```
 
-# Application Functionality Requests
+3. Click **Deploy → New deployment**
+4. Set type to **Web app**
+5. Set **Execute as** to **Me** and **Who has access** to **Anyone**
+6. Click **Deploy** and copy the `/exec` URL
 
-## Search for a Swimmer, filter on attributes
+### Local setup (anyone running the project)
 
-First, we want to search for a particular swimmer by their NAME (a substring) and TEAM affiliation.
-Additionally, we would like the ability to optionally restrict the year of the records.
-Other filters would be by stroke or by event (each of which has a specific gender, stroke, and distance).
+1. Copy `.env.example` to `.env`
+2. Set `GSHEET_EXPORT_URL` to the `/exec` URL from the deployment above
+3. Install `uv` if not already present: `brew install uv` or `curl -LsSf https://astral.sh/uv/install.sh | sh`
 
-Second, we would like to be able to search for swimmer rankings for a particular event.
-
-* Choose an EVENT (only required criteria); this implicitly requires choice of gender, stroke, and distance.
+With that in place, `sh import-latest.sh` (or `/import-results` in Claude Code) will fetch the latest results, save them to `src/fixtures/`, and regenerate `swimData.json`.
