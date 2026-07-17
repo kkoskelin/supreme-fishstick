@@ -13,3 +13,4 @@ else
 fi
 
 node ./src/fixtures/csvToJson.js ./src/fixtures/*csv
+rm "$SOURCE"
